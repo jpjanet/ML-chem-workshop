@@ -1,0 +1,16 @@
+Our training data defines the \textit{empirical risk}
+\begin{align*}
+    R_{emp}(f) &=\frac{1}{n}\sum_{i=1}^{n}\mathcal{L}(y_i,f(x_i))=\frac{1}{n}\sum_{i=1}^{n}\left(y_i - f(x_i)\right)^2
+\end{align*}
+we choose the model to minimize $R_{emp}(f)$ over all the models in $\mathcal{T}$
+\begin{align*}
+    \hat{f} = \arg\min_{f\in\mathcal{T}} R_{emp}(f)
+\end{align*}
+ we actually care about is the overall risk:
+\begin{align*}
+    R(f)&=\int\mathcal{L}(y,f(x))p(x,y)dxdy = \mathbb{E}\left[\mathcal{L}(Y,f(X))\right]
+\end{align*}
+with minimum
+\begin{align*}
+    f^{*}&= \mathbb{E}\left[Y\vert X=x\right]
+\end{align*}

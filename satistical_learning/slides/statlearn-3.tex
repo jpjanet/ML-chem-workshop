@@ -1,0 +1,7 @@
+Two critical ideas that are worth noting. Under mild assumptions one can show that:
+\begin{enumerate}
+\item with enough data, the model will generalize
+\item  more complicated $\mathcal{T}$ will near-zero approximation error 
+\item the rate of generalization as we add more data is inversely related to size of the set $\mathcal{T}$, i.e. more complicated spaces of models require more data to generalize. 
+\end{enumerate}
+$\mathcal{T}$ model to be large/complicated enough to have low approximation error,  \textbf{but no more complicated}.  With limited data, we are often better off searching for our model in a simpler, smaller family models that `learn' more robustly and quickly as opposed to very complicated models with lots of parameters. Conversely,  a simple model will stop improving with more data past a certain point -- where the approximation error dominates.
