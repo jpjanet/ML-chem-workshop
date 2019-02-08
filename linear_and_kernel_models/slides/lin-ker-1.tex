@@ -1,0 +1,16 @@
+
+
+
+We can rewrite our result to express $w = X^Ta$ for $a\in\mathbb{R}^n$ (shift of basis). 
+\begin{align*}
+&\left( \lambda I + X^TX \right) w = X^Ty_{data} \\
+&w  =  \color{red}{X^T}\color{blue}{\lambda^{-1}\left(y_{data} - Xw \right)}\color{black} =\color{red}X^T\color{blue}a\\ 
+\uncover<2->{\lambda &a  =  y_{data} - Xw = y_{data} + XX^T a \implies a = \left(XX^T + \lambda I\right)^{-1}y_{data}} \\
+\uncover<3->{\implies &w = X^T\left(\color{purple}{XX^T} \color{black} + \lambda I\right)^{-1}y_{data} }\\
+\uncover<4->{\text{c.f. }\: &w = \left(\lambda I + X^TX\right)^{-1} X^Ty_{data}}
+\end{align*}
+\uncover<4->{
+The term \color{purple}$XX^T$\color{black} is the (linear) \textbf{kernel matrix}, whose elements are $\left\langle x_i,x_j \right\rangle = x_i^Tx_j$,  and for $n\times p$ matrix $X$, this is a $n$-sized matrix.}
+
+
+

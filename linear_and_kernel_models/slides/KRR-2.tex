@@ -1,0 +1,18 @@
+
+
+It gets even better. Take the exponential kernel:
+\begin{align*}
+K_{i,j} = \exp\left(-\frac{1}{2\sigma^2}\left\Vert x_i-x_j \right\Vert_2^2 \right)
+\end{align*}
+What is $\varphi(x_i)$ here? 
+\pause{}
+\begin{align*}
+\varphi(x) = e^{\frac{-x^2}{2\sigma^2}}\begin{bmatrix} 1 &
+&{\frac{1}{\sigma}}x &\sqrt{\frac{1}{2!\sigma^4}}x^2 &\hdots\end{bmatrix}^T
+\end{align*}
+infinite dimensional feature space!
+How to choose $\sigma$ for each feature?
+\pause{}
+\begin{itemize}
+\item cross-validation inside the training cv-loop (inception) 
+\end{itemize}

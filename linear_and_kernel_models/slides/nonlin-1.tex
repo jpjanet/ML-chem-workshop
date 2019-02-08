@@ -1,0 +1,16 @@
+
+
+What about non-linear regression?\pause{} Let's say we want to use a quadratic model ($\varphi(x)=ax^2 +bx$), and for simplicity assume a 2D input variable. Our feature space is now given by:
+\begin{align*}
+\mathcal{X} = \begin{bmatrix} x_{1,1}& x_{1,2} & x_{1,1}x_{1,2} & x_{1,1}^2 & x_{1,2}^2    \\ 
+\vdots  &&\hdots && \vdots \\
+ x_{n,1}& x_{n,2} & x_{n,1}x_{n,2} & x_{n,1}^2 & x_{n,2}^2  
+\end{bmatrix}
+\end{align*}
+\pause{}
+We can follow exactly the same procedure to find:
+\begin{align*}
+y_{mod}(x^*) =\sum_{i=1}^{n} z_i a_i,\: \: z_i =  \left\langle \varphi(x^*),\varphi(x_i) \right\rangle  
+\end{align*}
+\pause{}
+except the dimension has increased from $\mathbb{R}^2 \rightarrow \mathbb{R}^{6}$! This gets \emph{factorially} worse as the number of factors increases...

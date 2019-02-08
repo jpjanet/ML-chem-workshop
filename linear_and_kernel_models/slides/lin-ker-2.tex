@@ -1,0 +1,9 @@
+
+The matrix $K_{i,j}=\left\langle x_i,x_j \right\rangle$ corresponds the euclidean projection of one observation onto another, and since $w=X^Ta$, any new data point $x^*$ can be evaluated as:
+\begin{align*}
+y_{mod}(x^*) &= x^* w = x^* X^Ta =z a = \sum_{i=1}^{n} z_i a_i \\
+z_i &=  \left\langle x^*,x_i \right\rangle  
+\end{align*}
+\pause{}
+The prediction at any new point is proportional to the inner product of each training point and the new point.
+

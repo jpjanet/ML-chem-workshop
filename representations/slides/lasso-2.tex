@@ -1,0 +1,17 @@
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzstyle{line} = [draw, -latex', very thick]
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (0,0) rectangle (5.5+5.5,3.25+3.25);
+\clip (-0.15,-0.15) rectangle (11,6.5);
+\node (ds) at (0,0){};
+\node (dsy) at (0,2){};
+\node (dsx) at (2,0){};
+\node (dsxm) at (-2,0){};
+\node (dsym) at (0,-2){};
+\visible<1->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsy);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsxm);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsym);}
+\node[circle,minimum width=2.82cm,draw, thick,fill=blue!20,opacity=0.5] (l2) at (0,0){};
+\node[rectangle,minimum width=2.0cm,minimum height=2.0cm,draw, thick,rotate=45,fill=red,opacity=0.5] (l2) at (0,0){};
+\end{tikzpicture}
