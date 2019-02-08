@@ -1,0 +1,1666 @@
+DRAGON ver.5.4 - No. of variables: 1664				
+No.	Rel.No.	Symbol	Definition	Class
+1	1	MW	molecular weight	constitutional descriptors
+2	2	AMW	average molecular weight	constitutional descriptors
+3	3	Sv	sum of atomic van der Waals volumes (scaled on Carbon atom)	constitutional descriptors
+4	4	Se	sum of atomic Sanderson electronegativities (scaled on Carbon atom)	constitutional descriptors
+5	5	Sp	sum of atomic polarizabilities (scaled on Carbon atom)	constitutional descriptors
+6	6	Ss	sum of Kier-Hall electrotopological states	constitutional descriptors
+7	7	Mv	mean atomic van der Waals volume (scaled on Carbon atom)	constitutional descriptors
+8	8	Me	mean atomic Sanderson electronegativity (scaled on Carbon atom)	constitutional descriptors
+9	9	Mp	mean atomic polarizability (scaled on Carbon atom)	constitutional descriptors
+10	10	Ms	mean electrotopological state	constitutional descriptors
+11	11	nAT	number of atoms	constitutional descriptors
+12	12	nSK	number of non-H atoms	constitutional descriptors
+13	13	nBT	number of bonds	constitutional descriptors
+14	14	nBO	number of non-H bonds	constitutional descriptors
+15	15	nBM	number of multiple bonds	constitutional descriptors
+16	16	SCBO	sum of conventional bond orders (H-depleted)	constitutional descriptors
+17	17	ARR	aromatic ratio	constitutional descriptors
+18	18	nCIC	number of rings	constitutional descriptors
+19	19	nCIR	number of circuits	constitutional descriptors
+20	20	RBN	number of rotatable bonds	constitutional descriptors
+21	21	RBF	rotatable bond fraction	constitutional descriptors
+22	22	nDB	number of double bonds	constitutional descriptors
+23	23	nTB	number of triple bonds	constitutional descriptors
+24	24	nAB	number of aromatic bonds	constitutional descriptors
+25	25	nH	number of Hydrogen atoms	constitutional descriptors
+26	26	nC	number of Carbon atoms	constitutional descriptors
+27	27	nN	number of Nitrogen atoms	constitutional descriptors
+28	28	nO	number of Oxygen atoms	constitutional descriptors
+29	29	nP	number of Phosphorous atoms	constitutional descriptors
+30	30	nS	number of Sulfur atoms	constitutional descriptors
+31	31	nF	number of Fluorine atoms	constitutional descriptors
+32	32	nCL	number of Chlorine atoms	constitutional descriptors
+33	33	nBR	number of Bromine atoms	constitutional descriptors
+34	34	nI	number of Iodine atoms	constitutional descriptors
+35	35	nB	number of Boron atoms	constitutional descriptors
+36	36	nHM	number of heavy atoms	constitutional descriptors
+37	37	nX	number of halogen atoms	constitutional descriptors
+38	38	nR03	number of 3-membered rings	constitutional descriptors
+39	39	nR04	number of 4-membered rings	constitutional descriptors
+40	40	nR05	number of 5-membered rings	constitutional descriptors
+41	41	nR06	number of 6-membered rings	constitutional descriptors
+42	42	nR07	number of 7-membered rings	constitutional descriptors
+43	43	nR08	number of 8-membered rings	constitutional descriptors
+44	44	nR09	number of 9-membered rings	constitutional descriptors
+45	45	nR10	number of 10-membered rings	constitutional descriptors
+46	46	nR11	number of 11-membered rings	constitutional descriptors
+47	47	nR12	number of 12-membered rings	constitutional descriptors
+48	48	nBnz	number of benzene-like rings	constitutional descriptors
+49	1	ZM1	first Zagreb index M1	topological descriptors
+50	2	ZM1V	first Zagreb index by valence vertex degrees	topological descriptors
+51	3	ZM2	second Zagreb index M2	topological descriptors
+52	4	ZM2V	second Zagreb index by valence vertex degrees	topological descriptors
+53	5	Qindex	Quadratic index	topological descriptors
+54	6	SNar	Narumi simple topological index (log)	topological descriptors
+55	7	HNar	Narumi harmonic topological index	topological descriptors
+56	8	GNar	Narumi geometric topological index	topological descriptors
+57	9	Xt	Total structure connectivity index	topological descriptors
+58	10	Dz	Pogliani index	topological descriptors
+59	11	Ram	ramification index	topological descriptors
+60	12	Pol	polarity number	topological descriptors
+61	13	LPRS	log of product of row sums (PRS)	topological descriptors
+62	14	VDA	average vertex distance degree	topological descriptors
+63	15	MSD	mean square distance index (Balaban)	topological descriptors
+64	16	SMTI	Schultz Molecular Topological Index (MTI)	topological descriptors
+65	17	SMTIV	Schultz MTI by valence vertex degrees	topological descriptors
+66	18	GMTI	Gutman Molecular Topological Index	topological descriptors
+67	19	GMTIV	Gutman MTI by valence vertex degrees	topological descriptors
+68	20	Xu	Xu index	topological descriptors
+69	21	SPI	superpendentic index	topological descriptors
+70	22	W	Wiener W index	topological descriptors
+71	23	WA	mean Wiener index	topological descriptors
+72	24	Har	Harary H index	topological descriptors
+73	25	Har2	square reciprocal distance sum index	topological descriptors
+74	26	QW	quasi-Wiener index (Kirchhoff number)	topological descriptors
+75	27	TI1	first Mohar index TI1	topological descriptors
+76	28	TI2	second Mohar index TI2	topological descriptors
+77	29	STN	spanning tree number (log)	topological descriptors
+78	30	HyDp	hyper-distance-path index	topological descriptors
+79	31	RHyDp	reciprocal hyper-distance-path index	topological descriptors
+80	32	w	detour index	topological descriptors
+81	33	ww	hyper-detour index	topological descriptors
+82	34	Rww	reciprocal hyper-detour index	topological descriptors
+83	35	D/D	distance/detour index	topological descriptors
+84	36	Wap	all-path Wiener index	topological descriptors
+85	37	WhetZ	Wiener-type index from Z weighted distance matrix (Barysz matrix)	topological descriptors
+86	38	Whetm	Wiener-type index from mass weighted distance matrix	topological descriptors
+87	39	Whetv	Wiener-type index from van der Waals weighted distance matrix	topological descriptors
+88	40	Whete	Wiener-type index from electronegativity weighted distance matrix	topological descriptors
+89	41	Whetp	Wiener-type index from polarizability weighted distance matrix	topological descriptors
+90	42	J	Balaban distance connectivity index	topological descriptors
+91	43	JhetZ	Balaban-type index from Z weighted distance matrix (Barysz matrix)	topological descriptors
+92	44	Jhetm	Balaban-type index from mass weighted distance matrix	topological descriptors
+93	45	Jhetv	Balaban-type index from van der Waals weighted distance matrix	topological descriptors
+94	46	Jhete	Balaban-type index from electronegativity weighted distance matrix	topological descriptors
+95	47	Jhetp	Balaban-type index from polarizability weighted distance matrix	topological descriptors
+96	48	MAXDN	maximal electrotopological negative variation	topological descriptors
+97	49	MAXDP	maximal electrotopological positive variation	topological descriptors
+98	50	DELS	molecular electrotopological variation	topological descriptors
+99	51	TIE	E-state topological parameter	topological descriptors
+100	52	S0K	Kier symmetry index	topological descriptors
+101	53	S1K	1-path Kier alpha-modified shape index	topological descriptors
+102	54	S2K	2-path Kier alpha-modified shape index	topological descriptors
+103	55	S3K	3-path Kier alpha-modified shape index	topological descriptors
+104	56	PHI	Kier flexibility index	topological descriptors
+105	57	BLI	Kier benzene-likeliness index	topological descriptors
+106	58	PW2	path/walk 2 - Randic shape index	topological descriptors
+107	59	PW3	path/walk 3 - Randic shape index	topological descriptors
+108	60	PW4	path/walk 4 - Randic shape index	topological descriptors
+109	61	PW5	path/walk 5 - Randic shape index	topological descriptors
+110	62	PJI2	2D Petitjean shape index	topological descriptors
+111	63	CSI	eccentric connectivity index	topological descriptors
+112	64	ECC	eccentricity	topological descriptors
+113	65	AECC	average eccentricity	topological descriptors
+114	66	DECC	eccentric	topological descriptors
+115	67	MDDD	mean distance degree deviation	topological descriptors
+116	68	UNIP	unipolarity	topological descriptors
+117	69	CENT	centralization	topological descriptors
+118	70	VAR	variation	topological descriptors
+119	71	BAC	Balaban centric index	topological descriptors
+120	72	Lop	Lopping centric index	topological descriptors
+121	73	ICR	radial centric information index	topological descriptors
+122	74	D/Dr03	distance/detour ring index of order 3	topological descriptors
+123	75	D/Dr04	distance/detour ring index of order 4	topological descriptors
+124	76	D/Dr05	distance/detour ring index of order 5	topological descriptors
+125	77	D/Dr06	distance/detour ring index of order 6	topological descriptors
+126	78	D/Dr07	distance/detour ring index of order 7	topological descriptors
+127	79	D/Dr08	distance/detour ring index of order 8	topological descriptors
+128	80	D/Dr09	distance/detour ring index of order 9	topological descriptors
+129	81	D/Dr10	distance/detour ring index of order 10	topological descriptors
+130	82	D/Dr11	distance/detour ring index of order 11	topological descriptors
+131	83	D/Dr12	distance/detour ring index of order 12	topological descriptors
+132	84	T(N..N)	sum of topological distances between N..N	topological descriptors
+133	85	T(N..O)	sum of topological distances between N..O	topological descriptors
+134	86	T(N..S)	sum of topological distances between N..S	topological descriptors
+135	87	T(N..P)	sum of topological distances between N..P	topological descriptors
+136	88	T(N..F)	sum of topological distances between N..F	topological descriptors
+137	89	T(N..Cl)	sum of topological distances between N..Cl	topological descriptors
+138	90	T(N..Br)	sum of topological distances between N..Br	topological descriptors
+139	91	T(N..I)	sum of topological distances between N..I	topological descriptors
+140	92	T(O..O)	sum of topological distances between O..O	topological descriptors
+141	93	T(O..S)	sum of topological distances between O..S	topological descriptors
+142	94	T(O..P)	sum of topological distances between O..P	topological descriptors
+143	95	T(O..F)	sum of topological distances between O..F	topological descriptors
+144	96	T(O..Cl)	sum of topological distances between O..Cl	topological descriptors
+145	97	T(O..Br)	sum of topological distances between O..Br	topological descriptors
+146	98	T(O..I)	sum of topological distances between O..I	topological descriptors
+147	99	T(S..S)	sum of topological distances between S..S	topological descriptors
+148	100	T(S..P)	sum of topological distances between S..P	topological descriptors
+149	101	T(S..F)	sum of topological distances between S..F	topological descriptors
+150	102	T(S..Cl)	sum of topological distances between S..Cl	topological descriptors
+151	103	T(S..Br)	sum of topological distances between S..Br	topological descriptors
+152	104	T(S..I)	sum of topological distances between S..I	topological descriptors
+153	105	T(P..P)	sum of topological distances between P..P	topological descriptors
+154	106	T(P..F)	sum of topological distances between P..F	topological descriptors
+155	107	T(P..Cl)	sum of topological distances between P..Cl	topological descriptors
+156	108	T(P..Br)	sum of topological distances between P..Br	topological descriptors
+157	109	T(P..I)	sum of topological distances between P..I	topological descriptors
+158	110	T(F..F)	sum of topological distances between F..F	topological descriptors
+159	111	T(F..Cl)	sum of topological distances between F..Cl	topological descriptors
+160	112	T(F..Br)	sum of topological distances between F..Br	topological descriptors
+161	113	T(F..I)	sum of topological distances between F..I	topological descriptors
+162	114	T(Cl..Cl)	sum of topological distances between Cl..Cl	topological descriptors
+163	115	T(Cl..Br)	sum of topological distances between Cl..Br	topological descriptors
+164	116	T(Cl..I)	sum of topological distances between Cl..I	topological descriptors
+165	117	T(Br..Br)	sum of topological distances between Br..Br	topological descriptors
+166	118	T(Br..I)	sum of topological distances between Br..I	topological descriptors
+167	119	T(I..I)	sum of topological distances between I..I	topological descriptors
+168	1	MWC01	molecular walk count of order 01 (number of non-H bonds, nBO)	walk and path counts
+169	2	MWC02	molecular walk count of order 02	walk and path counts
+170	3	MWC03	molecular walk count of order 03	walk and path counts
+171	4	MWC04	molecular walk count of order 04	walk and path counts
+172	5	MWC05	molecular walk count of order 05	walk and path counts
+173	6	MWC06	molecular walk count of order 06	walk and path counts
+174	7	MWC07	molecular walk count of order 07	walk and path counts
+175	8	MWC08	molecular walk count of order 08	walk and path counts
+176	9	MWC09	molecular walk count of order 09	walk and path counts
+177	10	MWC10	molecular walk count of order 10	walk and path counts
+178	11	TWC	total walk count	walk and path counts
+179	12	SRW01	self-returning walk count of order 01 (number of non-H atoms, nSK)	walk and path counts
+180	13	SRW02	self-returning walk count of order 02 (twice the number of non-H bonds)	walk and path counts
+181	14	SRW03	self-returning walk count of order 03	walk and path counts
+182	15	SRW04	self-returning walk count of order 04	walk and path counts
+183	16	SRW05	self-returning walk count of order 05	walk and path counts
+184	17	SRW06	self-returning walk count of order 06	walk and path counts
+185	18	SRW07	self-returning walk count of order 07	walk and path counts
+186	19	SRW08	self-returning walk count of order 08	walk and path counts
+187	20	SRW09	self-returning walk count of order 09	walk and path counts
+188	21	SRW10	self-returning walk count of order 10	walk and path counts
+189	22	MPC01	molecular path count of order 01 (number of non-H bonds, nBO)	walk and path counts
+190	23	MPC02	molecular path count of order 02 (Gordon-Scantlebury index)	walk and path counts
+191	24	MPC03	molecular path count of order 03 	walk and path counts
+192	25	MPC04	molecular path count of order 04 	walk and path counts
+193	26	MPC05	molecular path count of order 05 	walk and path counts
+194	27	MPC06	molecular path count of order 06 	walk and path counts
+195	28	MPC07	molecular path count of order 07 	walk and path counts
+196	29	MPC08	molecular path count of order 08 	walk and path counts
+197	30	MPC09	molecular path count of order 09 	walk and path counts
+198	31	MPC10	molecular path count of order 10 	walk and path counts
+199	32	piPC01	molecular multiple path count of order 01 (sum of conventional bond orders, SCBO)	walk and path counts
+200	33	piPC02	molecular multiple path count of order 02	walk and path counts
+201	34	piPC03	molecular multiple path count of order 03 	walk and path counts
+202	35	piPC04	molecular multiple path count of order 04 	walk and path counts
+203	36	piPC05	molecular multiple path count of order 05 	walk and path counts
+204	37	piPC06	molecular multiple path count of order 06 	walk and path counts
+205	38	piPC07	molecular multiple path count of order 07 	walk and path counts
+206	39	piPC08	molecular multiple path count of order 08 	walk and path counts
+207	40	piPC09	molecular multiple path count of order 09 	walk and path counts
+208	41	piPC10	molecular multiple path count of order 10 	walk and path counts
+209	42	TPC	total path count	walk and path counts
+210	43	piID	conventional bond-order ID number	walk and path counts
+211	44	PCR	ratio of multiple path count over path count	walk and path counts
+212	45	PCD	difference between multiple path count and path count	walk and path counts
+213	46	CID	Randic ID number	walk and path counts
+214	47	BID	Balaban ID number	walk and path counts
+215	1	X0	connectivity index chi-0	connectivity indices
+216	2	X1	connectivity index chi-1 (Randic connectivity index)	connectivity indices
+217	3	X2	connectivity index chi-2	connectivity indices
+218	4	X3	connectivity index chi-3	connectivity indices
+219	5	X4	connectivity index chi-4	connectivity indices
+220	6	X5	connectivity index chi-5	connectivity indices
+221	7	X0A	average connectivity index chi-0	connectivity indices
+222	8	X1A	average connectivity index chi-1	connectivity indices
+223	9	X2A	average connectivity index chi-2	connectivity indices
+224	10	X3A	average connectivity index chi-3	connectivity indices
+225	11	X4A	average connectivity index chi-4	connectivity indices
+226	12	X5A	average connectivity index chi-5	connectivity indices
+227	13	X0v	valence connectivity index chi-0	connectivity indices
+228	14	X1v	valence connectivity index chi-1	connectivity indices
+229	15	X2v	valence connectivity index chi-2	connectivity indices
+230	16	X3v	valence connectivity index chi-3	connectivity indices
+231	17	X4v	valence connectivity index chi-4	connectivity indices
+232	18	X5v	valence connectivity index chi-5	connectivity indices
+233	19	X0Av	average valence connectivity index chi-0	connectivity indices
+234	20	X1Av	average valence connectivity index chi-1	connectivity indices
+235	21	X2Av	average valence connectivity index chi-2	connectivity indices
+236	22	X3Av	average valence connectivity index chi-3	connectivity indices
+237	23	X4Av	average valence connectivity index chi-4	connectivity indices
+238	24	X5Av	average valence connectivity index chi-5	connectivity indices
+239	25	X0sol	solvation connectivity index chi-0	connectivity indices
+240	26	X1sol	solvation connectivity index chi-1	connectivity indices
+241	27	X2sol	solvation connectivity index chi-2	connectivity indices
+242	28	X3sol	solvation connectivity index chi-3	connectivity indices
+243	29	X4sol	solvation connectivity index chi-4	connectivity indices
+244	30	X5sol	solvation connectivity index chi-5	connectivity indices
+245	31	XMOD	modified Randic connectivity index	connectivity indices
+246	32	RDCHI	reciprocal distance Randic-type index	connectivity indices
+247	33	RDSQ	reciprocal distance squared Randic-type index	connectivity indices
+248	1	ISIZ	information index on molecular size	information indices
+249	2	IAC	total information index of atomic composition	information indices
+250	3	AAC	mean information index on atomic composition	information indices
+251	4	IDE	mean information content on the distance equality	information indices
+252	5	IDM	mean information content on the distance magnitude	information indices
+253	6	IDDE	mean information content on the distance degree equality	information indices
+254	7	IDDM	mean information content on the distance degree magnitude	information indices
+255	8	IDET	total information content on the distance equality	information indices
+256	9	IDMT	total information content on the distance magnitude	information indices
+257	10	IVDE	mean information content on the vertex degree equality	information indices
+258	11	IVDM	mean information content on the vertex degree magnitude	information indices
+259	12	HVcpx	graph vertex complexity index	information indices
+260	13	HDcpx	graph distance complexity index (log)	information indices
+261	14	Uindex	Balaban U index	information indices
+262	15	Vindex	Balaban V index	information indices
+263	16	Xindex	Balaban X index	information indices
+264	17	Yindex	Balaban Y index	information indices
+265	18	IC0	information content index (neighborhood symmetry of 0-order)	information indices
+266	19	TIC0	total information content index (neighborhood symmetry of 0-order)	information indices
+267	20	SIC0	structural information content (neighborhood symmetry of 0-order) 	information indices
+268	21	CIC0	complementary information content (neighborhood symmetry of 0-order)	information indices
+269	22	BIC0	bond information content (neighborhood symmetry of 0-order)	information indices
+270	23	IC1	information content index (neighborhood symmetry of 1-order)	information indices
+271	24	TIC1	total information content index (neighborhood symmetry of 1-order)	information indices
+272	25	SIC1	structural information content (neighborhood symmetry of 1-order) 	information indices
+273	26	CIC1	complementary information content (neighborhood symmetry of 1-order)	information indices
+274	27	BIC1	bond information content (neighborhood symmetry of 1-order)	information indices
+275	28	IC2	information content index (neighborhood symmetry of 2-order)	information indices
+276	29	TIC2	total information content index (neighborhood symmetry of 2-order)	information indices
+277	30	SIC2	structural information content (neighborhood symmetry of 2-order) 	information indices
+278	31	CIC2	complementary information content (neighborhood symmetry of 2-order)	information indices
+279	32	BIC2	bond information content (neighborhood symmetry of 2-order)	information indices
+280	33	IC3	information content index (neighborhood symmetry of 3-order)	information indices
+281	34	TIC3	total information content index (neighborhood symmetry of 3-order)	information indices
+282	35	SIC3	structural information content (neighborhood symmetry of 3-order) 	information indices
+283	36	CIC3	complementary information content (neighborhood symmetry of 3-order)	information indices
+284	37	BIC3	bond information content (neighborhood symmetry of 3-order)	information indices
+285	38	IC4	information content index (neighborhood symmetry of 4-order)	information indices
+286	39	TIC4	total information content index (neighborhood symmetry of 4-order)	information indices
+287	40	SIC4	structural information content (neighborhood symmetry of 4-order) 	information indices
+288	41	CIC4	complementary information content (neighborhood symmetry of 4-order)	information indices
+289	42	BIC4	bond information content (neighborhood symmetry of 4-order)	information indices
+290	43	IC5	information content index (neighborhood symmetry of 5-order)	information indices
+291	44	TIC5	total information content index (neighborhood symmetry of 5-order)	information indices
+292	45	SIC5	structural information content (neighborhood symmetry of 5-order) 	information indices
+293	46	CIC5	complementary information content (neighborhood symmetry of 5-order)	information indices
+294	47	BIC5	bond information content (neighborhood symmetry of 5-order)	information indices
+295	1	ATS1m	Broto-Moreau autocorrelation of a topological structure - lag 1 / weighted by atomic masses	2D autocorrelations
+296	2	ATS2m	Broto-Moreau autocorrelation of a topological structure - lag 2 / weighted by atomic masses	2D autocorrelations
+297	3	ATS3m	Broto-Moreau autocorrelation of a topological structure - lag 3 / weighted by atomic masses	2D autocorrelations
+298	4	ATS4m	Broto-Moreau autocorrelation of a topological structure - lag 4 / weighted by atomic masses	2D autocorrelations
+299	5	ATS5m	Broto-Moreau autocorrelation of a topological structure - lag 5 / weighted by atomic masses	2D autocorrelations
+300	6	ATS6m	Broto-Moreau autocorrelation of a topological structure - lag 6 / weighted by atomic masses	2D autocorrelations
+301	7	ATS7m	Broto-Moreau autocorrelation of a topological structure - lag 7 / weighted by atomic masses	2D autocorrelations
+302	8	ATS8m	Broto-Moreau autocorrelation of a topological structure - lag 8 / weighted by atomic masses	2D autocorrelations
+303	9	ATS1v	Broto-Moreau autocorrelation of a topological structure - lag 1 / weighted by atomic van der Waals volumes	2D autocorrelations
+304	10	ATS2v	Broto-Moreau autocorrelation of a topological structure - lag 2 / weighted by atomic van der Waals volumes	2D autocorrelations
+305	11	ATS3v	Broto-Moreau autocorrelation of a topological structure - lag 3 / weighted by atomic van der Waals volumes	2D autocorrelations
+306	12	ATS4v	Broto-Moreau autocorrelation of a topological structure - lag 4 / weighted by atomic van der Waals volumes	2D autocorrelations
+307	13	ATS5v	Broto-Moreau autocorrelation of a topological structure - lag 5 / weighted by atomic van der Waals volumes	2D autocorrelations
+308	14	ATS6v	Broto-Moreau autocorrelation of a topological structure - lag 6 / weighted by atomic van der Waals volumes	2D autocorrelations
+309	15	ATS7v	Broto-Moreau autocorrelation of a topological structure - lag 7 / weighted by atomic van der Waals volumes	2D autocorrelations
+310	16	ATS8v	Broto-Moreau autocorrelation of a topological structure - lag 8 / weighted by atomic van der Waals volumes	2D autocorrelations
+311	17	ATS1e	Broto-Moreau autocorrelation of a topological structure - lag 1 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+312	18	ATS2e	Broto-Moreau autocorrelation of a topological structure - lag 2 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+313	19	ATS3e	Broto-Moreau autocorrelation of a topological structure - lag 3 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+314	20	ATS4e	Broto-Moreau autocorrelation of a topological structure - lag 4 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+315	21	ATS5e	Broto-Moreau autocorrelation of a topological structure - lag 5 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+316	22	ATS6e	Broto-Moreau autocorrelation of a topological structure - lag 6 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+317	23	ATS7e	Broto-Moreau autocorrelation of a topological structure - lag 7 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+318	24	ATS8e	Broto-Moreau autocorrelation of a topological structure - lag 8 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+319	25	ATS1p	Broto-Moreau autocorrelation of a topological structure - lag 1 / weighted by atomic polarizabilities	2D autocorrelations
+320	26	ATS2p	Broto-Moreau autocorrelation of a topological structure - lag 2 / weighted by atomic polarizabilities	2D autocorrelations
+321	27	ATS3p	Broto-Moreau autocorrelation of a topological structure - lag 3 / weighted by atomic polarizabilities	2D autocorrelations
+322	28	ATS4p	Broto-Moreau autocorrelation of a topological structure - lag 4 / weighted by atomic polarizabilities	2D autocorrelations
+323	29	ATS5p	Broto-Moreau autocorrelation of a topological structure - lag 5 / weighted by atomic polarizabilities	2D autocorrelations
+324	30	ATS6p	Broto-Moreau autocorrelation of a topological structure - lag 6 / weighted by atomic polarizabilities	2D autocorrelations
+325	31	ATS7p	Broto-Moreau autocorrelation of a topological structure - lag 7 / weighted by atomic polarizabilities	2D autocorrelations
+326	32	ATS8p	Broto-Moreau autocorrelation of a topological structure - lag 8 / weighted by atomic polarizabilities	2D autocorrelations
+327	33	MATS1m	Moran autocorrelation - lag 1 / weighted by atomic masses	2D autocorrelations
+328	34	MATS2m	Moran autocorrelation - lag 2 / weighted by atomic masses	2D autocorrelations
+329	35	MATS3m	Moran autocorrelation - lag 3 / weighted by atomic masses	2D autocorrelations
+330	36	MATS4m	Moran autocorrelation - lag 4 / weighted by atomic masses	2D autocorrelations
+331	37	MATS5m	Moran autocorrelation - lag 5 / weighted by atomic masses	2D autocorrelations
+332	38	MATS6m	Moran autocorrelation - lag 6 / weighted by atomic masses	2D autocorrelations
+333	39	MATS7m	Moran autocorrelation - lag 7 / weighted by atomic masses	2D autocorrelations
+334	40	MATS8m	Moran autocorrelation - lag 8 / weighted by atomic masses	2D autocorrelations
+335	41	MATS1v	Moran autocorrelation - lag 1 / weighted by atomic van der Waals volumes	2D autocorrelations
+336	42	MATS2v	Moran autocorrelation - lag 2 / weighted by atomic van der Waals volumes	2D autocorrelations
+337	43	MATS3v	Moran autocorrelation - lag 3 / weighted by atomic van der Waals volumes	2D autocorrelations
+338	44	MATS4v	Moran autocorrelation - lag 4 / weighted by atomic van der Waals volumes	2D autocorrelations
+339	45	MATS5v	Moran autocorrelation - lag 5 / weighted by atomic van der Waals volumes	2D autocorrelations
+340	46	MATS6v	Moran autocorrelation - lag 6 / weighted by atomic van der Waals volumes	2D autocorrelations
+341	47	MATS7v	Moran autocorrelation - lag 7 / weighted by atomic van der Waals volumes	2D autocorrelations
+342	48	MATS8v	Moran autocorrelation - lag 8 / weighted by atomic van der Waals volumes	2D autocorrelations
+343	49	MATS1e	Moran autocorrelation - lag 1 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+344	50	MATS2e	Moran autocorrelation - lag 2 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+345	51	MATS3e	Moran autocorrelation - lag 3 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+346	52	MATS4e	Moran autocorrelation - lag 4 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+347	53	MATS5e	Moran autocorrelation - lag 5 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+348	54	MATS6e	Moran autocorrelation - lag 6 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+349	55	MATS7e	Moran autocorrelation - lag 7 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+350	56	MATS8e	Moran autocorrelation - lag 8 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+351	57	MATS1p	Moran autocorrelation - lag 1 / weighted by atomic polarizabilities	2D autocorrelations
+352	58	MATS2p	Moran autocorrelation - lag 2 / weighted by atomic polarizabilities	2D autocorrelations
+353	59	MATS3p	Moran autocorrelation - lag 3 / weighted by atomic polarizabilities	2D autocorrelations
+354	60	MATS4p	Moran autocorrelation - lag 4 / weighted by atomic polarizabilities	2D autocorrelations
+355	61	MATS5p	Moran autocorrelation - lag 5 / weighted by atomic polarizabilities	2D autocorrelations
+356	62	MATS6p	Moran autocorrelation - lag 6 / weighted by atomic polarizabilities	2D autocorrelations
+357	63	MATS7p	Moran autocorrelation - lag 7 / weighted by atomic polarizabilities	2D autocorrelations
+358	64	MATS8p	Moran autocorrelation - lag 8 / weighted by atomic polarizabilities	2D autocorrelations
+359	65	GATS1m	Geary autocorrelation - lag 1 / weighted by atomic masses	2D autocorrelations
+360	66	GATS2m	Geary autocorrelation - lag 2 / weighted by atomic masses	2D autocorrelations
+361	67	GATS3m	Geary autocorrelation - lag 3 / weighted by atomic masses	2D autocorrelations
+362	68	GATS4m	Geary autocorrelation - lag 4 / weighted by atomic masses	2D autocorrelations
+363	69	GATS5m	Geary autocorrelation - lag 5 / weighted by atomic masses	2D autocorrelations
+364	70	GATS6m	Geary autocorrelation - lag 6 / weighted by atomic masses	2D autocorrelations
+365	71	GATS7m	Geary autocorrelation - lag 7 / weighted by atomic masses	2D autocorrelations
+366	72	GATS8m	Geary autocorrelation - lag 8 / weighted by atomic masses	2D autocorrelations
+367	73	GATS1v	Geary autocorrelation - lag 1 / weighted by atomic van der Waals volumes	2D autocorrelations
+368	74	GATS2v	Geary autocorrelation - lag 2 / weighted by atomic van der Waals volumes	2D autocorrelations
+369	75	GATS3v	Geary autocorrelation - lag 3 / weighted by atomic van der Waals volumes	2D autocorrelations
+370	76	GATS4v	Geary autocorrelation - lag 4 / weighted by atomic van der Waals volumes	2D autocorrelations
+371	77	GATS5v	Geary autocorrelation - lag 5 / weighted by atomic van der Waals volumes	2D autocorrelations
+372	78	GATS6v	Geary autocorrelation - lag 6 / weighted by atomic van der Waals volumes	2D autocorrelations
+373	79	GATS7v	Geary autocorrelation - lag 7 / weighted by atomic van der Waals volumes	2D autocorrelations
+374	80	GATS8v	Geary autocorrelation - lag 8 / weighted by atomic van der Waals volumes	2D autocorrelations
+375	81	GATS1e	Geary autocorrelation - lag 1 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+376	82	GATS2e	Geary autocorrelation - lag 2 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+377	83	GATS3e	Geary autocorrelation - lag 3 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+378	84	GATS4e	Geary autocorrelation - lag 4 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+379	85	GATS5e	Geary autocorrelation - lag 5 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+380	86	GATS6e	Geary autocorrelation - lag 6 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+381	87	GATS7e	Geary autocorrelation - lag 7 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+382	88	GATS8e	Geary autocorrelation - lag 8 / weighted by atomic Sanderson electronegativities	2D autocorrelations
+383	89	GATS1p	Geary autocorrelation - lag 1 / weighted by atomic polarizabilities	2D autocorrelations
+384	90	GATS2p	Geary autocorrelation - lag 2 / weighted by atomic polarizabilities	2D autocorrelations
+385	91	GATS3p	Geary autocorrelation - lag 3 / weighted by atomic polarizabilities	2D autocorrelations
+386	92	GATS4p	Geary autocorrelation - lag 4 / weighted by atomic polarizabilities	2D autocorrelations
+387	93	GATS5p	Geary autocorrelation - lag 5 / weighted by atomic polarizabilities	2D autocorrelations
+388	94	GATS6p	Geary autocorrelation - lag 6 / weighted by atomic polarizabilities	2D autocorrelations
+389	95	GATS7p	Geary autocorrelation - lag 7 / weighted by atomic polarizabilities	2D autocorrelations
+390	96	GATS8p	Geary autocorrelation - lag 8 / weighted by atomic polarizabilities	2D autocorrelations
+391	1	EPS0	edge connectivity index of order 0	edge adjacency indices
+392	2	EPS1	edge connectivity index of order 1	edge adjacency indices
+393	3	EEig01x	Eigenvalue 01 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+394	4	EEig02x	Eigenvalue 02 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+395	5	EEig03x	Eigenvalue 03 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+396	6	EEig04x	Eigenvalue 04 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+397	7	EEig05x	Eigenvalue 05 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+398	8	EEig06x	Eigenvalue 06 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+399	9	EEig07x	Eigenvalue 07 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+400	10	EEig08x	Eigenvalue 08 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+401	11	EEig09x	Eigenvalue 09 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+402	12	EEig10x	Eigenvalue 10 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+403	13	EEig11x	Eigenvalue 11 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+404	14	EEig12x	Eigenvalue 12 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+405	15	EEig13x	Eigenvalue 13 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+406	16	EEig14x	Eigenvalue 14 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+407	17	EEig15x	Eigenvalue 15 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+408	18	EEig01d	Eigenvalue 01 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+409	19	EEig02d	Eigenvalue 02 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+410	20	EEig03d	Eigenvalue 03 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+411	21	EEig04d	Eigenvalue 04 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+412	22	EEig05d	Eigenvalue 05 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+413	23	EEig06d	Eigenvalue 06 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+414	24	EEig07d	Eigenvalue 07 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+415	25	EEig08d	Eigenvalue 08 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+416	26	EEig09d	Eigenvalue 09 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+417	27	EEig10d	Eigenvalue 10 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+418	28	EEig11d	Eigenvalue 11 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+419	29	EEig12d	Eigenvalue 12 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+420	30	EEig13d	Eigenvalue 13 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+421	31	EEig14d	Eigenvalue 14 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+422	32	EEig15d	Eigenvalue 15 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+423	33	EEig01r	Eigenvalue 01 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+424	34	EEig02r	Eigenvalue 02 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+425	35	EEig03r	Eigenvalue 03 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+426	36	EEig04r	Eigenvalue 04 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+427	37	EEig05r	Eigenvalue 05 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+428	38	EEig06r	Eigenvalue 06 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+429	39	EEig07r	Eigenvalue 07 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+430	40	EEig08r	Eigenvalue 08 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+431	41	EEig09r	Eigenvalue 09 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+432	42	EEig10r	Eigenvalue 10 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+433	43	EEig11r	Eigenvalue 11 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+434	44	EEig12r	Eigenvalue 12 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+435	45	EEig13r	Eigenvalue 13 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+436	46	EEig14r	Eigenvalue 14 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+437	47	EEig15r	Eigenvalue 15 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+438	48	ESpm01u	Spectral moment 01 from edge adj. matrix	edge adjacency indices
+439	49	ESpm02u	Spectral moment 02 from edge adj. matrix	edge adjacency indices
+440	50	ESpm03u	Spectral moment 03 from edge adj. matrix	edge adjacency indices
+441	51	ESpm04u	Spectral moment 04 from edge adj. matrix	edge adjacency indices
+442	52	ESpm05u	Spectral moment 05 from edge adj. matrix	edge adjacency indices
+443	53	ESpm06u	Spectral moment 06 from edge adj. matrix	edge adjacency indices
+444	54	ESpm07u	Spectral moment 07 from edge adj. matrix	edge adjacency indices
+445	55	ESpm08u	Spectral moment 08 from edge adj. matrix	edge adjacency indices
+446	56	ESpm09u	Spectral moment 09 from edge adj. matrix	edge adjacency indices
+447	57	ESpm10u	Spectral moment 10 from edge adj. matrix	edge adjacency indices
+448	58	ESpm11u	Spectral moment 11 from edge adj. matrix	edge adjacency indices
+449	59	ESpm12u	Spectral moment 12 from edge adj. matrix	edge adjacency indices
+450	60	ESpm13u	Spectral moment 13 from edge adj. matrix	edge adjacency indices
+451	61	ESpm14u	Spectral moment 14 from edge adj. matrix	edge adjacency indices
+452	62	ESpm15u	Spectral moment 15 from edge adj. matrix	edge adjacency indices
+453	63	ESpm01x	Spectral moment 01 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+454	64	ESpm02x	Spectral moment 02 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+455	65	ESpm03x	Spectral moment 03 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+456	66	ESpm04x	Spectral moment 04 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+457	67	ESpm05x	Spectral moment 05 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+458	68	ESpm06x	Spectral moment 06 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+459	69	ESpm07x	Spectral moment 07 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+460	70	ESpm08x	Spectral moment 08 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+461	71	ESpm09x	Spectral moment 09 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+462	72	ESpm10x	Spectral moment 10 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+463	73	ESpm11x	Spectral moment 11 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+464	74	ESpm12x	Spectral moment 12 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+465	75	ESpm13x	Spectral moment 13 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+466	76	ESpm14x	Spectral moment 14 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+467	77	ESpm15x	Spectral moment 15 from edge adj. matrix weighted by edge degrees	edge adjacency indices
+468	78	ESpm01d	Spectral moment 01 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+469	79	ESpm02d	Spectral moment 02 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+470	80	ESpm03d	Spectral moment 03 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+471	81	ESpm04d	Spectral moment 04 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+472	82	ESpm05d	Spectral moment 05 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+473	83	ESpm06d	Spectral moment 06 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+474	84	ESpm07d	Spectral moment 07 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+475	85	ESpm08d	Spectral moment 08 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+476	86	ESpm09d	Spectral moment 09 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+477	87	ESpm10d	Spectral moment 10 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+478	88	ESpm11d	Spectral moment 11 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+479	89	ESpm12d	Spectral moment 12 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+480	90	ESpm13d	Spectral moment 13 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+481	91	ESpm14d	Spectral moment 14 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+482	92	ESpm15d	Spectral moment 15 from edge adj. matrix weighted by dipole moments	edge adjacency indices
+483	93	ESpm01r	Spectral moment 01 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+484	94	ESpm02r	Spectral moment 02 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+485	95	ESpm03r	Spectral moment 03 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+486	96	ESpm04r	Spectral moment 04 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+487	97	ESpm05r	Spectral moment 05 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+488	98	ESpm06r	Spectral moment 06 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+489	99	ESpm07r	Spectral moment 07 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+490	100	ESpm08r	Spectral moment 08 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+491	101	ESpm09r	Spectral moment 09 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+492	102	ESpm10r	Spectral moment 10 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+493	103	ESpm11r	Spectral moment 11 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+494	104	ESpm12r	Spectral moment 12 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+495	105	ESpm13r	Spectral moment 13 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+496	106	ESpm14r	Spectral moment 14 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+497	107	ESpm15r	Spectral moment 15 from edge adj. matrix weighted by resonance integrals	edge adjacency indices
+498	1	BEHm1	highest eigenvalue n. 1 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+499	2	BEHm2	highest eigenvalue n. 2 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+500	3	BEHm3	highest eigenvalue n. 3 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+501	4	BEHm4	highest eigenvalue n. 4 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+502	5	BEHm5	highest eigenvalue n. 5 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+503	6	BEHm6	highest eigenvalue n. 6 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+504	7	BEHm7	highest eigenvalue n. 7 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+505	8	BEHm8	highest eigenvalue n. 8 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+506	9	BELm1	lowest eigenvalue n. 1 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+507	10	BELm2	lowest eigenvalue n. 2 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+508	11	BELm3	lowest eigenvalue n. 3 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+509	12	BELm4	lowest eigenvalue n. 4 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+510	13	BELm5	lowest eigenvalue n. 5 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+511	14	BELm6	lowest eigenvalue n. 6 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+512	15	BELm7	lowest eigenvalue n. 7 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+513	16	BELm8	lowest eigenvalue n. 8 of Burden matrix / weighted by atomic masses	Burden eigenvalues
+514	17	BEHv1	highest eigenvalue n. 1 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+515	18	BEHv2	highest eigenvalue n. 2 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+516	19	BEHv3	highest eigenvalue n. 3 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+517	20	BEHv4	highest eigenvalue n. 4 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+518	21	BEHv5	highest eigenvalue n. 5 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+519	22	BEHv6	highest eigenvalue n. 6 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+520	23	BEHv7	highest eigenvalue n. 7 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+521	24	BEHv8	highest eigenvalue n. 8 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+522	25	BELv1	lowest eigenvalue n. 1 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+523	26	BELv2	lowest eigenvalue n. 2 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+524	27	BELv3	lowest eigenvalue n. 3 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+525	28	BELv4	lowest eigenvalue n. 4 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+526	29	BELv5	lowest eigenvalue n. 5 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+527	30	BELv6	lowest eigenvalue n. 6 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+528	31	BELv7	lowest eigenvalue n. 7 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+529	32	BELv8	lowest eigenvalue n. 8 of Burden matrix / weighted by atomic van der Waals volumes	Burden eigenvalues
+530	33	BEHe1	highest eigenvalue n. 1 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+531	34	BEHe2	highest eigenvalue n. 2 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+532	35	BEHe3	highest eigenvalue n. 3 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+533	36	BEHe4	highest eigenvalue n. 4 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+534	37	BEHe5	highest eigenvalue n. 5 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+535	38	BEHe6	highest eigenvalue n. 6 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+536	39	BEHe7	highest eigenvalue n. 7 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+537	40	BEHe8	highest eigenvalue n. 8 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+538	41	BELe1	lowest eigenvalue n. 1 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+539	42	BELe2	lowest eigenvalue n. 2 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+540	43	BELe3	lowest eigenvalue n. 3 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+541	44	BELe4	lowest eigenvalue n. 4 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+542	45	BELe5	lowest eigenvalue n. 5 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+543	46	BELe6	lowest eigenvalue n. 6 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+544	47	BELe7	lowest eigenvalue n. 7 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+545	48	BELe8	lowest eigenvalue n. 8 of Burden matrix / weighted by atomic Sanderson electronegativities	Burden eigenvalues
+546	49	BEHp1	highest eigenvalue n. 1 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+547	50	BEHp2	highest eigenvalue n. 2 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+548	51	BEHp3	highest eigenvalue n. 3 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+549	52	BEHp4	highest eigenvalue n. 4 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+550	53	BEHp5	highest eigenvalue n. 5 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+551	54	BEHp6	highest eigenvalue n. 6 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+552	55	BEHp7	highest eigenvalue n. 7 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+553	56	BEHp8	highest eigenvalue n. 8 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+554	57	BELp1	lowest eigenvalue n. 1 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+555	58	BELp2	lowest eigenvalue n. 2 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+556	59	BELp3	lowest eigenvalue n. 3 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+557	60	BELp4	lowest eigenvalue n. 4 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+558	61	BELp5	lowest eigenvalue n. 5 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+559	62	BELp6	lowest eigenvalue n. 6 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+560	63	BELp7	lowest eigenvalue n. 7 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+561	64	BELp8	lowest eigenvalue n. 8 of Burden matrix / weighted by atomic polarizabilities	Burden eigenvalues
+562	1	GGI1	topological charge index of order 1	topological charge indices
+563	2	GGI2	topological charge index of order 2	topological charge indices
+564	3	GGI3	topological charge index of order 3	topological charge indices
+565	4	GGI4	topological charge index of order 4	topological charge indices
+566	5	GGI5	topological charge index of order 5	topological charge indices
+567	6	GGI6	topological charge index of order 6	topological charge indices
+568	7	GGI7	topological charge index of order 7	topological charge indices
+569	8	GGI8	topological charge index of order 8	topological charge indices
+570	9	GGI9	topological charge index of order 9	topological charge indices
+571	10	GGI10	topological charge index of order 10	topological charge indices
+572	11	JGI1	mean topological charge index of order1	topological charge indices
+573	12	JGI2	mean topological charge index of order2	topological charge indices
+574	13	JGI3	mean topological charge index of order3	topological charge indices
+575	14	JGI4	mean topological charge index of order4	topological charge indices
+576	15	JGI5	mean topological charge index of order5	topological charge indices
+577	16	JGI6	mean topological charge index of order6	topological charge indices
+578	17	JGI7	mean topological charge index of order7	topological charge indices
+579	18	JGI8	mean topological charge index of order8	topological charge indices
+580	19	JGI9	mean topological charge index of order9	topological charge indices
+581	20	JGI10	mean topological charge index of order10	topological charge indices
+582	21	JGT	global topological charge index	topological charge indices
+583	1	LP1	Lovasz-Pelikan index (leading eigenvalue)	eigenvalue-based indices
+584	2	Eig1Z	Leading eigenvalue from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+585	3	Eig1m	Leading eigenvalue from mass weighted distance matrix	eigenvalue-based indices
+586	4	Eig1v	Leading eigenvalue from van der Waals weighted distance matrix	eigenvalue-based indices
+587	5	Eig1e	Leading eigenvalue from electronegativity weighted distance matrix	eigenvalue-based indices
+588	6	Eig1p	Leading eigenvalue from polarizability weighted distance matrix	eigenvalue-based indices
+589	7	SEigZ	Eigenvalue sum from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+590	8	SEigm	Eigenvalue sum from mass weighted distance matrix	eigenvalue-based indices
+591	9	SEigv	Eigenvalue sum from van der Waals weighted distance matrix	eigenvalue-based indices
+592	10	SEige	Eigenvalue sum from electronegativity weighted distance matrix	eigenvalue-based indices
+593	11	SEigp	Eigenvalue sum from polarizability weighted distance matrix	eigenvalue-based indices
+594	12	AEigZ	Absolute eigenvalue sum from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+595	13	AEigm	Absolute eigenvalue sum from mass weighted distance matrix	eigenvalue-based indices
+596	14	AEigv	Absolute eigenvalue sum from van der Waals weighted distance matrix	eigenvalue-based indices
+597	15	AEige	Absolute eigenvalue sum from electronegativity weighted distance matrix	eigenvalue-based indices
+598	16	AEigp	Absolute eigenvalue sum from polarizability weighted distance matrix	eigenvalue-based indices
+599	17	VEA1	eigenvector coefficient sum from adjacency matrix	eigenvalue-based indices
+600	18	VEA2	average eigenvector coefficient sum from adjacency matrix	eigenvalue-based indices
+601	19	VRA1	Randic-type eigenvector-based index from adjacency matrix	eigenvalue-based indices
+602	20	VRA2	average Randic-type eigenvector-based index from adjacency matrix	eigenvalue-based indices
+603	21	VED1	eigenvector coefficient sum from distance matrix	eigenvalue-based indices
+604	22	VED2	average eigenvector coefficient sum from distance matrix	eigenvalue-based indices
+605	23	VRD1	Randic-type eigenvector-based index from distance matrix	eigenvalue-based indices
+606	24	VRD2	average Randic-type eigenvector-based index from distance matrix	eigenvalue-based indices
+607	25	VEZ1	eigenvector coefficient sum from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+608	26	VEZ2	average eigenvector coefficient sum from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+609	27	VRZ1	Randic-type eigenvector-based index from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+610	28	VRZ2	average Randic-type eigenvector-based index from Z weighted distance matrix (Barysz matrix)	eigenvalue-based indices
+611	29	VEm1	eigenvector coefficient sum from mass weighted distance matrix	eigenvalue-based indices
+612	30	VEm2	average eigenvector coefficient sum from mass weighted distance matrix	eigenvalue-based indices
+613	31	VRm1	Randic-type eigenvector-based index from mass weighted distance matrix	eigenvalue-based indices
+614	32	VRm2	average Randic-type eigenvector-based index from mass weighted distance matrix	eigenvalue-based indices
+615	33	VEv1	eigenvector coefficient sum from van der Waals weighted distance matrix	eigenvalue-based indices
+616	34	VEv2	average eigenvector coefficient sum from van der Waals weighted distance matrix	eigenvalue-based indices
+617	35	VRv1	Randic-type eigenvector-based index from van der Waals weighted distance matrix	eigenvalue-based indices
+618	36	VRv2	average Randic-type eigenvector-based index from van der Waals weighted distance matrix	eigenvalue-based indices
+619	37	VEe1	eigenvector coefficient sum from electronegativity weighted distance matrix	eigenvalue-based indices
+620	38	VEe2	average eigenvector coefficient sum from electronegativity weighted distance matrix	eigenvalue-based indices
+621	39	VRe1	Randic-type eigenvector-based index from electronegativity weighted distance matrix	eigenvalue-based indices
+622	40	VRe2	average Randic-type eigenvector-based index from electronegativity weighted distance matrix	eigenvalue-based indices
+623	41	VEp1	eigenvector coefficient sum from polarizability weighted distance matrix	eigenvalue-based indices
+624	42	VEp2	average eigenvector coefficient sum from polarizability weighted distance matrix	eigenvalue-based indices
+625	43	VRp1	Randic-type eigenvector-based index from polarizability weighted distance matrix	eigenvalue-based indices
+626	44	VRp2	average Randic-type eigenvector-based index from polarizability weighted distance matrix	eigenvalue-based indices
+627	1	DP01	molecular profile no. 01	Randic molecular profiles
+628	2	DP02	molecular profile no. 02	Randic molecular profiles
+629	3	DP03	molecular profile no. 03	Randic molecular profiles
+630	4	DP04	molecular profile no. 04	Randic molecular profiles
+631	5	DP05	molecular profile no. 05	Randic molecular profiles
+632	6	DP06	molecular profile no. 06	Randic molecular profiles
+633	7	DP07	molecular profile no. 07	Randic molecular profiles
+634	8	DP08	molecular profile no. 08	Randic molecular profiles
+635	9	DP09	molecular profile no. 09	Randic molecular profiles
+636	10	DP10	molecular profile no. 10	Randic molecular profiles
+637	11	DP11	molecular profile no. 11	Randic molecular profiles
+638	12	DP12	molecular profile no. 12	Randic molecular profiles
+639	13	DP13	molecular profile no. 13	Randic molecular profiles
+640	14	DP14	molecular profile no. 14	Randic molecular profiles
+641	15	DP15	molecular profile no. 15	Randic molecular profiles
+642	16	DP16	molecular profile no. 16	Randic molecular profiles
+643	17	DP17	molecular profile no. 17	Randic molecular profiles
+644	18	DP18	molecular profile no. 18	Randic molecular profiles
+645	19	DP19	molecular profile no. 19	Randic molecular profiles
+646	20	DP20	molecular profile no. 20	Randic molecular profiles
+647	21	SP01	shape profile no. 01	Randic molecular profiles
+648	22	SP02	shape profile no. 02	Randic molecular profiles
+649	23	SP03	shape profile no. 03	Randic molecular profiles
+650	24	SP04	shape profile no. 04	Randic molecular profiles
+651	25	SP05	shape profile no. 05	Randic molecular profiles
+652	26	SP06	shape profile no. 06	Randic molecular profiles
+653	27	SP07	shape profile no. 07	Randic molecular profiles
+654	28	SP08	shape profile no. 08	Randic molecular profiles
+655	29	SP09	shape profile no. 09	Randic molecular profiles
+656	30	SP10	shape profile no. 10	Randic molecular profiles
+657	31	SP11	shape profile no. 11	Randic molecular profiles
+658	32	SP12	shape profile no. 12	Randic molecular profiles
+659	33	SP13	shape profile no. 13	Randic molecular profiles
+660	34	SP14	shape profile no. 14	Randic molecular profiles
+661	35	SP15	shape profile no. 15	Randic molecular profiles
+662	36	SP16	shape profile no. 16	Randic molecular profiles
+663	37	SP17	shape profile no. 17	Randic molecular profiles
+664	38	SP18	shape profile no. 18	Randic molecular profiles
+665	39	SP19	shape profile no. 19	Randic molecular profiles
+666	40	SP20	shape profile no. 20	Randic molecular profiles
+667	41	SHP2	average shape profile index of order 2	Randic molecular profiles
+668	1	W3D	3D-Wiener index	geometrical descriptors
+669	2	J3D	3D-Balaban index	geometrical descriptors
+670	3	H3D	3D-Harary index	geometrical descriptors
+671	4	AGDD	average geometric distance degree	geometrical descriptors
+672	5	DDI	D/D index	geometrical descriptors
+673	6	ADDD	average distance/distance degree	geometrical descriptors
+674	7	G1	gravitational index G1	geometrical descriptors
+675	8	G2	gravitational index G2 (bond-restricted)	geometrical descriptors
+676	9	RGyr	radius of gyration (mass weighted)	geometrical descriptors
+677	10	SPAN	span R	geometrical descriptors
+678	11	SPAM	average span R	geometrical descriptors
+679	12	MEcc	molecular eccentricity	geometrical descriptors
+680	13	SPH	spherosity	geometrical descriptors
+681	14	ASP	asphericity	geometrical descriptors
+682	15	FDI	folding degree index	geometrical descriptors
+683	16	PJI3	3D Petitjean shape index	geometrical descriptors
+684	17	L/Bw	length-to-breadth ratio by WHIM	geometrical descriptors
+685	18	SEig	absolute eigenvalue sum on geometry matrix	geometrical descriptors
+686	19	HOMA	Harmonic Oscillator Model of Aromaticity index	geometrical descriptors
+687	20	RCI	Jug RC index	geometrical descriptors
+688	21	AROM	aromaticity index	geometrical descriptors
+689	22	HOMT	HOMA total	geometrical descriptors
+690	23	DISPm	d COMMA2 value / weighted by atomic masses	geometrical descriptors
+691	24	QXXm	Qxx COMMA2 value / weighted by atomic masses	geometrical descriptors
+692	25	QYYm	Qyy COMMA2 value / weighted by atomic masses	geometrical descriptors
+693	26	QZZm	Qzz COMMA2 value / weighted by atomic masses	geometrical descriptors
+694	27	DISPv	d COMMA2 value / weighted by atomic van der Waals volumes	geometrical descriptors
+695	28	QXXv	Qxx COMMA2 value / weighted by atomic van der Waals volumes	geometrical descriptors
+696	29	QYYv	Qyy COMMA2 value / weighted by atomic van der Waals volumes	geometrical descriptors
+697	30	QZZv	Qzz COMMA2 value / weighted by atomic van der Waals volumes	geometrical descriptors
+698	31	DISPe	d COMMA2 value / weighted by atomic Sanderson electronegativities	geometrical descriptors
+699	32	QXXe	Qxx COMMA2 value / weighted by atomic Sanderson electronegativities	geometrical descriptors
+700	33	QYYe	Qyy COMMA2 value / weighted by atomic Sanderson electronegativities	geometrical descriptors
+701	34	QZZe	Qzz COMMA2 value / weighted by atomic Sanderson electronegativities	geometrical descriptors
+702	35	DISPp	d COMMA2 value / weighted by atomic polarizabilities	geometrical descriptors
+703	36	QXXp	Qxx COMMA2 value / weighted by atomic polarizabilities	geometrical descriptors
+704	37	QYYp	Qyy COMMA2 value / weighted by atomic polarizabilities	geometrical descriptors
+705	38	QZZp	Qzz COMMA2 value / weighted by atomic polarizabilities	geometrical descriptors
+706	39	G(N..N)	sum of geometrical distances between N..N	geometrical descriptors
+707	40	G(N..O)	sum of geometrical distances between N..O	geometrical descriptors
+708	41	G(N..S)	sum of geometrical distances between N..S	geometrical descriptors
+709	42	G(N..P)	sum of geometrical distances between N..P	geometrical descriptors
+710	43	G(N..F)	sum of geometrical distances between N..F	geometrical descriptors
+711	44	G(N..Cl)	sum of geometrical distances between N..Cl	geometrical descriptors
+712	45	G(N..Br)	sum of geometrical distances between N..Br	geometrical descriptors
+713	46	G(N..I)	sum of geometrical distances between N..I	geometrical descriptors
+714	47	G(O..O)	sum of geometrical distances between O..O	geometrical descriptors
+715	48	G(O..S)	sum of geometrical distances between O..S	geometrical descriptors
+716	49	G(O..P)	sum of geometrical distances between O..P	geometrical descriptors
+717	50	G(O..F)	sum of geometrical distances between O..F	geometrical descriptors
+718	51	G(O..Cl)	sum of geometrical distances between O..Cl	geometrical descriptors
+719	52	G(O..Br)	sum of geometrical distances between O..Br	geometrical descriptors
+720	53	G(O..I)	sum of geometrical distances between O..I	geometrical descriptors
+721	54	G(S..S)	sum of geometrical distances between S..S	geometrical descriptors
+722	55	G(S..P)	sum of geometrical distances between S..P	geometrical descriptors
+723	56	G(S..F)	sum of geometrical distances between S..F	geometrical descriptors
+724	57	G(S..Cl)	sum of geometrical distances between S..Cl	geometrical descriptors
+725	58	G(S..Br)	sum of geometrical distances between S..Br	geometrical descriptors
+726	59	G(S..I)	sum of geometrical distances between S..I	geometrical descriptors
+727	60	G(P..P)	sum of geometrical distances between P..P	geometrical descriptors
+728	61	G(P..F)	sum of geometrical distances between P..F	geometrical descriptors
+729	62	G(P..Cl)	sum of geometrical distances between P..Cl	geometrical descriptors
+730	63	G(P..Br)	sum of geometrical distances between P..Br	geometrical descriptors
+731	64	G(P..I)	sum of geometrical distances between P..I	geometrical descriptors
+732	65	G(F..F)	sum of geometrical distances between F..F	geometrical descriptors
+733	66	G(F..Cl)	sum of geometrical distances between F..Cl	geometrical descriptors
+734	67	G(F..Br)	sum of geometrical distances between F..Br	geometrical descriptors
+735	68	G(F..I)	sum of geometrical distances between F..I	geometrical descriptors
+736	69	G(Cl..Cl)	sum of geometrical distances between Cl..Cl	geometrical descriptors
+737	70	G(Cl..Br)	sum of geometrical distances between Cl..Br	geometrical descriptors
+738	71	G(Cl..I)	sum of geometrical distances between Cl..I	geometrical descriptors
+739	72	G(Br..Br)	sum of geometrical distances between Br..Br	geometrical descriptors
+740	73	G(Br..I)	sum of geometrical distances between Br..I	geometrical descriptors
+741	74	G(I..I)	sum of geometrical distances between I..I	geometrical descriptors
+742	1	RDF010u	Radial Distribution Function - 1.0 / unweighted	RDF descriptors
+743	2	RDF015u	Radial Distribution Function - 1.5 / unweighted	RDF descriptors
+744	3	RDF020u	Radial Distribution Function - 2.0 / unweighted	RDF descriptors
+745	4	RDF025u	Radial Distribution Function - 2.5 / unweighted	RDF descriptors
+746	5	RDF030u	Radial Distribution Function - 3.0 / unweighted	RDF descriptors
+747	6	RDF035u	Radial Distribution Function - 3.5 / unweighted	RDF descriptors
+748	7	RDF040u	Radial Distribution Function - 4.0 / unweighted	RDF descriptors
+749	8	RDF045u	Radial Distribution Function - 4.5 / unweighted	RDF descriptors
+750	9	RDF050u	Radial Distribution Function - 5.0 / unweighted	RDF descriptors
+751	10	RDF055u	Radial Distribution Function - 5.5 / unweighted	RDF descriptors
+752	11	RDF060u	Radial Distribution Function - 6.0 / unweighted	RDF descriptors
+753	12	RDF065u	Radial Distribution Function - 6.5 / unweighted	RDF descriptors
+754	13	RDF070u	Radial Distribution Function - 7.0 / unweighted	RDF descriptors
+755	14	RDF075u	Radial Distribution Function - 7.5 / unweighted	RDF descriptors
+756	15	RDF080u	Radial Distribution Function - 8.0 / unweighted	RDF descriptors
+757	16	RDF085u	Radial Distribution Function - 8.5 / unweighted	RDF descriptors
+758	17	RDF090u	Radial Distribution Function - 9.0 / unweighted	RDF descriptors
+759	18	RDF095u	Radial Distribution Function - 9.5 / unweighted	RDF descriptors
+760	19	RDF100u	Radial Distribution Function - 10.0 / unweighted	RDF descriptors
+761	20	RDF105u	Radial Distribution Function - 10.5 / unweighted	RDF descriptors
+762	21	RDF110u	Radial Distribution Function - 11.0 / unweighted	RDF descriptors
+763	22	RDF115u	Radial Distribution Function - 11.5 / unweighted	RDF descriptors
+764	23	RDF120u	Radial Distribution Function - 12.0 / unweighted	RDF descriptors
+765	24	RDF125u	Radial Distribution Function - 12.5 / unweighted	RDF descriptors
+766	25	RDF130u	Radial Distribution Function - 13.0 / unweighted	RDF descriptors
+767	26	RDF135u	Radial Distribution Function - 13.5 / unweighted	RDF descriptors
+768	27	RDF140u	Radial Distribution Function - 14.0 / unweighted	RDF descriptors
+769	28	RDF145u	Radial Distribution Function - 14.5 / unweighted	RDF descriptors
+770	29	RDF150u	Radial Distribution Function - 15.0 / unweighted	RDF descriptors
+771	30	RDF155u	Radial Distribution Function - 15.5 / unweighted	RDF descriptors
+772	31	RDF010m	Radial Distribution Function - 1.0 / weighted by atomic masses	RDF descriptors
+773	32	RDF015m	Radial Distribution Function - 1.5 / weighted by atomic masses	RDF descriptors
+774	33	RDF020m	Radial Distribution Function - 2.0 / weighted by atomic masses	RDF descriptors
+775	34	RDF025m	Radial Distribution Function - 2.5 / weighted by atomic masses	RDF descriptors
+776	35	RDF030m	Radial Distribution Function - 3.0 / weighted by atomic masses	RDF descriptors
+777	36	RDF035m	Radial Distribution Function - 3.5 / weighted by atomic masses	RDF descriptors
+778	37	RDF040m	Radial Distribution Function - 4.0 / weighted by atomic masses	RDF descriptors
+779	38	RDF045m	Radial Distribution Function - 4.5 / weighted by atomic masses	RDF descriptors
+780	39	RDF050m	Radial Distribution Function - 5.0 / weighted by atomic masses	RDF descriptors
+781	40	RDF055m	Radial Distribution Function - 5.5 / weighted by atomic masses	RDF descriptors
+782	41	RDF060m	Radial Distribution Function - 6.0 / weighted by atomic masses	RDF descriptors
+783	42	RDF065m	Radial Distribution Function - 6.5 / weighted by atomic masses	RDF descriptors
+784	43	RDF070m	Radial Distribution Function - 7.0 / weighted by atomic masses	RDF descriptors
+785	44	RDF075m	Radial Distribution Function - 7.5 / weighted by atomic masses	RDF descriptors
+786	45	RDF080m	Radial Distribution Function - 8.0 / weighted by atomic masses	RDF descriptors
+787	46	RDF085m	Radial Distribution Function - 8.5 / weighted by atomic masses	RDF descriptors
+788	47	RDF090m	Radial Distribution Function - 9.0 / weighted by atomic masses	RDF descriptors
+789	48	RDF095m	Radial Distribution Function - 9.5 / weighted by atomic masses	RDF descriptors
+790	49	RDF100m	Radial Distribution Function - 10.0 / weighted by atomic masses	RDF descriptors
+791	50	RDF105m	Radial Distribution Function - 10.5 / weighted by atomic masses	RDF descriptors
+792	51	RDF110m	Radial Distribution Function - 11.0 / weighted by atomic masses	RDF descriptors
+793	52	RDF115m	Radial Distribution Function - 11.5 / weighted by atomic masses	RDF descriptors
+794	53	RDF120m	Radial Distribution Function - 12.0 / weighted by atomic masses	RDF descriptors
+795	54	RDF125m	Radial Distribution Function - 12.5 / weighted by atomic masses	RDF descriptors
+796	55	RDF130m	Radial Distribution Function - 13.0 / weighted by atomic masses	RDF descriptors
+797	56	RDF135m	Radial Distribution Function - 13.5 / weighted by atomic masses	RDF descriptors
+798	57	RDF140m	Radial Distribution Function - 14.0 / weighted by atomic masses	RDF descriptors
+799	58	RDF145m	Radial Distribution Function - 14.5 / weighted by atomic masses	RDF descriptors
+800	59	RDF150m	Radial Distribution Function - 15.0 / weighted by atomic masses	RDF descriptors
+801	60	RDF155m	Radial Distribution Function - 15.5 / weighted by atomic masses	RDF descriptors
+802	61	RDF010v	Radial Distribution Function - 1.0 / weighted by atomic van der Waals volumes	RDF descriptors
+803	62	RDF015v	Radial Distribution Function - 1.5 / weighted by atomic van der Waals volumes	RDF descriptors
+804	63	RDF020v	Radial Distribution Function - 2.0 / weighted by atomic van der Waals volumes	RDF descriptors
+805	64	RDF025v	Radial Distribution Function - 2.5 / weighted by atomic van der Waals volumes	RDF descriptors
+806	65	RDF030v	Radial Distribution Function - 3.0 / weighted by atomic van der Waals volumes	RDF descriptors
+807	66	RDF035v	Radial Distribution Function - 3.5 / weighted by atomic van der Waals volumes	RDF descriptors
+808	67	RDF040v	Radial Distribution Function - 4.0 / weighted by atomic van der Waals volumes	RDF descriptors
+809	68	RDF045v	Radial Distribution Function - 4.5 / weighted by atomic van der Waals volumes	RDF descriptors
+810	69	RDF050v	Radial Distribution Function - 5.0 / weighted by atomic van der Waals volumes	RDF descriptors
+811	70	RDF055v	Radial Distribution Function - 5.5 / weighted by atomic van der Waals volumes	RDF descriptors
+812	71	RDF060v	Radial Distribution Function - 6.0 / weighted by atomic van der Waals volumes	RDF descriptors
+813	72	RDF065v	Radial Distribution Function - 6.5 / weighted by atomic van der Waals volumes	RDF descriptors
+814	73	RDF070v	Radial Distribution Function - 7.0 / weighted by atomic van der Waals volumes	RDF descriptors
+815	74	RDF075v	Radial Distribution Function - 7.5 / weighted by atomic van der Waals volumes	RDF descriptors
+816	75	RDF080v	Radial Distribution Function - 8.0 / weighted by atomic van der Waals volumes	RDF descriptors
+817	76	RDF085v	Radial Distribution Function - 8.5 / weighted by atomic van der Waals volumes	RDF descriptors
+818	77	RDF090v	Radial Distribution Function - 9.0 / weighted by atomic van der Waals volumes	RDF descriptors
+819	78	RDF095v	Radial Distribution Function - 9.5 / weighted by atomic van der Waals volumes	RDF descriptors
+820	79	RDF100v	Radial Distribution Function - 10.0 / weighted by atomic van der Waals volumes	RDF descriptors
+821	80	RDF105v	Radial Distribution Function - 10.5 / weighted by atomic van der Waals volumes	RDF descriptors
+822	81	RDF110v	Radial Distribution Function - 11.0 / weighted by atomic van der Waals volumes	RDF descriptors
+823	82	RDF115v	Radial Distribution Function - 11.5 / weighted by atomic van der Waals volumes	RDF descriptors
+824	83	RDF120v	Radial Distribution Function - 12.0 / weighted by atomic van der Waals volumes	RDF descriptors
+825	84	RDF125v	Radial Distribution Function - 12.5 / weighted by atomic van der Waals volumes	RDF descriptors
+826	85	RDF130v	Radial Distribution Function - 13.0 / weighted by atomic van der Waals volumes	RDF descriptors
+827	86	RDF135v	Radial Distribution Function - 13.5 / weighted by atomic van der Waals volumes	RDF descriptors
+828	87	RDF140v	Radial Distribution Function - 14.0 / weighted by atomic van der Waals volumes	RDF descriptors
+829	88	RDF145v	Radial Distribution Function - 14.5 / weighted by atomic van der Waals volumes	RDF descriptors
+830	89	RDF150v	Radial Distribution Function - 15.0 / weighted by atomic van der Waals volumes	RDF descriptors
+831	90	RDF155v	Radial Distribution Function - 15.5 / weighted by atomic van der Waals volumes	RDF descriptors
+832	91	RDF010e	Radial Distribution Function - 1.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+833	92	RDF015e	Radial Distribution Function - 1.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+834	93	RDF020e	Radial Distribution Function - 2.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+835	94	RDF025e	Radial Distribution Function - 2.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+836	95	RDF030e	Radial Distribution Function - 3.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+837	96	RDF035e	Radial Distribution Function - 3.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+838	97	RDF040e	Radial Distribution Function - 4.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+839	98	RDF045e	Radial Distribution Function - 4.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+840	99	RDF050e	Radial Distribution Function - 5.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+841	100	RDF055e	Radial Distribution Function - 5.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+842	101	RDF060e	Radial Distribution Function - 6.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+843	102	RDF065e	Radial Distribution Function - 6.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+844	103	RDF070e	Radial Distribution Function - 7.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+845	104	RDF075e	Radial Distribution Function - 7.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+846	105	RDF080e	Radial Distribution Function - 8.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+847	106	RDF085e	Radial Distribution Function - 8.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+848	107	RDF090e	Radial Distribution Function - 9.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+849	108	RDF095e	Radial Distribution Function - 9.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+850	109	RDF100e	Radial Distribution Function - 10.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+851	110	RDF105e	Radial Distribution Function - 10.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+852	111	RDF110e	Radial Distribution Function - 11.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+853	112	RDF115e	Radial Distribution Function - 11.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+854	113	RDF120e	Radial Distribution Function - 12.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+855	114	RDF125e	Radial Distribution Function - 12.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+856	115	RDF130e	Radial Distribution Function - 13.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+857	116	RDF135e	Radial Distribution Function - 13.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+858	117	RDF140e	Radial Distribution Function - 14.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+859	118	RDF145e	Radial Distribution Function - 14.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+860	119	RDF150e	Radial Distribution Function - 15.0 / weighted by atomic Sanderson electronegativities	RDF descriptors
+861	120	RDF155e	Radial Distribution Function - 15.5 / weighted by atomic Sanderson electronegativities	RDF descriptors
+862	121	RDF010p	Radial Distribution Function - 1.0 / weighted by atomic polarizabilities	RDF descriptors
+863	122	RDF015p	Radial Distribution Function - 1.5 / weighted by atomic polarizabilities	RDF descriptors
+864	123	RDF020p	Radial Distribution Function - 2.0 / weighted by atomic polarizabilities	RDF descriptors
+865	124	RDF025p	Radial Distribution Function - 2.5 / weighted by atomic polarizabilities	RDF descriptors
+866	125	RDF030p	Radial Distribution Function - 3.0 / weighted by atomic polarizabilities	RDF descriptors
+867	126	RDF035p	Radial Distribution Function - 3.5 / weighted by atomic polarizabilities	RDF descriptors
+868	127	RDF040p	Radial Distribution Function - 4.0 / weighted by atomic polarizabilities	RDF descriptors
+869	128	RDF045p	Radial Distribution Function - 4.5 / weighted by atomic polarizabilities	RDF descriptors
+870	129	RDF050p	Radial Distribution Function - 5.0 / weighted by atomic polarizabilities	RDF descriptors
+871	130	RDF055p	Radial Distribution Function - 5.5 / weighted by atomic polarizabilities	RDF descriptors
+872	131	RDF060p	Radial Distribution Function - 6.0 / weighted by atomic polarizabilities	RDF descriptors
+873	132	RDF065p	Radial Distribution Function - 6.5 / weighted by atomic polarizabilities	RDF descriptors
+874	133	RDF070p	Radial Distribution Function - 7.0 / weighted by atomic polarizabilities	RDF descriptors
+875	134	RDF075p	Radial Distribution Function - 7.5 / weighted by atomic polarizabilities	RDF descriptors
+876	135	RDF080p	Radial Distribution Function - 8.0 / weighted by atomic polarizabilities	RDF descriptors
+877	136	RDF085p	Radial Distribution Function - 8.5 / weighted by atomic polarizabilities	RDF descriptors
+878	137	RDF090p	Radial Distribution Function - 9.0 / weighted by atomic polarizabilities	RDF descriptors
+879	138	RDF095p	Radial Distribution Function - 9.5 / weighted by atomic polarizabilities	RDF descriptors
+880	139	RDF100p	Radial Distribution Function - 10.0 / weighted by atomic polarizabilities	RDF descriptors
+881	140	RDF105p	Radial Distribution Function - 10.5 / weighted by atomic polarizabilities	RDF descriptors
+882	141	RDF110p	Radial Distribution Function - 11.0 / weighted by atomic polarizabilities	RDF descriptors
+883	142	RDF115p	Radial Distribution Function - 11.5 / weighted by atomic polarizabilities	RDF descriptors
+884	143	RDF120p	Radial Distribution Function - 12.0 / weighted by atomic polarizabilities	RDF descriptors
+885	144	RDF125p	Radial Distribution Function - 12.5 / weighted by atomic polarizabilities	RDF descriptors
+886	145	RDF130p	Radial Distribution Function - 13.0 / weighted by atomic polarizabilities	RDF descriptors
+887	146	RDF135p	Radial Distribution Function - 13.5 / weighted by atomic polarizabilities	RDF descriptors
+888	147	RDF140p	Radial Distribution Function - 14.0 / weighted by atomic polarizabilities	RDF descriptors
+889	148	RDF145p	Radial Distribution Function - 14.5 / weighted by atomic polarizabilities	RDF descriptors
+890	149	RDF150p	Radial Distribution Function - 15.0 / weighted by atomic polarizabilities	RDF descriptors
+891	150	RDF155p	Radial Distribution Function - 15.5 / weighted by atomic polarizabilities	RDF descriptors
+892	1	Mor01u	3D-MoRSE - signal 01 / unweighted	3D-MoRSE descriptors
+893	2	Mor02u	3D-MoRSE - signal 02 / unweighted	3D-MoRSE descriptors
+894	3	Mor03u	3D-MoRSE - signal 03 / unweighted	3D-MoRSE descriptors
+895	4	Mor04u	3D-MoRSE - signal 04 / unweighted	3D-MoRSE descriptors
+896	5	Mor05u	3D-MoRSE - signal 05 / unweighted	3D-MoRSE descriptors
+897	6	Mor06u	3D-MoRSE - signal 06 / unweighted	3D-MoRSE descriptors
+898	7	Mor07u	3D-MoRSE - signal 07 / unweighted	3D-MoRSE descriptors
+899	8	Mor08u	3D-MoRSE - signal 08 / unweighted	3D-MoRSE descriptors
+900	9	Mor09u	3D-MoRSE - signal 09 / unweighted	3D-MoRSE descriptors
+901	10	Mor10u	3D-MoRSE - signal 10 / unweighted	3D-MoRSE descriptors
+902	11	Mor11u	3D-MoRSE - signal 11 / unweighted	3D-MoRSE descriptors
+903	12	Mor12u	3D-MoRSE - signal 12 / unweighted	3D-MoRSE descriptors
+904	13	Mor13u	3D-MoRSE - signal 13 / unweighted	3D-MoRSE descriptors
+905	14	Mor14u	3D-MoRSE - signal 14 / unweighted	3D-MoRSE descriptors
+906	15	Mor15u	3D-MoRSE - signal 15 / unweighted	3D-MoRSE descriptors
+907	16	Mor16u	3D-MoRSE - signal 16 / unweighted	3D-MoRSE descriptors
+908	17	Mor17u	3D-MoRSE - signal 17 / unweighted	3D-MoRSE descriptors
+909	18	Mor18u	3D-MoRSE - signal 18 / unweighted	3D-MoRSE descriptors
+910	19	Mor19u	3D-MoRSE - signal 19 / unweighted	3D-MoRSE descriptors
+911	20	Mor20u	3D-MoRSE - signal 20 / unweighted	3D-MoRSE descriptors
+912	21	Mor21u	3D-MoRSE - signal 21 / unweighted	3D-MoRSE descriptors
+913	22	Mor22u	3D-MoRSE - signal 22 / unweighted	3D-MoRSE descriptors
+914	23	Mor23u	3D-MoRSE - signal 23 / unweighted	3D-MoRSE descriptors
+915	24	Mor24u	3D-MoRSE - signal 24 / unweighted	3D-MoRSE descriptors
+916	25	Mor25u	3D-MoRSE - signal 25 / unweighted	3D-MoRSE descriptors
+917	26	Mor26u	3D-MoRSE - signal 26 / unweighted	3D-MoRSE descriptors
+918	27	Mor27u	3D-MoRSE - signal 27 / unweighted	3D-MoRSE descriptors
+919	28	Mor28u	3D-MoRSE - signal 28 / unweighted	3D-MoRSE descriptors
+920	29	Mor29u	3D-MoRSE - signal 29 / unweighted	3D-MoRSE descriptors
+921	30	Mor30u	3D-MoRSE - signal 30 / unweighted	3D-MoRSE descriptors
+922	31	Mor31u	3D-MoRSE - signal 31 / unweighted	3D-MoRSE descriptors
+923	32	Mor32u	3D-MoRSE - signal 32 / unweighted	3D-MoRSE descriptors
+924	33	Mor01m	3D-MoRSE - signal 01 / weighted by atomic masses	3D-MoRSE descriptors
+925	34	Mor02m	3D-MoRSE - signal 02 / weighted by atomic masses	3D-MoRSE descriptors
+926	35	Mor03m	3D-MoRSE - signal 03 / weighted by atomic masses	3D-MoRSE descriptors
+927	36	Mor04m	3D-MoRSE - signal 04 / weighted by atomic masses	3D-MoRSE descriptors
+928	37	Mor05m	3D-MoRSE - signal 05 / weighted by atomic masses	3D-MoRSE descriptors
+929	38	Mor06m	3D-MoRSE - signal 06 / weighted by atomic masses	3D-MoRSE descriptors
+930	39	Mor07m	3D-MoRSE - signal 07 / weighted by atomic masses	3D-MoRSE descriptors
+931	40	Mor08m	3D-MoRSE - signal 08 / weighted by atomic masses	3D-MoRSE descriptors
+932	41	Mor09m	3D-MoRSE - signal 09 / weighted by atomic masses	3D-MoRSE descriptors
+933	42	Mor10m	3D-MoRSE - signal 10 / weighted by atomic masses	3D-MoRSE descriptors
+934	43	Mor11m	3D-MoRSE - signal 11 / weighted by atomic masses	3D-MoRSE descriptors
+935	44	Mor12m	3D-MoRSE - signal 12 / weighted by atomic masses	3D-MoRSE descriptors
+936	45	Mor13m	3D-MoRSE - signal 13 / weighted by atomic masses	3D-MoRSE descriptors
+937	46	Mor14m	3D-MoRSE - signal 14 / weighted by atomic masses	3D-MoRSE descriptors
+938	47	Mor15m	3D-MoRSE - signal 15 / weighted by atomic masses	3D-MoRSE descriptors
+939	48	Mor16m	3D-MoRSE - signal 16 / weighted by atomic masses	3D-MoRSE descriptors
+940	49	Mor17m	3D-MoRSE - signal 17 / weighted by atomic masses	3D-MoRSE descriptors
+941	50	Mor18m	3D-MoRSE - signal 18 / weighted by atomic masses	3D-MoRSE descriptors
+942	51	Mor19m	3D-MoRSE - signal 19 / weighted by atomic masses	3D-MoRSE descriptors
+943	52	Mor20m	3D-MoRSE - signal 20 / weighted by atomic masses	3D-MoRSE descriptors
+944	53	Mor21m	3D-MoRSE - signal 21 / weighted by atomic masses	3D-MoRSE descriptors
+945	54	Mor22m	3D-MoRSE - signal 22 / weighted by atomic masses	3D-MoRSE descriptors
+946	55	Mor23m	3D-MoRSE - signal 23 / weighted by atomic masses	3D-MoRSE descriptors
+947	56	Mor24m	3D-MoRSE - signal 24 / weighted by atomic masses	3D-MoRSE descriptors
+948	57	Mor25m	3D-MoRSE - signal 25 / weighted by atomic masses	3D-MoRSE descriptors
+949	58	Mor26m	3D-MoRSE - signal 26 / weighted by atomic masses	3D-MoRSE descriptors
+950	59	Mor27m	3D-MoRSE - signal 27 / weighted by atomic masses	3D-MoRSE descriptors
+951	60	Mor28m	3D-MoRSE - signal 28 / weighted by atomic masses	3D-MoRSE descriptors
+952	61	Mor29m	3D-MoRSE - signal 29 / weighted by atomic masses	3D-MoRSE descriptors
+953	62	Mor30m	3D-MoRSE - signal 30 / weighted by atomic masses	3D-MoRSE descriptors
+954	63	Mor31m	3D-MoRSE - signal 31 / weighted by atomic masses	3D-MoRSE descriptors
+955	64	Mor32m	3D-MoRSE - signal 32 / weighted by atomic masses	3D-MoRSE descriptors
+956	65	Mor01v	3D-MoRSE - signal 01 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+957	66	Mor02v	3D-MoRSE - signal 02 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+958	67	Mor03v	3D-MoRSE - signal 03 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+959	68	Mor04v	3D-MoRSE - signal 04 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+960	69	Mor05v	3D-MoRSE - signal 05 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+961	70	Mor06v	3D-MoRSE - signal 06 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+962	71	Mor07v	3D-MoRSE - signal 07 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+963	72	Mor08v	3D-MoRSE - signal 08 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+964	73	Mor09v	3D-MoRSE - signal 09 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+965	74	Mor10v	3D-MoRSE - signal 10 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+966	75	Mor11v	3D-MoRSE - signal 11 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+967	76	Mor12v	3D-MoRSE - signal 12 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+968	77	Mor13v	3D-MoRSE - signal 13 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+969	78	Mor14v	3D-MoRSE - signal 14 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+970	79	Mor15v	3D-MoRSE - signal 15 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+971	80	Mor16v	3D-MoRSE - signal 16 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+972	81	Mor17v	3D-MoRSE - signal 17 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+973	82	Mor18v	3D-MoRSE - signal 18 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+974	83	Mor19v	3D-MoRSE - signal 19 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+975	84	Mor20v	3D-MoRSE - signal 20 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+976	85	Mor21v	3D-MoRSE - signal 21 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+977	86	Mor22v	3D-MoRSE - signal 22 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+978	87	Mor23v	3D-MoRSE - signal 23 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+979	88	Mor24v	3D-MoRSE - signal 24 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+980	89	Mor25v	3D-MoRSE - signal 25 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+981	90	Mor26v	3D-MoRSE - signal 26 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+982	91	Mor27v	3D-MoRSE - signal 27 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+983	92	Mor28v	3D-MoRSE - signal 28 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+984	93	Mor29v	3D-MoRSE - signal 29 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+985	94	Mor30v	3D-MoRSE - signal 30 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+986	95	Mor31v	3D-MoRSE - signal 31 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+987	96	Mor32v	3D-MoRSE - signal 32 / weighted by atomic van der Waals volumes	3D-MoRSE descriptors
+988	97	Mor01e	3D-MoRSE - signal 01 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+989	98	Mor02e	3D-MoRSE - signal 02 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+990	99	Mor03e	3D-MoRSE - signal 03 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+991	100	Mor04e	3D-MoRSE - signal 04 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+992	101	Mor05e	3D-MoRSE - signal 05 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+993	102	Mor06e	3D-MoRSE - signal 06 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+994	103	Mor07e	3D-MoRSE - signal 07 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+995	104	Mor08e	3D-MoRSE - signal 08 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+996	105	Mor09e	3D-MoRSE - signal 09 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+997	106	Mor10e	3D-MoRSE - signal 10 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+998	107	Mor11e	3D-MoRSE - signal 11 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+999	108	Mor12e	3D-MoRSE - signal 12 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1000	109	Mor13e	3D-MoRSE - signal 13 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1001	110	Mor14e	3D-MoRSE - signal 14 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1002	111	Mor15e	3D-MoRSE - signal 15 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1003	112	Mor16e	3D-MoRSE - signal 16 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1004	113	Mor17e	3D-MoRSE - signal 17 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1005	114	Mor18e	3D-MoRSE - signal 18 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1006	115	Mor19e	3D-MoRSE - signal 19 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1007	116	Mor20e	3D-MoRSE - signal 20 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1008	117	Mor21e	3D-MoRSE - signal 21 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1009	118	Mor22e	3D-MoRSE - signal 22 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1010	119	Mor23e	3D-MoRSE - signal 23 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1011	120	Mor24e	3D-MoRSE - signal 24 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1012	121	Mor25e	3D-MoRSE - signal 25 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1013	122	Mor26e	3D-MoRSE - signal 26 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1014	123	Mor27e	3D-MoRSE - signal 27 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1015	124	Mor28e	3D-MoRSE - signal 28 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1016	125	Mor29e	3D-MoRSE - signal 29 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1017	126	Mor30e	3D-MoRSE - signal 30 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1018	127	Mor31e	3D-MoRSE - signal 31 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1019	128	Mor32e	3D-MoRSE - signal 32 / weighted by atomic Sanderson electronegativities	3D-MoRSE descriptors
+1020	129	Mor01p	3D-MoRSE - signal 01 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1021	130	Mor02p	3D-MoRSE - signal 02 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1022	131	Mor03p	3D-MoRSE - signal 03 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1023	132	Mor04p	3D-MoRSE - signal 04 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1024	133	Mor05p	3D-MoRSE - signal 05 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1025	134	Mor06p	3D-MoRSE - signal 06 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1026	135	Mor07p	3D-MoRSE - signal 07 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1027	136	Mor08p	3D-MoRSE - signal 08 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1028	137	Mor09p	3D-MoRSE - signal 09 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1029	138	Mor10p	3D-MoRSE - signal 10 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1030	139	Mor11p	3D-MoRSE - signal 11 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1031	140	Mor12p	3D-MoRSE - signal 12 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1032	141	Mor13p	3D-MoRSE - signal 13 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1033	142	Mor14p	3D-MoRSE - signal 14 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1034	143	Mor15p	3D-MoRSE - signal 15 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1035	144	Mor16p	3D-MoRSE - signal 16 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1036	145	Mor17p	3D-MoRSE - signal 17 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1037	146	Mor18p	3D-MoRSE - signal 18 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1038	147	Mor19p	3D-MoRSE - signal 19 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1039	148	Mor20p	3D-MoRSE - signal 20 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1040	149	Mor21p	3D-MoRSE - signal 21 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1041	150	Mor22p	3D-MoRSE - signal 22 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1042	151	Mor23p	3D-MoRSE - signal 23 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1043	152	Mor24p	3D-MoRSE - signal 24 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1044	153	Mor25p	3D-MoRSE - signal 25 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1045	154	Mor26p	3D-MoRSE - signal 26 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1046	155	Mor27p	3D-MoRSE - signal 27 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1047	156	Mor28p	3D-MoRSE - signal 28 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1048	157	Mor29p	3D-MoRSE - signal 29 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1049	158	Mor30p	3D-MoRSE - signal 30 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1050	159	Mor31p	3D-MoRSE - signal 31 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1051	160	Mor32p	3D-MoRSE - signal 32 / weighted by atomic polarizabilities	3D-MoRSE descriptors
+1052	1	L1u	1st component size directional WHIM index / unweighted	WHIM descriptors
+1053	2	L2u	2nd component size directional WHIM index / unweighted	WHIM descriptors
+1054	3	L3u	3rd component size directional WHIM index / unweighted	WHIM descriptors
+1055	4	P1u	1st component shape directional WHIM index / unweighted	WHIM descriptors
+1056	5	P2u	2nd component shape directional WHIM index / unweighted	WHIM descriptors
+1057	6	G1u	1st component symmetry directional WHIM index / unweighted	WHIM descriptors
+1058	7	G2u	2st component symmetry directional WHIM index / unweighted	WHIM descriptors
+1059	8	G3u	3st component symmetry directional WHIM index / unweighted	WHIM descriptors
+1060	9	E1u	1st component accessibility directional WHIM index / unweighted	WHIM descriptors
+1061	10	E2u	2nd component accessibility directional WHIM index / unweighted	WHIM descriptors
+1062	11	E3u	3rd component accessibility directional WHIM index / unweighted	WHIM descriptors
+1063	12	L1m	1st component size directional WHIM index / weighted by atomic masses	WHIM descriptors
+1064	13	L2m	2nd component size directional WHIM index / weighted by atomic masses	WHIM descriptors
+1065	14	L3m	3rd component size directional WHIM index / weighted by atomic masses	WHIM descriptors
+1066	15	P1m	1st component shape directional WHIM index / weighted by atomic masses	WHIM descriptors
+1067	16	P2m	2nd component shape directional WHIM index / weighted by atomic masses	WHIM descriptors
+1068	17	G1m	1st component symmetry directional WHIM index / weighted by atomic masses	WHIM descriptors
+1069	18	G2m	2st component symmetry directional WHIM index / weighted by atomic masses	WHIM descriptors
+1070	19	G3m	3st component symmetry directional WHIM index / weighted by atomic masses	WHIM descriptors
+1071	20	E1m	1st component accessibility directional WHIM index / weighted by atomic masses	WHIM descriptors
+1072	21	E2m	2nd component accessibility directional WHIM index / weighted by atomic masses	WHIM descriptors
+1073	22	E3m	3rd component accessibility directional WHIM index / weighted by atomic masses	WHIM descriptors
+1074	23	L1v	1st component size directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1075	24	L2v	2nd component size directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1076	25	L3v	3rd component size directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1077	26	P1v	1st component shape directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1078	27	P2v	2nd component shape directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1079	28	G1v	1st component symmetry directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1080	29	G2v	2st component symmetry directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1081	30	G3v	3st component symmetry directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1082	31	E1v	1st component accessibility directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1083	32	E2v	2nd component accessibility directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1084	33	E3v	3rd component accessibility directional WHIM index / weighted by atomic van der Waals volumes	WHIM descriptors
+1085	34	L1e	1st component size directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1086	35	L2e	2nd component size directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1087	36	L3e	3rd component size directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1088	37	P1e	1st component shape directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1089	38	P2e	2nd component shape directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1090	39	G1e	1st component symmetry directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1091	40	G2e	2st component symmetry directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1092	41	G3e	3st component symmetry directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1093	42	E1e	1st component accessibility directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1094	43	E2e	2nd component accessibility directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1095	44	E3e	3rd component accessibility directional WHIM index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1096	45	L1p	1st component size directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1097	46	L2p	2nd component size directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1098	47	L3p	3rd component size directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1099	48	P1p	1st component shape directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1100	49	P2p	2nd component shape directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1101	50	G1p	1st component symmetry directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1102	51	G2p	2st component symmetry directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1103	52	G3p	3st component symmetry directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1104	53	E1p	1st component accessibility directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1105	54	E2p	2nd component accessibility directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1106	55	E3p	3rd component accessibility directional WHIM index / weighted by atomic polarizabilities	WHIM descriptors
+1107	56	L1s	1st component size directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1108	57	L2s	2nd component size directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1109	58	L3s	3rd component size directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1110	59	P1s	1st component shape directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1111	60	P2s	2nd component shape directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1112	61	G1s	1st component symmetry directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1113	62	G2s	2st component symmetry directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1114	63	G3s	3st component symmetry directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1115	64	E1s	1st component accessibility directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1116	65	E2s	2nd component accessibility directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1117	66	E3s	3rd component accessibility directional WHIM index / weighted by atomic electrotopological states	WHIM descriptors
+1118	67	Tu	T total size index / unweighted	WHIM descriptors
+1119	68	Tm	T total size index / weighted by atomic masses	WHIM descriptors
+1120	69	Tv	T total size index / weighted by atomic van der Waals volumes	WHIM descriptors
+1121	70	Te	T total size index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1122	71	Tp	T total size index / weighted by atomic polarizabilities	WHIM descriptors
+1123	72	Ts	T total size index / weighted by atomic electrotopological states	WHIM descriptors
+1124	73	Au	A total size index / unweighted	WHIM descriptors
+1125	74	Am	A total size index / weighted by atomic masses	WHIM descriptors
+1126	75	Av	A total size index / weighted by atomic van der Waals volumes	WHIM descriptors
+1127	76	Ae	A total size index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1128	77	Ap	A total size index / weighted by atomic polarizabilities	WHIM descriptors
+1129	78	As	A total size index / weighted by atomic electrotopological states	WHIM descriptors
+1130	79	Gu	G total symmetry index / unweighted	WHIM descriptors
+1131	80	Gm	G total symmetry index / weighted by atomic masses	WHIM descriptors
+1132	81	Gs	G total symmetry index / weighted by atomic electrotopological states	WHIM descriptors
+1133	82	Ku	K global shape index / unweighted	WHIM descriptors
+1134	83	Km	K global shape index / weighted by atomic masses	WHIM descriptors
+1135	84	Kv	K global shape index / weighted by atomic van der Waals volumes	WHIM descriptors
+1136	85	Ke	K global shape index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1137	86	Kp	K global shape index / weighted by atomic polarizabilities	WHIM descriptors
+1138	87	Ks	K global shape index / weighted by atomic electrotopological states	WHIM descriptors
+1139	88	Du	D total accessibility index / unweighted	WHIM descriptors
+1140	89	Dm	D total accessibility index / weighted by atomic masses	WHIM descriptors
+1141	90	Dv	D total accessibility index / weighted by atomic van der Waals volumes	WHIM descriptors
+1142	91	De	D total accessibility index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1143	92	Dp	D total accessibility index / weighted by atomic polarizabilities	WHIM descriptors
+1144	93	Ds	D total accessibility index / weighted by atomic electrotopological states	WHIM descriptors
+1145	94	Vu	V total size index / unweighted	WHIM descriptors
+1146	95	Vm	V total size index / weighted by atomic masses	WHIM descriptors
+1147	96	Vv	V total size index / weighted by atomic van der Waals volumes	WHIM descriptors
+1148	97	Ve	V total size index / weighted by atomic Sanderson electronegativities	WHIM descriptors
+1149	98	Vp	V total size index / weighted by atomic polarizabilities	WHIM descriptors
+1150	99	Vs	V total size index / weighted by atomic electrotopological states	WHIM descriptors
+1151	1	ITH	total information content on the leverage equality	GETAWAY descriptors
+1152	2	ISH	standardized information content on the leverage equality	GETAWAY descriptors
+1153	3	HIC	mean information content on the leverage magnitude	GETAWAY descriptors
+1154	4	HGM	geometric mean on the leverage magnitude	GETAWAY descriptors
+1155	5	H0u	H autocorrelation of lag 0 / unweighted	GETAWAY descriptors
+1156	6	H1u	H autocorrelation of lag 1 / unweighted	GETAWAY descriptors
+1157	7	H2u	H autocorrelation of lag 2 / unweighted	GETAWAY descriptors
+1158	8	H3u	H autocorrelation of lag 3 / unweighted	GETAWAY descriptors
+1159	9	H4u	H autocorrelation of lag 4 / unweighted	GETAWAY descriptors
+1160	10	H5u	H autocorrelation of lag 5 / unweighted	GETAWAY descriptors
+1161	11	H6u	H autocorrelation of lag 6 / unweighted	GETAWAY descriptors
+1162	12	H7u	H autocorrelation of lag 7 / unweighted	GETAWAY descriptors
+1163	13	H8u	H autocorrelation of lag 8 / unweighted	GETAWAY descriptors
+1164	14	HTu	H total index / unweighted	GETAWAY descriptors
+1165	15	HATS0u	leverage-weighted autocorrelation of lag 0 / unweighted	GETAWAY descriptors
+1166	16	HATS1u	leverage-weighted autocorrelation of lag 1 / unweighted	GETAWAY descriptors
+1167	17	HATS2u	leverage-weighted autocorrelation of lag 2 / unweighted	GETAWAY descriptors
+1168	18	HATS3u	leverage-weighted autocorrelation of lag 3 / unweighted	GETAWAY descriptors
+1169	19	HATS4u	leverage-weighted autocorrelation of lag 4 / unweighted	GETAWAY descriptors
+1170	20	HATS5u	leverage-weighted autocorrelation of lag 5 / unweighted	GETAWAY descriptors
+1171	21	HATS6u	leverage-weighted autocorrelation of lag 6 / unweighted	GETAWAY descriptors
+1172	22	HATS7u	leverage-weighted autocorrelation of lag 7 / unweighted	GETAWAY descriptors
+1173	23	HATS8u	leverage-weighted autocorrelation of lag 8 / unweighted	GETAWAY descriptors
+1174	24	HATSu	leverage-weighted total index / unweighted	GETAWAY descriptors
+1175	25	H0m	H autocorrelation of lag 0 / weighted by atomic masses	GETAWAY descriptors
+1176	26	H1m	H autocorrelation of lag 1 / weighted by atomic masses	GETAWAY descriptors
+1177	27	H2m	H autocorrelation of lag 2 / weighted by atomic masses	GETAWAY descriptors
+1178	28	H3m	H autocorrelation of lag 3 / weighted by atomic masses	GETAWAY descriptors
+1179	29	H4m	H autocorrelation of lag 4 / weighted by atomic masses	GETAWAY descriptors
+1180	30	H5m	H autocorrelation of lag 5 / weighted by atomic masses	GETAWAY descriptors
+1181	31	H6m	H autocorrelation of lag 6 / weighted by atomic masses	GETAWAY descriptors
+1182	32	H7m	H autocorrelation of lag 7 / weighted by atomic masses	GETAWAY descriptors
+1183	33	H8m	H autocorrelation of lag 8 / weighted by atomic masses	GETAWAY descriptors
+1184	34	HTm	H total index / weighted by atomic masses	GETAWAY descriptors
+1185	35	HATS0m	leverage-weighted autocorrelation of lag 0 / weighted by atomic masses	GETAWAY descriptors
+1186	36	HATS1m	leverage-weighted autocorrelation of lag 1 / weighted by atomic masses	GETAWAY descriptors
+1187	37	HATS2m	leverage-weighted autocorrelation of lag 2 / weighted by atomic masses	GETAWAY descriptors
+1188	38	HATS3m	leverage-weighted autocorrelation of lag 3 / weighted by atomic masses	GETAWAY descriptors
+1189	39	HATS4m	leverage-weighted autocorrelation of lag 4 / weighted by atomic masses	GETAWAY descriptors
+1190	40	HATS5m	leverage-weighted autocorrelation of lag 5 / weighted by atomic masses	GETAWAY descriptors
+1191	41	HATS6m	leverage-weighted autocorrelation of lag 6 / weighted by atomic masses	GETAWAY descriptors
+1192	42	HATS7m	leverage-weighted autocorrelation of lag 7 / weighted by atomic masses	GETAWAY descriptors
+1193	43	HATS8m	leverage-weighted autocorrelation of lag 8 / weighted by atomic masses	GETAWAY descriptors
+1194	44	HATSm	leverage-weighted total index / weighted by atomic masses	GETAWAY descriptors
+1195	45	H0v	H autocorrelation of lag 0 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1196	46	H1v	H autocorrelation of lag 1 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1197	47	H2v	H autocorrelation of lag 2 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1198	48	H3v	H autocorrelation of lag 3 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1199	49	H4v	H autocorrelation of lag 4 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1200	50	H5v	H autocorrelation of lag 5 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1201	51	H6v	H autocorrelation of lag 6 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1202	52	H7v	H autocorrelation of lag 7 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1203	53	H8v	H autocorrelation of lag 8 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1204	54	HTv	H total index / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1205	55	HATS0v	leverage-weighted autocorrelation of lag 0 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1206	56	HATS1v	leverage-weighted autocorrelation of lag 1 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1207	57	HATS2v	leverage-weighted autocorrelation of lag 2 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1208	58	HATS3v	leverage-weighted autocorrelation of lag 3 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1209	59	HATS4v	leverage-weighted autocorrelation of lag 4 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1210	60	HATS5v	leverage-weighted autocorrelation of lag 5 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1211	61	HATS6v	leverage-weighted autocorrelation of lag 6 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1212	62	HATS7v	leverage-weighted autocorrelation of lag 7 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1213	63	HATS8v	leverage-weighted autocorrelation of lag 8 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1214	64	HATSv	leverage-weighted total index / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1215	65	H0e	H autocorrelation of lag 0 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1216	66	H1e	H autocorrelation of lag 1 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1217	67	H2e	H autocorrelation of lag 2 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1218	68	H3e	H autocorrelation of lag 3 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1219	69	H4e	H autocorrelation of lag 4 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1220	70	H5e	H autocorrelation of lag 5 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1221	71	H6e	H autocorrelation of lag 6 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1222	72	H7e	H autocorrelation of lag 7 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1223	73	H8e	H autocorrelation of lag 8 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1224	74	HTe	H total index / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1225	75	HATS0e	leverage-weighted autocorrelation of lag 0 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1226	76	HATS1e	leverage-weighted autocorrelation of lag 1 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1227	77	HATS2e	leverage-weighted autocorrelation of lag 2 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1228	78	HATS3e	leverage-weighted autocorrelation of lag 3 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1229	79	HATS4e	leverage-weighted autocorrelation of lag 4 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1230	80	HATS5e	leverage-weighted autocorrelation of lag 5 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1231	81	HATS6e	leverage-weighted autocorrelation of lag 6 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1232	82	HATS7e	leverage-weighted autocorrelation of lag 7 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1233	83	HATS8e	leverage-weighted autocorrelation of lag 8 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1234	84	HATSe	leverage-weighted total index / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1235	85	H0p	H autocorrelation of lag 0 / weighted by atomic polarizabilities	GETAWAY descriptors
+1236	86	H1p	H autocorrelation of lag 1 / weighted by atomic polarizabilities	GETAWAY descriptors
+1237	87	H2p	H autocorrelation of lag 2 / weighted by atomic polarizabilities	GETAWAY descriptors
+1238	88	H3p	H autocorrelation of lag 3 / weighted by atomic polarizabilities	GETAWAY descriptors
+1239	89	H4p	H autocorrelation of lag 4 / weighted by atomic polarizabilities	GETAWAY descriptors
+1240	90	H5p	H autocorrelation of lag 5 / weighted by atomic polarizabilities	GETAWAY descriptors
+1241	91	H6p	H autocorrelation of lag 6 / weighted by atomic polarizabilities	GETAWAY descriptors
+1242	92	H7p	H autocorrelation of lag 7 / weighted by atomic polarizabilities	GETAWAY descriptors
+1243	93	H8p	H autocorrelation of lag 8 / weighted by atomic polarizabilities	GETAWAY descriptors
+1244	94	HTp	H total index / weighted by atomic polarizabilities	GETAWAY descriptors
+1245	95	HATS0p	leverage-weighted autocorrelation of lag 0 / weighted by atomic polarizabilities	GETAWAY descriptors
+1246	96	HATS1p	leverage-weighted autocorrelation of lag 1 / weighted by atomic polarizabilities	GETAWAY descriptors
+1247	97	HATS2p	leverage-weighted autocorrelation of lag 2 / weighted by atomic polarizabilities	GETAWAY descriptors
+1248	98	HATS3p	leverage-weighted autocorrelation of lag 3 / weighted by atomic polarizabilities	GETAWAY descriptors
+1249	99	HATS4p	leverage-weighted autocorrelation of lag 4 / weighted by atomic polarizabilities	GETAWAY descriptors
+1250	100	HATS5p	leverage-weighted autocorrelation of lag 5 / weighted by atomic polarizabilities	GETAWAY descriptors
+1251	101	HATS6p	leverage-weighted autocorrelation of lag 6 / weighted by atomic polarizabilities	GETAWAY descriptors
+1252	102	HATS7p	leverage-weighted autocorrelation of lag 7 / weighted by atomic polarizabilities	GETAWAY descriptors
+1253	103	HATS8p	leverage-weighted autocorrelation of lag 8 / weighted by atomic polarizabilities	GETAWAY descriptors
+1254	104	HATSp	leverage-weighted total index / weighted by atomic polarizabilities	GETAWAY descriptors
+1255	105	RCON	Randic-type R matrix connectivity	GETAWAY descriptors
+1256	106	RARS	R matrix average row sum	GETAWAY descriptors
+1257	107	REIG	first eigenvalue of the R matrix	GETAWAY descriptors
+1258	108	R1u	R autocorrelation of lag 1 / unweighted	GETAWAY descriptors
+1259	109	R2u	R autocorrelation of lag 2 / unweighted	GETAWAY descriptors
+1260	110	R3u	R autocorrelation of lag 3 / unweighted	GETAWAY descriptors
+1261	111	R4u	R autocorrelation of lag 4 / unweighted	GETAWAY descriptors
+1262	112	R5u	R autocorrelation of lag 5 / unweighted	GETAWAY descriptors
+1263	113	R6u	R autocorrelation of lag 6 / unweighted	GETAWAY descriptors
+1264	114	R7u	R autocorrelation of lag 7 / unweighted	GETAWAY descriptors
+1265	115	R8u	R autocorrelation of lag 8 / unweighted	GETAWAY descriptors
+1266	116	RTu	R total index / unweighted	GETAWAY descriptors
+1267	117	R1u+	R maximal autocorrelation of lag 1 / unweighted	GETAWAY descriptors
+1268	118	R2u+	R maximal autocorrelation of lag 2 / unweighted	GETAWAY descriptors
+1269	119	R3u+	R maximal autocorrelation of lag 3 / unweighted	GETAWAY descriptors
+1270	120	R4u+	R maximal autocorrelation of lag 4 / unweighted	GETAWAY descriptors
+1271	121	R5u+	R maximal autocorrelation of lag 5 / unweighted	GETAWAY descriptors
+1272	122	R6u+	R maximal autocorrelation of lag 6 / unweighted	GETAWAY descriptors
+1273	123	R7u+	R maximal autocorrelation of lag 7 / unweighted	GETAWAY descriptors
+1274	124	R8u+	R maximal autocorrelation of lag 8 / unweighted	GETAWAY descriptors
+1275	125	RTu+	R maximal index / unweighted	GETAWAY descriptors
+1276	126	R1m	R autocorrelation of lag 1 / weighted by atomic masses	GETAWAY descriptors
+1277	127	R2m	R autocorrelation of lag 2 / weighted by atomic masses	GETAWAY descriptors
+1278	128	R3m	R autocorrelation of lag 3 / weighted by atomic masses	GETAWAY descriptors
+1279	129	R4m	R autocorrelation of lag 4 / weighted by atomic masses	GETAWAY descriptors
+1280	130	R5m	R autocorrelation of lag 5 / weighted by atomic masses	GETAWAY descriptors
+1281	131	R6m	R autocorrelation of lag 6 / weighted by atomic masses	GETAWAY descriptors
+1282	132	R7m	R autocorrelation of lag 7 / weighted by atomic masses	GETAWAY descriptors
+1283	133	R8m	R autocorrelation of lag 8 / weighted by atomic masses	GETAWAY descriptors
+1284	134	RTm	R total index / weighted by atomic masses	GETAWAY descriptors
+1285	135	R1m+	R maximal autocorrelation of lag 1 / weighted by atomic masses	GETAWAY descriptors
+1286	136	R2m+	R maximal autocorrelation of lag 2 / weighted by atomic masses	GETAWAY descriptors
+1287	137	R3m+	R maximal autocorrelation of lag 3 / weighted by atomic masses	GETAWAY descriptors
+1288	138	R4m+	R maximal autocorrelation of lag 4 / weighted by atomic masses	GETAWAY descriptors
+1289	139	R5m+	R maximal autocorrelation of lag 5 / weighted by atomic masses	GETAWAY descriptors
+1290	140	R6m+	R maximal autocorrelation of lag 6 / weighted by atomic masses	GETAWAY descriptors
+1291	141	R7m+	R maximal autocorrelation of lag 7 / weighted by atomic masses	GETAWAY descriptors
+1292	142	R8m+	R maximal autocorrelation of lag 8 / weighted by atomic masses	GETAWAY descriptors
+1293	143	RTm+	R maximal index / weighted by atomic masses	GETAWAY descriptors
+1294	144	R1v	R autocorrelation of lag 1 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1295	145	R2v	R autocorrelation of lag 2 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1296	146	R3v	R autocorrelation of lag 3 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1297	147	R4v	R autocorrelation of lag 4 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1298	148	R5v	R autocorrelation of lag 5 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1299	149	R6v	R autocorrelation of lag 6 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1300	150	R7v	R autocorrelation of lag 7 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1301	151	R8v	R autocorrelation of lag 8 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1302	152	RTv	R total index / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1303	153	R1v+	R maximal autocorrelation of lag 1 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1304	154	R2v+	R maximal autocorrelation of lag 2 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1305	155	R3v+	R maximal autocorrelation of lag 3 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1306	156	R4v+	R maximal autocorrelation of lag 4 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1307	157	R5v+	R maximal autocorrelation of lag 5 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1308	158	R6v+	R maximal autocorrelation of lag 6 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1309	159	R7v+	R maximal autocorrelation of lag 7 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1310	160	R8v+	R maximal autocorrelation of lag 8 / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1311	161	RTv+	R maximal index / weighted by atomic van der Waals volumes	GETAWAY descriptors
+1312	162	R1e	R autocorrelation of lag 1 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1313	163	R2e	R autocorrelation of lag 2 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1314	164	R3e	R autocorrelation of lag 3 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1315	165	R4e	R autocorrelation of lag 4 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1316	166	R5e	R autocorrelation of lag 5 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1317	167	R6e	R autocorrelation of lag 6 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1318	168	R7e	R autocorrelation of lag 7 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1319	169	R8e	R autocorrelation of lag 8 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1320	170	RTe	R total index / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1321	171	R1e+	R maximal autocorrelation of lag 1 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1322	172	R2e+	R maximal autocorrelation of lag 2 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1323	173	R3e+	R maximal autocorrelation of lag 3 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1324	174	R4e+	R maximal autocorrelation of lag 4 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1325	175	R5e+	R maximal autocorrelation of lag 5 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1326	176	R6e+	R maximal autocorrelation of lag 6 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1327	177	R7e+	R maximal autocorrelation of lag 7 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1328	178	R8e+	R maximal autocorrelation of lag 8 / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1329	179	RTe+	R maximal index / weighted by atomic Sanderson electronegativities	GETAWAY descriptors
+1330	180	R1p	R autocorrelation of lag 1 / weighted by atomic polarizabilities	GETAWAY descriptors
+1331	181	R2p	R autocorrelation of lag 2 / weighted by atomic polarizabilities	GETAWAY descriptors
+1332	182	R3p	R autocorrelation of lag 3 / weighted by atomic polarizabilities	GETAWAY descriptors
+1333	183	R4p	R autocorrelation of lag 4 / weighted by atomic polarizabilities	GETAWAY descriptors
+1334	184	R5p	R autocorrelation of lag 5 / weighted by atomic polarizabilities	GETAWAY descriptors
+1335	185	R6p	R autocorrelation of lag 6 / weighted by atomic polarizabilities	GETAWAY descriptors
+1336	186	R7p	R autocorrelation of lag 7 / weighted by atomic polarizabilities	GETAWAY descriptors
+1337	187	R8p	R autocorrelation of lag 8 / weighted by atomic polarizabilities	GETAWAY descriptors
+1338	188	RTp	R total index / weighted by atomic polarizabilities	GETAWAY descriptors
+1339	189	R1p+	R maximal autocorrelation of lag 1 / weighted by atomic polarizabilities	GETAWAY descriptors
+1340	190	R2p+	R maximal autocorrelation of lag 2 / weighted by atomic polarizabilities	GETAWAY descriptors
+1341	191	R3p+	R maximal autocorrelation of lag 3 / weighted by atomic polarizabilities	GETAWAY descriptors
+1342	192	R4p+	R maximal autocorrelation of lag 4 / weighted by atomic polarizabilities	GETAWAY descriptors
+1343	193	R5p+	R maximal autocorrelation of lag 5 / weighted by atomic polarizabilities	GETAWAY descriptors
+1344	194	R6p+	R maximal autocorrelation of lag 6 / weighted by atomic polarizabilities	GETAWAY descriptors
+1345	195	R7p+	R maximal autocorrelation of lag 7 / weighted by atomic polarizabilities	GETAWAY descriptors
+1346	196	R8p+	R maximal autocorrelation of lag 8 / weighted by atomic polarizabilities	GETAWAY descriptors
+1347	197	RTp+	R maximal index / weighted by atomic polarizabilities	GETAWAY descriptors
+1348	1	nCp	number of terminal primary C(sp3)	functional group counts
+1349	2	nCs	number of total secondary C(sp3)	functional group counts
+1350	3	nCt	number of total tertiary C(sp3)	functional group counts
+1351	4	nCq	number of total quaternary C(sp3)	functional group counts
+1352	5	nCrs	number of ring secondary C(sp3)	functional group counts
+1353	6	nCrt	number of ring tertiary C(sp3)	functional group counts
+1354	7	nCrq	number of ring quaternary C(sp3)	functional group counts
+1355	8	nCar	number of aromatic C(sp2)	functional group counts
+1356	9	nCbH	number of unsubstituted benzene C(sp2)	functional group counts
+1357	10	nCb-	number of substituted benzene C(sp2)	functional group counts
+1358	11	nCconj	number of non-aromatic conjugated C(sp2)	functional group counts
+1359	12	nR=Cp	number of terminal primary C(sp2)	functional group counts
+1360	13	nR=Cs	number of aliphatic secondary C(sp2)	functional group counts
+1361	14	nR=Ct	number of aliphatic tertiary C(sp2)	functional group counts
+1362	15	n=C=	number of allenes groups	functional group counts
+1363	16	nR#CH/X	number of terminal C(sp)	functional group counts
+1364	17	nR#C-	number of non-terminal C(sp)	functional group counts
+1365	18	nROCN	number of cyanates (aliphatic)	functional group counts
+1366	19	nArOCN	number of cyanates (aromatic)	functional group counts
+1367	20	nRNCO	number of isocyanates (aliphatic)	functional group counts
+1368	21	nArNCO	number of isocyanates (aromatic)	functional group counts
+1369	22	nRSCN	number of thiocyanates (aliphatic)	functional group counts
+1370	23	nArSCN	number of thiocyanates (aromatic)	functional group counts
+1371	24	nRNCS	number of isothiocyanates (aliphatic)	functional group counts
+1372	25	nArNCS	number of isothiocyanates (aromatic)	functional group counts
+1373	26	nRCOOH	number of carboxylic acids (aliphatic)	functional group counts
+1374	27	nArCOOH	number of carboxylic acids (aromatic)	functional group counts
+1375	28	nRCOOR	number of esters (aliphatic)	functional group counts
+1376	29	nArCOOR	number of esters (aromatic)	functional group counts
+1377	30	nRCONH2	number of primary amides (aliphatic)	functional group counts
+1378	31	nArCONH2	number of primary amides (aromatic)	functional group counts
+1379	32	nRCONHR	number of secondary amides (aliphatic)	functional group counts
+1380	33	nArCONHR	number of secondary amides (aromatic)	functional group counts
+1381	34	nRCONR2	number of tertiary amides (aliphatic)	functional group counts
+1382	35	nArCONR2	number of tertiary amides (aromatic)	functional group counts
+1383	36	nROCON	number of (thio-) carbamates (aliphatic)	functional group counts
+1384	37	nArOCON	number of (thio-) carbamates (aromatic)	functional group counts
+1385	38	nRCOX	number of acyl halogenides (aliphatic)	functional group counts
+1386	39	nArCOX	number of acyl halogenides (aromatic)	functional group counts
+1387	40	nRCSOH	number of thioacids (aliphatic)	functional group counts
+1388	41	nArCSOH	number of thioacids (aromatic)	functional group counts
+1389	42	nRCSSH	number of dithioacids (aliphatic)	functional group counts
+1390	43	nArCSSH	number of dithioacids (aromatic)	functional group counts
+1391	44	nRCOSR	number of thioesters (aliphatic)	functional group counts
+1392	45	nArCOSR	number of thioesters (aromatic)	functional group counts
+1393	46	nRCSSR	number of dithioesters (aliphatic)	functional group counts
+1394	47	nArCSSR	number of dithioesters (aromatic)	functional group counts
+1395	48	nRCHO	number of aldehydes (aliphatic)	functional group counts
+1396	49	nArCHO	number of aldehydes (aromatic)	functional group counts
+1397	50	nRCO	number of ketones (aliphatic)	functional group counts
+1398	51	nArCO	number of ketones (aromatic)	functional group counts
+1399	52	nCONN	number of urea (-thio) derivatives	functional group counts
+1400	53	nC=O(O)2	number of carbonate (-thio) derivatives	functional group counts
+1401	54	nN=C-N<	number of amidine derivatives	functional group counts
+1402	55	nC(=N)N2	number of guanidine derivatives	functional group counts
+1403	56	nRC=N	number of imines (aliphatic)	functional group counts
+1404	57	nArC=N	number of imines (aromatic)	functional group counts
+1405	58	nRCNO	number of oximes (aliphatic)	functional group counts
+1406	59	nArCNO	number of oximes (aromatic)	functional group counts
+1407	60	nRNH2	number of primary amines (aliphatic)	functional group counts
+1408	61	nArNH2	number of primary amines (aromatic)	functional group counts
+1409	62	nRNHR	number of secondary amines (aliphatic)	functional group counts
+1410	63	nArNHR	number of secondary amines (aromatic)	functional group counts
+1411	64	nRNR2	number of tertiary amines (aliphatic)	functional group counts
+1412	65	nArNR2	number of tertiary amines (aromatic)	functional group counts
+1413	66	nN-N	number of N hydrazines	functional group counts
+1414	67	nN=N	number of N azo-derivatives	functional group counts
+1415	68	nRCN	number of nitriles (aliphatic)	functional group counts
+1416	69	nArCN	number of nitriles (aromatic)	functional group counts
+1417	70	nN+	number of positively charged N	functional group counts
+1418	71	nNq	number of quaternary N	functional group counts
+1419	72	nRNHO	number of hydroxylamines (aliphatic)	functional group counts
+1420	73	nArNHO	number of hydroxylamines (aromatic)	functional group counts
+1421	74	nRNNOx	number of N-nitroso groups (aliphatic)	functional group counts
+1422	75	nArNNOx	number of N-nitroso groups (aromatic)	functional group counts
+1423	76	nRNO	number of nitroso groups (aliphatic)	functional group counts
+1424	77	nArNO	number of nitroso groups (aromatic)	functional group counts
+1425	78	nRNO2	number of nitro groups (aliphatic)	functional group counts
+1426	79	nArNO2	number of nitro groups (aromatic)	functional group counts
+1427	80	nN(CO)2	number of imides (-thio)	functional group counts
+1428	81	nC=N-N<	number of hydrazones	functional group counts
+1429	82	nROH	number of hydroxyl groups	functional group counts
+1430	83	nArOH	number of aromatic hydroxyls	functional group counts
+1431	84	nOHp	number of primary alcohols	functional group counts
+1432	85	nOHs	number of secondary alcohols	functional group counts
+1433	86	nOHt	number of tertiary alcohols	functional group counts
+1434	87	nROR	number of ethers (aliphatic)	functional group counts
+1435	88	nArOR	number of ethers (aromatic)	functional group counts
+1436	89	nROX	number of hypohalogenides (aliphatic)	functional group counts
+1437	90	nArOX	number of hypohalogenides (aromatic)	functional group counts
+1438	91	nO(C=O)2	number of anhydrides (-thio)	functional group counts
+1439	92	nH2O	number of water molecules	functional group counts
+1440	93	nSH	number of thiols	functional group counts
+1441	94	nC=S	number of thioketones	functional group counts
+1442	95	nRSR	number of sulfides	functional group counts
+1443	96	nRSSR	number of disulfides	functional group counts
+1444	97	nSO	number of sulfoxides	functional group counts
+1445	98	nS(=O)2	number of sulfones	functional group counts
+1446	99	nSOH	number of sulfenic (thio-) acids	functional group counts
+1447	100	nSOOH	number of sulfinic (thio-/dithio-) acids	functional group counts
+1448	101	nSO2OH	number of sulfonic (thio-/dithio-) acids	functional group counts
+1449	102	nSO3OH	number of sulfuric (thio-/dithio-) acids	functional group counts
+1450	103	nSO2	number of sulfites (thio-/dithio-)	functional group counts
+1451	104	nSO3	number of sulfonates (thio-/dithio-)	functional group counts
+1452	105	nSO4	number of sulfates (thio-/dithio-)	functional group counts
+1453	106	nSO2N	number of sulfonamides (thio-/dithio-)	functional group counts
+1454	107	nPO3	number of phosphites/thiophosphites	functional group counts
+1455	108	nPO4	number of phosphates/thiophosphates	functional group counts
+1456	109	nPR3	number of phosphanes	functional group counts
+1457	110	nP(=O)O2R	number of phosphonates (thio-)	functional group counts
+1458	111	nP(=O)R3/nPR5	number of phosphoranes (thio-)	functional group counts
+1459	112	nCH2RX	number of CH2RX	functional group counts
+1460	113	nCHR2X	number of CHR2X	functional group counts
+1461	114	nCR3X	number of CR3X	functional group counts
+1462	115	nR=CHX	number of R=CHX	functional group counts
+1463	116	nR=CRX	number of R=CRX	functional group counts
+1464	117	nR#CX	number of R#CX	functional group counts
+1465	118	nCHRX2	number of CHRX2	functional group counts
+1466	119	nCR2X2	number of CR2X2	functional group counts
+1467	120	nR=CX2	number of R=CX2	functional group counts
+1468	121	nCRX3	number of CRX3	functional group counts
+1469	122	nArX	number of X on aromatic ring	functional group counts
+1470	123	nCXr	number of X on ring C(sp3)	functional group counts
+1471	124	nCXr=	number of X on ring C(sp2)	functional group counts
+1472	125	nCconjX	number of X on exo-conjugated C	functional group counts
+1473	126	nAziridines	number of Aziridines	functional group counts
+1474	127	nOxiranes	number of Oxiranes	functional group counts
+1475	128	nThiranes	number of Thiranes	functional group counts
+1476	129	nAzetidines	number of Azetidines	functional group counts
+1477	130	nOxetanes	number of Oxetanes	functional group counts
+1478	131	nThioethanes	number of Thioethanes	functional group counts
+1479	132	nBeta-Lactams	number of Beta-Lactams	functional group counts
+1480	133	nPyrrolidines	number of Pyrrolidines	functional group counts
+1481	134	nOxolanes	number of Oxolanes	functional group counts
+1482	135	ntH-Thiophenes	number of tetrahydro-thiophenes	functional group counts
+1483	136	nPyrroles	number of Pyrroles	functional group counts
+1484	137	nPyrazoles	number of Pyrazoles	functional group counts
+1485	138	nImidazoles	number of Imidazoles	functional group counts
+1486	139	nFuranes	number of Furanes	functional group counts
+1487	140	nThiophenes	number of Thiophenes	functional group counts
+1488	141	nOxazoles	number of Oxazoles	functional group counts
+1489	142	nIsoxazoles	number of Isoxazoles	functional group counts
+1490	143	nThiazoles	number of Thiazoles	functional group counts
+1491	144	nIsothiazoles	number of Isothiazoles	functional group counts
+1492	145	nTriazoles	number of Triazoles	functional group counts
+1493	146	nPyridines	number of Pyridines	functional group counts
+1494	147	nPyridazines	number of Pyridazines	functional group counts
+1495	148	nPyrimidines	number of Pyrimidines	functional group counts
+1496	149	nPyrazines	number of Pyrazines	functional group counts
+1497	150	n135-Triazines	number of 1-3-5-Triazines	functional group counts
+1498	151	n124-Triazines	number of 1-2-4-Triazines	functional group counts
+1499	152	nHDon	number of donor atoms for H-bonds (N and O)	functional group counts
+1500	153	nHAcc	number of acceptor atoms for H-bonds (N,O,F)	functional group counts
+1501	154	nHBonds	number of intramolecular H-bonds (with N,O,F)	functional group counts
+1502	1	C-001	CH3R / CH4	atom-centred fragments
+1503	2	C-002	CH2R2	atom-centred fragments
+1504	3	C-003	CHR3	atom-centred fragments
+1505	4	C-004	CR4	atom-centred fragments
+1506	5	C-005	CH3X	atom-centred fragments
+1507	6	C-006	CH2RX	atom-centred fragments
+1508	7	C-007	CH2X2	atom-centred fragments
+1509	8	C-008	CHR2X	atom-centred fragments
+1510	9	C-009	CHRX2	atom-centred fragments
+1511	10	C-010	CHX3	atom-centred fragments
+1512	11	C-011	CR3X	atom-centred fragments
+1513	12	C-012	CR2X2	atom-centred fragments
+1514	13	C-013	CRX3	atom-centred fragments
+1515	14	C-014	CX4	atom-centred fragments
+1516	15	C-015	 =CH2	atom-centred fragments
+1517	16	C-016	 =CHR	atom-centred fragments
+1518	17	C-017	 =CR2	atom-centred fragments
+1519	18	C-018	 =CHX	atom-centred fragments
+1520	19	C-019	 =CRX	atom-centred fragments
+1521	20	C-020	 =CX2	atom-centred fragments
+1522	21	C-021	#CH	atom-centred fragments
+1523	22	C-022	#CR / R=C=R	atom-centred fragments
+1524	23	C-023	#CX	atom-centred fragments
+1525	24	C-024	R--CH--R	atom-centred fragments
+1526	25	C-025	R--CR--R	atom-centred fragments
+1527	26	C-026	R--CX--R	atom-centred fragments
+1528	27	C-027	R--CH--X	atom-centred fragments
+1529	28	C-028	R--CR--X	atom-centred fragments
+1530	29	C-029	R--CX--X	atom-centred fragments
+1531	30	C-030	X--CH--X	atom-centred fragments
+1532	31	C-031	X--CR--X	atom-centred fragments
+1533	32	C-032	X--CX--X	atom-centred fragments
+1534	33	C-033	R--CH..X	atom-centred fragments
+1535	34	C-034	R--CR..X	atom-centred fragments
+1536	35	C-035	R--CX..X	atom-centred fragments
+1537	36	C-036	Al-CH=X	atom-centred fragments
+1538	37	C-037	Ar-CH=X	atom-centred fragments
+1539	38	C-038	Al-C(=X)-Al	atom-centred fragments
+1540	39	C-039	Ar-C(=X)-R	atom-centred fragments
+1541	40	C-040	R-C(=X)-X / R-C#X / X=C=X	atom-centred fragments
+1542	41	C-041	X-C(=X)-X	atom-centred fragments
+1543	42	C-042	X--CH..X	atom-centred fragments
+1544	43	C-043	X--CR..X	atom-centred fragments
+1545	44	C-044	X--CX..X	atom-centred fragments
+1546	45	U-045	undefined	atom-centred fragments
+1547	46	H-046	H attached to C0(sp3) no X attached to next C	atom-centred fragments
+1548	47	H-047	H attached to C1(sp3)/C0(sp2)	atom-centred fragments
+1549	48	H-048	H attached to C2(sp3)/C1(sp2)/C0(sp)	atom-centred fragments
+1550	49	H-049	H attached to C3(sp3)/C2(sp2)/C3(sp2)/C3(sp)	atom-centred fragments
+1551	50	H-050	H attached to heteroatom	atom-centred fragments
+1552	51	H-051	H attached to alpha-C	atom-centred fragments
+1553	52	H-052	H attached to C0(sp3) with 1X attached to next C	atom-centred fragments
+1554	53	H-053	H attached to C0(sp3) with 2X attached to next C	atom-centred fragments
+1555	54	H-054	H attached to C0(sp3) with 3X attached to next C	atom-centred fragments
+1556	55	H-055	H attached to C0(sp3) with 4X attached to next C	atom-centred fragments
+1557	56	O-056	alcohol	atom-centred fragments
+1558	57	O-057	phenol / enol / carboxyl OH	atom-centred fragments
+1559	58	O-058	#NOME?	atom-centred fragments
+1560	59	O-059	Al-O-Al	atom-centred fragments
+1561	60	O-060	Al-O-Ar / Ar-O-Ar / R..O..R / R-O-C=X	atom-centred fragments
+1562	61	O-061	O--	atom-centred fragments
+1563	62	O-062	O- (negatively charged)	atom-centred fragments
+1564	63	O-063	R-O-O-R	atom-centred fragments
+1565	64	Se-064	Any-Se-Any	atom-centred fragments
+1566	65	Se-065	#NOME?	atom-centred fragments
+1567	66	N-066	Al-NH2	atom-centred fragments
+1568	67	N-067	Al2-NH	atom-centred fragments
+1569	68	N-068	Al3-N	atom-centred fragments
+1570	69	N-069	Ar-NH2 / X-NH2	atom-centred fragments
+1571	70	N-070	Ar-NH-Al	atom-centred fragments
+1572	71	N-071	Ar-NAl2	atom-centred fragments
+1573	72	N-072	RCO-N< / >N-X=X	atom-centred fragments
+1574	73	N-073	Ar2NH / Ar3N / Ar2N-Al / R..N..R	atom-centred fragments
+1575	74	N-074	R#N / R=N-	atom-centred fragments
+1576	75	N-075	R--N--R / R--N--X	atom-centred fragments
+1577	76	N-076	Ar-NO2 / R--N(--R)--O / RO-NO	atom-centred fragments
+1578	77	N-077	Al-NO2	atom-centred fragments
+1579	78	N-078	Ar-N=X / X-N=X	atom-centred fragments
+1580	79	N-079	N+ (positively charged)	atom-centred fragments
+1581	80	U-080	undefined	atom-centred fragments
+1582	81	F-081	F attached to C1(sp3)	atom-centred fragments
+1583	82	F-082	F attached to C2(sp3)	atom-centred fragments
+1584	83	F-083	F attached to C3(sp3)	atom-centred fragments
+1585	84	F-084	F attached to C1(sp2)	atom-centred fragments
+1586	85	F-085	F attached to C2(sp2)-C4(sp2)/C1(sp)/C4(sp3)/X	atom-centred fragments
+1587	86	Cl-086	Cl attached to C1(sp3)	atom-centred fragments
+1588	87	Cl-087	Cl attached to C2(sp3)	atom-centred fragments
+1589	88	Cl-088	Cl attached to C3(sp3)	atom-centred fragments
+1590	89	Cl-089	Cl attached to C1(sp2)	atom-centred fragments
+1591	90	Cl-090	Cl attached to C2(sp2)-C4(sp2)/C1(sp)/C4(sp3)/X	atom-centred fragments
+1592	91	Br-091	Br attached to C1(sp3)	atom-centred fragments
+1593	92	Br-092	Br attached to C2(sp3)	atom-centred fragments
+1594	93	Br-093	Br attached to C3(sp3)	atom-centred fragments
+1595	94	Br-094	Br attached to C1(sp2)	atom-centred fragments
+1596	95	Br-095	Br attached to C2(sp2)-C4(sp2)/C1(sp)/C4(sp3)/X	atom-centred fragments
+1597	96	I-096	I attached to C1(sp3)	atom-centred fragments
+1598	97	I-097	I attached to C2(sp3)	atom-centred fragments
+1599	98	I-098	I attached to C3(sp3)	atom-centred fragments
+1600	99	I-099	I attached to C1(sp2)	atom-centred fragments
+1601	100	I-100	I attached to C2(sp2)-C4(sp2)/C1(sp)/C4(sp3)/X	atom-centred fragments
+1602	101	F-101	fluoride ion	atom-centred fragments
+1603	102	Cl-102	chloride ion	atom-centred fragments
+1604	103	Br-103	bromide ion	atom-centred fragments
+1605	104	I-104	iodide ion	atom-centred fragments
+1606	105	U-105	undefined	atom-centred fragments
+1607	106	S-106	R-SH	atom-centred fragments
+1608	107	S-107	R2S / RS-SR	atom-centred fragments
+1609	108	S-108	R=S	atom-centred fragments
+1610	109	S-109	R-SO-R	atom-centred fragments
+1611	110	S-110	R-SO2-R	atom-centred fragments
+1612	111	Si-111	>Si<	atom-centred fragments
+1613	112	B-112	>B- as in boranes	atom-centred fragments
+1614	113	U-113	undefined	atom-centred fragments
+1615	114	U-114	undefined	atom-centred fragments
+1616	115	P-115	P ylids	atom-centred fragments
+1617	116	P-116	R3-P=X	atom-centred fragments
+1618	117	P-117	X3-P=X (phosphate)	atom-centred fragments
+1619	118	P-118	PX3 (phosphite)	atom-centred fragments
+1620	119	P-119	PR3 (phosphine)	atom-centred fragments
+1621	120	P-120	C-P(X)2=X (phosphonate)	atom-centred fragments
+1622	1	qpmax	maximum positive charge	charge descriptors
+1623	2	qnmax	maximum negative charge	charge descriptors
+1624	3	Qpos	total positive charge	charge descriptors
+1625	4	Qneg	total negative charge	charge descriptors
+1626	5	Qtot	total absolute charge (electronic charge index - ECI)	charge descriptors
+1627	6	Qmean	mean absolute charge (charge polarization)	charge descriptors
+1628	7	Q2	total squared charge	charge descriptors
+1629	8	RPCG	relative positive charge	charge descriptors
+1630	9	RNCG	relative negative charge	charge descriptors
+1631	10	SPP	submolecular polarity parameter	charge descriptors
+1632	11	TE1	topological electronic descriptor	charge descriptors
+1633	12	TE2	topological electronic descriptor (bond resctricted)	charge descriptors
+1634	13	PCWTe	partial charge weighted topological electronic descriptor	charge descriptors
+1635	14	LDI	local dipole index	charge descriptors
+1636	1	Ui	unsaturation index	molecular properties
+1637	2	Hy	hydrophilic factor	molecular properties
+1638	3	AMR	Ghose-Crippen molar refractivity	molecular properties
+1639	4	TPSA(NO)	topological polar surface area using N,O polar contributions	molecular properties
+1640	5	TPSA(Tot)	topological polar surface area using N,O,S,P polar contributions	molecular properties
+1641	6	MLOGP	Moriguchi octanol-water partition coeff. (logP)	molecular properties
+1642	7	MLOGP2	Squared Moriguchi octanol-water partition coeff. (logP^2)	molecular properties
+1643	8	ALOGP	Ghose-Crippen octanol-water partition coeff. (logP)	molecular properties
+1644	9	ALOGP2	Squared Ghose-Crippen octanol-water partition coeff. (logP^2)	molecular properties
+1645	10	LAI	Lipinski Alert index	molecular properties
+1646	11	GVWAI-80	Ghose-Viswanadhan-Wendoloski drug-like index at 80%	molecular properties
+1647	12	GVWAI-50	Ghose-Viswanadhan-Wendoloski drug-like index at 50%	molecular properties
+1648	13	Inflammat-80	Ghose-Viswanadhan-Wendoloski antiinflammatory-like index at 80%	molecular properties
+1649	14	Inflammat-50	Ghose-Viswanadhan-Wendoloski antiinflammatory-like index at 50%	molecular properties
+1650	15	Depressant-80	Ghose-Viswanadhan-Wendoloski antidepressant-like index at 80%	molecular properties
+1651	16	Depressant-50	Ghose-Viswanadhan-Wendoloski antidepressant-like index at 50%	molecular properties
+1652	17	Psychotic-80	Ghose-Viswanadhan-Wendoloski antipsychotic-like index at 80%	molecular properties
+1653	18	Psychotic-50	Ghose-Viswanadhan-Wendoloski antipsychotic-like index at 50%	molecular properties
+1654	19	Hypertens-80	Ghose-Viswanadhan-Wendoloski antihypertensive-like index at 80%	molecular properties
+1655	20	Hypertens-50	Ghose-Viswanadhan-Wendoloski antihypertensive-like index at 50%	molecular properties
+1656	21	Hypnotic-80	Ghose-Viswanadhan-Wendoloski hypnotic-like index at 80%	molecular properties
+1657	22	Hypnotic-50	Ghose-Viswanadhan-Wendoloski hypnotic-like index at 50%	molecular properties
+1658	23	Neoplastic-80	Ghose-Viswanadhan-Wendoloski antineoplastic-like index at 80%	molecular properties
+1659	24	Neoplastic-50	Ghose-Viswanadhan-Wendoloski antineoplastic-like index at 50%	molecular properties
+1660	25	Infective-80	Ghose-Viswanadhan-Wendoloski antiinfective-like index at 80%	molecular properties
+1661	26	Infective-50	Ghose-Viswanadhan-Wendoloski antiinfective-like index at 50%	molecular properties
+1662	27	BLTF96	Verhaar model of Fish base-line toxicity from MLOGP (mmol/l)	molecular properties
+1663	28	BLTD48	Verhaar model of Daphnia base-line toxicity from MLOGP (mmol/l)	molecular properties
+1664	29	BLTA96	Verhaar model of Algae base-line toxicity from MLOGP (mmol/l)	molecular properties
