@@ -1,4 +1,5 @@
-
+Using $\left\Vert W \right\Vert_1^{1}$ makes the optimization problem more difficult, but automatically performs feature selection so we don't need RFE or other tricks. Why?
+\begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm]
 \tikzstyle{line} = [draw, -latex', very thick]
 \draw[use as bounding box, anchor = north west,draw,dashed,gray] (0,0) rectangle (5.5+5.5,3.25+3.25);
@@ -15,3 +16,6 @@
 \node[circle,minimum width=2.82cm,draw, thick,fill=blue!20,opacity=0.5] (l2) at (0,0){};
 \node[rectangle,minimum width=2.0cm,minimum height=2.0cm,draw, thick,rotate=45,fill=red,opacity=0.5] (l2) at (0,0){};
 \end{tikzpicture}
+\item the \textbf{larger}  $\lambda$, the fewer features survive
+\pause{}
+\item $\lambda$ comes from cross-validation
