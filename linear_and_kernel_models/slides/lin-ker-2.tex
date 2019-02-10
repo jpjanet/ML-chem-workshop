@@ -1,9 +1,8 @@
-
-The matrix $K_{i,j}=\left\langle x_i,x_j \right\rangle$ corresponds the euclidean projection of one observation onto another, and since $w=X^Ta$, any new data point $x^*$ can be evaluated as:
+The matrix $K_{i,j}=\left\langle x_i,x_j \right\rangle$ is called the (linear) \textbf{kernel matrix}. \\
+We can write the solution of the regression problem in this form -- it is \textbf{exactly equivalent}:
 \begin{align*}
-y_{mod}(x^*) &= x^* w = x^* X^Ta =z a = \sum_{i=1}^{n} z_i a_i \\
-z_i &=  \left\langle x^*,x_i \right\rangle  
+\hat{y}(X)&= Ka \\ 
+a &=  (K+{I}_n\lambda)^{-1}y
 \end{align*}
-\pause{}
-The prediction at any new point is proportional to the inner product of each training point and the new point.
+\visible<2->{The prediction at any new point is proportional to the inner product of each training point and the new point.}
 
