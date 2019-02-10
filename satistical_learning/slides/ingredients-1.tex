@@ -1,0 +1,12 @@
+The basic ingredients are
+\begin{enumerate}
+	\item Training data $X$ and $y$ -- we write each observation as a row so $X \in \mathbb{R}^{n\times d}$ and $y\in \mathbb{R}^{n}$
+	\item A family of possible models $f(\cdot,X)\in \mathcal{T}$, defined by parameters $W$. For example linear: functions \[
+	f(X,w)=Xw\]
+	\item a loss function -- we'll only use $l_{2}$:
+	\[
+	\mathcal{L}(y,\hat{y}(x)) = \left\Vert y - \hat{y}(x)\right\Vert_2^2 = \left\Vert y - f(x,W)\right\Vert_2^2 = \left(y - f(x,W)\right)^2
+	\]
+	\item A way to change $W$ to make $\mathcal{L}$ smaller -- optimization method.
+\end{enumerate}
+\pause{Note the notation used here.}
