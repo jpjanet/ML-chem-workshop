@@ -1,0 +1,5 @@
+Linear models give $\hat{y}$ as linear function of the data matrix of $X$-dimensional observations $X \in\mathbb{R}^{n\times d}$, by choosing $d+1$ weights/parameters $w$: one per dimension and optionally one bias or constant term. It is convenient to consider augmenting our data matrix with an additional row of ones to account for the bias term, which will allow it to be treated seamlessly -- intuitively, a constant term is just a feature that is constant for all inputs:
+\begin{align}
+    &\hat{y}_{MLR}(X)\defeq Xw + b = \begin{bmatrix}  1, 1 \hdots, 1 \\ X \end{bmatrix} w  = X'w\\
+    &w\in \mathbb{R}^{d+1}, X'\in\mathbb{R}^{n\times(d+1)}
+\end{align}

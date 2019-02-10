@@ -1,0 +1,20 @@
+Why does $L_1$ character drive feature selection?
+\uncover<2->{\begin{align*}
+\left\Vert W \right\Vert_2^{2}&=\begin{vmatrix}
+1 \\ 0 
+\end{vmatrix}_2 & = \sqrt{1^2 +0^2} = 1 \\
+\left\Vert W' \right\Vert_2^{2}&=\begin{vmatrix}
+0.5 \\ 0.5 
+\end{vmatrix}_2 & = \sqrt{0.5^2 +0.5^2} = \sqrt{0.5} < 1 \\
+\end{align*}}
+\uncover<3->{
+compare to
+\begin{align*}
+\left\Vert W \right\Vert_1^{1}&=\begin{vmatrix}
+1 \\ 0 
+\end{vmatrix}_1 & = \left\vert 1 \right\vert  +  \left\vert 1 \right\vert = 1 \\
+\left\Vert W' \right\Vert_1^{1}\begin{vmatrix}
+0.5 \\ 0.5 
+\end{vmatrix}_1 & =  \left\vert 0.5 \right\vert  +  \left\vert 0.5 \right\vert= 1 \\
+\end{align*}}
+\uncover<4->{Why not use even lower norms such as $\left\Vert \right\Vert_{0.5}^{0.5}|$? {\uncover<5->{\color{blue} Convexity!\color{black}}}}
