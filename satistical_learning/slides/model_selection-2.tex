@@ -1,0 +1,164 @@
+\begin{center}
+\tikzset{>=latex}
+\tikzstyle{block} = [rectangle, draw, fill=blue!20,
+text width=1.5cm, text centered, rounded corners, minimum height=1.0cm]	
+\def\rectDiv#1#2#3#4#5{%#columns, #rows, rectangle start, rectangle end, list of elements to fill
+\draw #3 rectangle #4;
+\path #3;
+\pgfgetlastxy{\firstx}{\firsty}
+\path #4;
+\pgfgetlastxy{\secondx}{\secondy}
+\pgfmathsetlengthmacro{\xdiff}{\secondx-\firstx}
+\pgfmathsetlengthmacro{\ydiff}{\secondy-\firsty}
+\pgfmathsetlengthmacro{\myxstep}{\xdiff/#1}
+\pgfmathsetlengthmacro{\myystep}{\ydiff/#2}
+\foreach \x in {1,...,#1}{
+	\draw ($#3 +\x*(\myxstep,0)$) -- ($#3 +(0,\ydiff) +\x*(\myxstep,0)$);
+}
+\foreach \y in {1,...,#2}{
+	\draw ($#3 +\y*(0,\myystep)$) -- ($#3 +(\xdiff,0) +\y*(0,\myystep)$);
+}
+\foreach \i/\j in {#5}{
+	\path[fill=darkgreen!20,draw] ($#3 + (\i*\myxstep,\j*\myystep)$) rectangle ($#3 + (\i*\myxstep,\j*\myystep) + (\myxstep,\myystep)$);
+}
+}
+\def\rectDivred#1#2#3#4#5{%#columns, #rows, rectangle start, rectangle end, list of elements to fill
+\draw #3 rectangle #4;
+\path #3;
+\pgfgetlastxy{\firstx}{\firsty}
+\path #4;
+\pgfgetlastxy{\secondx}{\secondy}
+\pgfmathsetlengthmacro{\xdiff}{\secondx-\firstx}
+\pgfmathsetlengthmacro{\ydiff}{\secondy-\firsty}
+\pgfmathsetlengthmacro{\myxstep}{\xdiff/#1}
+\pgfmathsetlengthmacro{\myystep}{\ydiff/#2}
+\foreach \x in {1,...,#1}{
+	\draw ($#3 +\x*(\myxstep,0)$) -- ($#3 +(0,\ydiff) +\x*(\myxstep,0)$);
+}
+\foreach \y in {1,...,#2}{
+	\draw ($#3 +\y*(0,\myystep)$) -- ($#3 +(\xdiff,0) +\y*(0,\myystep)$);
+}
+\foreach \i/\j in {#5}{
+	\path[fill=red!20,draw] ($#3 + (\i*\myxstep,\j*\myystep)$) rectangle ($#3 + (\i*\myxstep,\j*\myystep) + (\myxstep,\myystep)$);
+}
+}
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+%\pgfresetboundingbox
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-2,-3.25) rectangle (9,3.25);
+\clip (-2,-3.25) rectangle (9.0,3.25);
+\node (ds) at (0,0){};
+\node (dsy) at (0,4){};
+\node (dsx) at (4,0){};
+
+\visible<1->{\rectDivred{1}{6}{(-1.5,0)}{(-1.0,3)}{};}
+\visible<1->{\rectDivred{1}{2}{(-1.5,-3)}{(-1.0,-2)}{0/0,0/1};}
+%% labels to blocks
+\only<1->{
+\node[rotate=90] (thislab) at (-1.75,1.5) {trainning data};
+\node[rotate=90, red] (thislab) at (-1.75,-2.5) {test data};
+}
+
+
+\visible<2>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{};}
+\visible<3-8>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{0/0};}
+\visible<3>{\draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+	(0,-1) -- (0,2) node [black,midway,xshift=-1.25cm,rotate=90] {\footnotesize $\text{k-folds}$};}
+\visible<2-11>{\draw[black,dashed] (-1,0)--(0,-1);}
+\visible<2-11>{\draw[black,dashed] (-1,3)--(0,2);}
+
+
+\visible<4-8>{\rectDiv{1}{6}{(1,-0.5)}{(1.5,2)}{};}
+\visible<4-8>{\rectDiv{1}{1}{(1,-1.5)}{(1.5,-1.0)}{0/0};}
+\visible<4-8>{\node[darkgreen,anchor=north] (thislab) at (0.5,-1.75) {validation data};}
+
+\visible<4-8>{\draw[black,dashed] (0.5,-1)--(1.0,-1.5);}
+\visible<4-8>{\draw[black,dashed] (0.5,-0.5)--(1.0,-1.0);}
+
+\visible<5-8>{\node[block] (trained) at (3.5,0.75){model A};}
+\visible<5>{\node (LAlab) at (3.5,2.25){\Large $\lambda _A$};}
+\visible<5>{\draw[black,very thick,->] (LAlab) -- (trained);}
+\foreach \x in {1.5}
+\foreach \y in {-0.25,0.25,0.75,1.25,1.75}{
+	\visible<5-8>{\draw [black] (\x,\y) -- (trained.west);}}
+
+\visible<6-8>{\draw[red,very thick,->] (1.5,-1.25) -| node[right] {predict} ([xshift=0,yshift=-1.0cm]trained.south) --(trained.south);}
+
+
+\visible<8>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/0};}
+\visible<8>{\draw[red,very thick,->] (trained.east) -- (6.0,-0.75);}
+\visible<8>{\node[red,anchor = west] at (6.75, -0.75){error}  ;}
+
+\visible<8-11>{\node[anchor = west] at (3.5, -1.75){repeat for all $k$ folds};}
+
+\visible<9>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{0/1};}
+\visible<9>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/1,0/0};}
+\visible<9>{\node[red,anchor = west] at (6.75, -0.25){error};}
+\visible<9>{\draw[red,very thick,->] (0.5,-0.25) -- (6.0,-0.25);}
+\visible<10>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{0/2};}
+\visible<10>{\draw[red,very thick,->] (0.5,0.25) -- (6.0,0.25);}
+\visible<10>{\node[red,anchor = west] at (6.75, 0.25){error};}
+\visible<10>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/2,0/1,0/0};}
+%% all done 
+\visible<11-12>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/2,0/1,0/0,0/3,0/4,0/5,0/6};}
+\visible<11>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{};}
+\visible<12>{\draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+	(6,-1) -- (6,2) node [text badly centered,midway,xshift=-2.0cm, text width = 2 cm] { $\text{average  error}=\color{red}\textrm{CV error}$};}
+
+\visible<13-15>{\node[anchor = west] at (-0.75, -3.0){\textbf{CV error way is a fair way to compare models}};}
+
+\visible<13-15>{\node[block] (MA) at (1,2){model A};}
+\visible<13-15>{\node[red, anchor= west] (CVA) at (3.0,2.0){CV error A};}
+\visible<13-15>{\path[draw,red,very thick,->] (-1.0,1.5) -- (MA.west);}
+\visible<13-15>{\path[draw,red,very thick,->] (MA.east) -- (CVA);}
+
+\visible<14-15>{\node[block] (MB) at (1,0){model B};}
+\visible<14-15>{\node[red, anchor= west] (CVB) at (3.0,0.0){CV error B};}
+\visible<14-15>{\path[draw,red,very thick,->] (-1.0,1.5) -- (MB.west);}
+\visible<14-15>{\path[draw,red,very thick,->] (MB.east) -- (CVB);} 
+ 
+\visible<15>{\node[block] (MC) at (1,-2){model C};}
+\visible<15>{\node[red, anchor= west] (CVC) at (3.0,-2.0){CV error C};}
+\visible<15>{\path[draw,red,very thick,->] (-1.0,1.5) -- (MC.west);} 
+\visible<15>{\path[draw,red,very thick,->] (MC.east) -- (CVC);}
+
+
+\visible<16>{\node[block] (BM) at (1,0){model B};}
+\visible<16>{\node[red, anchor= west] (BP) at (3.0,0){predictions};}
+\visible<16>{\path[draw,red,very thick,->] (-1.0,-2.5) -| (BM.south);}
+\visible<16>{\path[draw,red,very thick,->] (BM.east) -- (BP);}
+%
+%\visible<1>{\node [circle,draw=red,fill=red,opacity=0.25] () at (6,3.25) {\huge 1};}
+%\visible<2>{\node [circle,draw=red,fill=red,opacity=0.25] () at (6,3.25) {\huge 2};}
+%\visible<3>{\node [circle,draw=red,fill=red,opacity=0.25] () at (6,3.25) {\huge 3};}
+%\visible<5-7>{\node [circle,draw=red,fill=red,opacity=0.25] () at (6,3.25) {\huge 4};}
+%\visible<8>{\node [circle,draw=red,fill=red,opacity=0.25] () at (6,3.25) {\huge 5};}
+
+
+
+%\visible<1-4>{\rectDiv{1}{12}{(-1.5,-2.0)}{(-0.5,3.0)}{0/0};}
+%\visible<1-4>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/0};}
+%\visible<2-4>{\rectDiv{1}{9}{(3,-1.5)}{(4,3)}{};}
+%\visible<2-4>{\rectDiv{1}{1}{(3,-3)}{(4,-2.5)}{0/0};}
+
+
+%%#columns, #rows, rectangle start, rectangle end, list of elements to fill
+
+%
+%\visible<4->{\rectDivred{1}{10}{(8,-2.5)}{(9,2.5)}{0/0};}
+
+%
+%\visible<5-7>{\draw[red,very thick,->,bend left] (1,2.25) to node[label={[label distance=1.0cm]-90:{repeat for all folds}}]{} (trained.west);}
+%\visible<5-7>{\draw[red,very thick,->,bend right] (trained.east) to node[below] {} (8,0) ;}
+%%\visible<6>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/1,0/2,0/3,0/4,0/5,0/6,0/7,0/8,0/9};}
+%\visible<5>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/1};}
+%\visible<5->{\rectDivred{1}{10}{(8,-2.5)}{(9,2.5)}{0/1};}
+%\visible<6>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/2};}
+%\visible<6->{\rectDivred{1}{10}{(8,-2.5)}{(9,2.5)}{0/2};}
+%\visible<7>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/3};}
+%\visible<7->{\rectDivred{1}{10}{(8,-2.5)}{(9,2.5)}{0/3};}
+%\visible<8>{\rectDiv{1}{10}{(0,-2.5)}{(1,2.5)}{0/9};}
+%\visible<8->{\rectDivred{1}{10}{(8,-2.5)}{(9,2.5)}{0/0,0/1,0/2,0/3,0/4,0/5,0/6,0/7,0/8,0/9};}
+
+\end{tikzpicture}
+\end{center}

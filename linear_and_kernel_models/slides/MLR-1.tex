@@ -1,0 +1,10 @@
+Linear models give $\hat{y}$ as linear function of the data matrix of $X$:
+\begin{align*}
+&\hat{y}_{MLR}(x^{*}) = \sum_{j=1}^{d} w_j x^{*}_j  +w_{0} \visible<2->{= \begin{bmatrix}  1 & x^{*}_1 & \hdots & x^{*}_d  \end{bmatrix} \begin{bmatrix} w_0 \\ w_1 \\ \vdots \\ w_d  \end{bmatrix} }
+\end{align*}
+\visible<3->{We can write this in a matrix form as well:
+\begin{align*}
+    &\hat{y}_{MLR}(X) = \begin{bmatrix}  1 &  x^{(1)}_{1} & x^{(1)}_{2} & \hdots x^{(1)}_{d}  \\  \vdots  &&&\vdots \\  1&  x^{(n)}_{1} & x^{(n)}_{2} & \hdots x^{(n)}_{d} \end{bmatrix} w  = X'w\\
+\end{align*}
+}
+\visible<4->{Notice how we handle the constant terms} 
