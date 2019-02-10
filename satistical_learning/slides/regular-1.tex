@@ -3,23 +3,27 @@
 %\pgfresetboundingbox
 \draw[use as bounding box, anchor = north west,draw,dashed,gray] (-5.5,-3.25) rectangle (5.5,3.25);
 \clip (-5.5,-3.25) rectangle (5.5,3.25);
-\node[anchor =north west] (text) at (-5.25,3.25){\begin{minipage}{5.0cm}
-\visible<1-8>{We have seen that adapting model complexity to fit the problem at hand is generally necessary. However, it is not generally obvious how to do
-this is a simple models often lack useful features, e.g. $2^{\textrm{nd}}$ order polynomials have one turning point. Therefore, we need another way 
-to prevent over-fitting that is applicable to many different types of model -- \textbf{Regularization}:
-}
-
+\only<6->{\node[anchor =north west] (text) at (-5.25,3.25){\begin{minipage}{10.0cm}Let's return to our previous example:
+		\end{minipage}};}
+\only<1-5>{\node[anchor =north west] (text) at (-5.25,3.25){\begin{minipage}{10.0cm}
+Adapting model complexity to fit the problem is necessary. However, it is not obvious how to do this is a constrolled way.\\
+Hence, we need a way prevent over-fitting that is applicable to many different types of model -- \textbf{Regularization}.\\
+\visible<2->{We instead choose to minimize:
+\begin{small}
 \begin{align*}
-    y(x) &=\sin(2\pi x)
+\mathcal{L}'(y,f(x,w)) &=\mathcal{L}(y,f(x,W)) + \lambda R(W) \\
+ \visible<3->{(\textrm{Tiknohov/Ridge})&=\frac{1}{n}\left\Vert y - f(x,W)\right\Vert_2^2 +{\only<4->{\color{red}} \lambda \left\Vert W \right\Vert_2^{2}}}
 \end{align*}
-Note that $f^{*} \notin \mathcal{T}$!\\
-\only<2>{Assume $8$ measurements with noise $\mathcal{N}(0,0.2)$}\\
-\only<3-4>{Start with degree $2$...\only<4>{What happens when we increase the order?}}
-\only<6-8>{\\ What do the risk terms look like?}
-\only<8->{\vspace{1.75cm}\\\color{red}{What happens if we add more data?}}
-\end{minipage}};
-\visible<1>{\node (figure) at (2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/lam_1.pdf}};}
-\visible<2>{\node (figure) at (2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/lam_2.pdf}};}
-\visible<3>{\node (figure) at (2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/lam_3.pdf}};}
+\end{small}}
+\visible<4->{We choose to {\color{red}penalize terms with large weights}, i.e. complicated functions}.
+\visible<5>{\begin{itemize}
+\item This makes empirical errors worse.
+\item This \textit{can} improve generalization/excess risk.
+\end{itemize}}
+\end{minipage}};}
+\visible<6->{\node (figure) at (-2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/comp_6.pdf}};}
+\visible<7->{\node (figure) at (2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/lam_2.pdf}};}
+\visible<8->{\node (figure) at (2.75,0){\includegraphics[width=5cm]{satistical_learning/figures/lam_3.pdf}};}
+\only<6->{\node[anchor =north west] (text) at (-5.25,-2.75){\begin{minipage}{10.0cm}Remember: larger $\lambda=$ simpler, flatter model. \end{minipage}};}
 \end{tikzpicture}
 \end{center}

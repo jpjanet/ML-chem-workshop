@@ -1,10 +1,10 @@
 We cannot expect that $f^*$ is in $\mathcal{T}$. The best we can do is $f^{\dagger}$:
 \begin{align*}
-    f^{\dagger}&= \arg \min_{f\in \mathcal{T}}R(f)
+    f^{\dagger}&= \arg \min_{f\in \mathcal{T}}\mathcal{E}(f)
 \end{align*}
-
+\uncover<2->{
 We want to generalize,  we want the \textit{excess risk} to be small:
 \begin{align*}
-     R(f^{*}) - R_{emp}(\hat{f}) &=   \left[R(f^{*})-R(f^{\dagger})\right] + \left[R(f^{\dagger})-R(\hat{f})\right]
-\end{align*}
-these terms are \textbf{approximation error} and \textbf{estimation error}. Statistical learning theory is concerned with studying these equations.
+     \mathcal{E}(f^{*}) - \mathcal{E}_{emp}(\hat{f}) &=   \only<3->{\color{red}}\left[\mathcal{E}(f^{*})-\mathcal{E}(f^{\dagger})\right] \only<3->{\color{black}} + \only<3->{\color{blue}}\left[\mathcal{E}(f^{\dagger})-\mathcal{E}(\hat{f})\right]\only<3->{\color{black}}
+\end{align*}}
+\uncover<3->{these terms are {\color{red}\textbf{approximation error}} and {\color{blue}\textbf{estimation error}}. Statistical learning theory is concerned with studying these equations.}
