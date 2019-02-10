@@ -1,5 +1,10 @@
-Linear models give $\hat{y}$ as linear function of the data matrix of $X$-dimensional observations $X \in\mathbb{R}^{n\times d}$, by choosing $d+1$ weights/parameters $w$: one per dimension and optionally one bias or constant term. It is convenient to consider augmenting our data matrix with an additional row of ones to account for the bias term, which will allow it to be treated seamlessly -- intuitively, a constant term is just a feature that is constant for all inputs:
-\begin{align}
-    &\hat{y}_{MLR}(X)\defeq Xw + b = \begin{bmatrix}  1, 1 \hdots, 1 \\ X \end{bmatrix} w  = X'w\\
-    &w\in \mathbb{R}^{d+1}, X'\in\mathbb{R}^{n\times(d+1)}
-\end{align}
+Linear models give $\hat{y}$ as linear function of the data matrix of $X$:
+\begin{align*}
+&\hat{y}_{MLR}(x^{*}) = \sum_{j=1}^{d} w_j x^{*}_j  +w_{0} \visible<2->{= \begin{bmatrix}  1 & x^{*}_1 & \hdots & x^{*}_d  \end{bmatrix} \begin{bmatrix} w_0 \\ w_1 \\ \vdots \\ w_d  \end{bmatrix} }
+\end{align*}
+\visible<3->{We can write this in a matrix form as well:
+\begin{align*}
+    &\hat{y}_{MLR}(X) = \begin{bmatrix}  1 &  x^{(1)}_{1} & x^{(1)}_{2} & \hdots x^{(1)}_{d}  \\  \vdots  &&&\vdots \\  1&  x^{(n)}_{1} & x^{(n)}_{2} & \hdots x^{(n)}_{d} \end{bmatrix} w  = X'w\\
+\end{align*}
+}
+\visible<4->{Notice how we handle the constant terms} 
