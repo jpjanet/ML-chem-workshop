@@ -1,0 +1,11 @@
+So what? \pause{}\\ $ $
+Notice that all that is required is vector products, i.e. $K_{i,j} =  \left\langle \varphi(x_i),\varphi(x_j) \right\rangle $ \\$ $\\ It turns out that these can often be computed \emph{much} more efficiently, without ever forming the big, nonlinear feature space directly. \pause{}For our quadratic example:
+\begin{align*}
+K_{i,j} = \left(x_i^Tx_j +1\right)^2 = x_{i,1}^2x_{i,2}^2  + x_{i,1}x_{i,2}x_{j,1}x_{j,2} + \hdots 
+\end{align*}
+\pause{}
+which {can be computed entirely using vectors in} $\mathbb{R}^2$, so we never have to allocate the (factorially large) feature space.\\
+\pause{}
+\begin{center}
+\textbf{It is the same machinery as the linear kernel, but the definition of similarity, defined by the kernel, has changed}.
+\end{center}
