@@ -1,0 +1,34 @@
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzstyle{line} = [draw, -latex', very thick]
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-1,-1) rectangle (5.5+4.5,3.25+2.25);
+\clip (-0.15,-0.15) rectangle (11,6.5);
+\node (ds) at (0,0){};
+\node (dsy) at (0,4){};
+\node (dsx) at (4,0){};
+\visible<1->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsy);}
+\visible<1->{\node (lab1) at (2,-1){\textbf{Linear Regression}};}
+\visible<2->{\node[circle, fill=black,minimum width =0.05cm,label=below:{$\mathbf{x}_*$}] (xs) at (1.2,1.3) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_1$}] (x1) at (2.2,3.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_2$}] (x2) at (0.35,2.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_3$}] (x3) at (3,0.45) {};}
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x2);}
+\visible<2->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<3->{\path[line,red, very thick] (ds.center) -- ($(x2.center)!.53!(ds.center)$);}
+
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x1);}
+\visible<2->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<3->{\path[line,red, very thick,dashed] (ds.center) -- ($(x1.center)!.42!(ds.center)$);}
+
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x3);}
+\visible<2->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<3->{\path[line,red, very thick,dashed] (ds.center) -- ($(x3.center)!.42!(ds.center)$);}
+
+
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x1);}
+\visible<2->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<3->{\path[line,red, very thick,dashed] (ds.center) -- ($(x1.center)!.42!(ds.center)$);}
+
+\visible<3->{\node (ylab) at (2.8,1.75){$y(\mathbf{x_*}) = \sum_{i} a_i \mathbf{x}_{*}^{T} \mathbf{x}_{2}$};}
+\end{tikzpicture}
