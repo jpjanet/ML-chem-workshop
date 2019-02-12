@@ -1,0 +1,42 @@
+\begin{center}
+\begin{tikzpicture}[node distance =  2.75cm,auto,x=1cm,y=1cm]
+\linespread{1}
+\tikzset{>=latex}
+\node [rectangle,minimum width=3.5cm,minimum height =3.5cm,anchor=center, 
+ 	path picture= {\node at (path picture bounding box.center){\includegraphics[width=4cm]{introduction/images/geo.png}{}};}](ff) at (-1.5,3){};
+
+\visible<2->{\node [] (outcome) at (6,3) {property}{};}
+
+\visible<5->{
+\foreach \namey / \y in {a/1,b/2,c/3,d/4}{
+	\visible<1->{\node[rectangle,text=black,draw=blue,minimum height = 0.5cm,minimum width = 0.5cm,inner sep = 0pt,thick,fill = blue, fill opacity=0.25] (\namey) at (1.0cm,2.25-0.5*\y){};}}
+\visible<1->{\node[text width = 4cm,text badly centered] (fets) at (1.0,-0.25) {features};}
+}
+
+\visible<3->{\node[rectangle,text=black,draw=blue,thick,fill = gray, fill opacity=0.25,text opacity= 1] (fpe) at (2.5,5) {experiment};}
+
+
+\visible<4->{\node[rectangle,text=black,draw=blue,thick,fill = gray, fill opacity=0.25,text opacity= 1,minimum width = 2.25cm] (fpc) at (2.5,3) {$H\Psi = E\Psi$};}
+\visible<4->{\node[text width = 5cm,text badly centered] (fpm) at (2.5,2.10) {density functional theory (DFT)};}
+% $\mathcal{O}(10\text{-}10^{2})$ hour
+\visible<5->{\node[rectangle,text=black,draw=blue,thick,fill = gray, fill opacity=0.25,text opacity= 1,minimum width = 2.25cm] (fpmo) at (3.0,1.0) {model};}
+\visible<5->{\node[text width = 4cm,text badly centered] (fpm) at (1.5,-0.25) {};}
+
+
+
+\visible<5->{\path[draw,ultra thick,->,blue] (ff.south) |- ([yshift=1.25cm,xshift = -0.25cm]fets.center);}
+\visible<5->{\path[draw,ultra thick,->,blue] ([yshift=1.25cm,xshift = 0.25cm]fets.center) -- ([xshift = -0cm]fpmo.west);}
+\visible<3->{\path[draw,ultra thick,->,blue] (ff.north) |- ([xshift = -0.0cm]fpe.west);}
+\visible<4->{\path[draw,ultra thick,->,blue] (ff.east) |- ([xshift = -0.0cm]fpc.west);}
+
+\visible<3->{\path[draw,ultra thick,->,blue] (fpe.east) -| (outcome.north);}
+\visible<3->{\node[text width = 4cm,text badly centered] (expcost) at (5,5.25) {days, weeks};}
+
+\visible<4->{\path[draw,ultra thick,->,blue] (fpc.east) -- (outcome.west);}
+\visible<4->{\node[text width = 4cm,text badly centered] (calcost) at (4.5,3.25) {hours};}
+\visible<5->{\path[draw,ultra thick,->,blue] (fpmo.east) -| (outcome.south);}
+\visible<5->{\node[text width = 4cm,text badly centered] (calcost) at (5,1.25) {seconds};}
+%\visible<1->{\path[draw,ultra thick,->,blue] ([yshift=-0.5cm]ff.north) |- (0.25+0.25,6-1.25);}
+%\visible<1->{\path[draw,ultra thick,->,blue] (fpm.east) -| (outcome.south);}
+\end{tikzpicture}
+\end{center}

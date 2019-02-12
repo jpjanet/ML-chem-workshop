@@ -1,0 +1,65 @@
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzstyle{line} = [draw, -latex', very thick]
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-1,-1) rectangle (5.5+4.5,3.25+2.25);
+\clip (-1.15,-1.15) rectangle (10,5.5);
+\node (ds) at (0,0){};
+\node (dsy) at (0,4){};
+\node (dsx) at (4,0){};
+\visible<1->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsy);}
+\node (xlab) at (2,-0.5) {\huge $x_1$};
+\node (ylab) at (-0.5,2) {\huge $x_2$};
+\visible<1->{\node[anchor=west] (lab1) at (-1,5){$y(x^*)={\color{blue}w_1x_1^{*}}+{\color{red}w_2x^{*}_2}$};}
+\visible<2->{\node[circle, fill=black,minimum width =0.05cm,label=above:{$\mathbf{x}^*$}] (xs) at (1.5,1.3) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(1)}$}] (x1) at (2.2,3.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(2)}$}] (x2) at (0.35,2.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(3)}$}] (x3) at (3,0.45) {};}
+
+
+\visible<2->{\path[line,blue, very thick] (ds.center) -- (1.5,0);}
+\visible<3->{\path[line,red, very thick] (ds.center) -- (0,1.3);}
+\visible<2->{\draw[blue, thick,dashed] (xs.south) -- (1.5,0);}
+\visible<3->{\draw[red, thick,dashed] (xs.west) -- (0,1.3);}
+
+
+\node (ds) at (6,0){};
+\node (dsy) at (6,4){};
+\node (dsx) at (10,0){};
+\visible<4->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<4->{\path[line,very thick] (ds.center) -- (dsy);}
+\visible<4->{\node (xlab) at (8,-0.5) {\huge $x_1$};}
+\visible<4->{\node (ylab) at (5.5,2) {\huge $x_2$};}
+\visible<4->{\node[anchor=west] (lab1) at (5,5){$y(x^*)=\sum_{i=1}^{n}a_i{\color{red}k(x^{*},x^{(i)})}$};}
+\visible<4->{\node[circle, fill=black,minimum width =0.05cm,label=above:{$\mathbf{x}^*$}] (xs) at (7.5,1.3) {};}
+\visible<4->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(1)}$}] (x1) at (8.2,3.7) {};}
+\visible<4->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(2)}$}] (x2) at (6.35,2.7) {};}
+\visible<4->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(3)}$}] (x3) at (9,0.45) {};}
+
+
+%
+%
+\visible<7->{\path[line,gray,very  thick] (ds.center) -- (x2);}
+\visible<7->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<8->{\path[line,red, very thick,dashed] (ds.center) -- ($(x2.center)!.53!(ds.center)$);}
+%
+\visible<5->{\path[line,gray,very  thick] (ds.center) -- (x1);}
+\visible<5->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<6->{\path[line,red, very thick,dashed] (ds.center) -- ($(x1.center)!.63!(ds.center)$);}
+%
+\visible<9->{\path[line,gray,very  thick] (ds.center) -- (x3);}
+\visible<9->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<10->{\path[line,red, very thick,dashed] (ds.center) -- ($(x3.center)!.48!(ds.center)$);}
+%
+%
+%\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x1);}
+%\visible<2->{\path[line,blue, very thick] (ds.center) -- (xs);}
+%\visible<3->{\path[line,red, very thick,dashed] (ds.center) -- ($(x1.center)!.42!(ds.center)$);}
+%
+%\visible<3->{\node (ylab) at (2.8,1.75){$y(\mathbf{x_*}) = \sum_{i} a_i \mathbf{x}_{*}^{T} \mathbf{x}_{2}$};}
+
+
+
+
+
+\end{tikzpicture}

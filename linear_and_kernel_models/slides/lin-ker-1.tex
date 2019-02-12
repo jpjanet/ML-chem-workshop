@@ -1,16 +1,24 @@
-
-
-
 We can rewrite our result to express $w = X^Ta$ for $a\in\mathbb{R}^n$ (shift of basis). 
 \begin{align*}
-&\left( \lambda I + X^TX \right) w = X^Ty_{data} \\
-&w  =  \color{red}{X^T}\color{blue}{\lambda^{-1}\left(y_{data} - Xw \right)}\color{black} =\color{red}X^T\color{blue}a\\ 
-\uncover<2->{\lambda &a  =  y_{data} - Xw = y_{data} + XX^T a \implies a = \left(XX^T + \lambda I\right)^{-1}y_{data}} \\
-\uncover<3->{\implies &w = X^T\left(\color{purple}{XX^T} \color{black} + \lambda I\right)^{-1}y_{data} }\\
-\uncover<4->{\text{c.f. }\: &w = \left(\lambda I + X^TX\right)^{-1} X^Ty_{data}}
+\hat{y}_{MLR}(x^{*}) &= x^{*}{\only<2->{\color{blue}}w} =\sum_{j=1}^{d}x^{*}_j {\only<2->{\color{blue}}w_{j}} \\
+\visible<3->{ &=  x^{*}{\only<2->{\color{blue}}X^Ta} =\begin{bmatrix}
+	x^{*}_1 & \hdots & x^{*}_d
+	\end{bmatrix} \color{blue}\begin{bmatrix}
+	x^{(1)}_1 & \hdots x^{(n)}_{1}\\ \vdots  & \vdots \\x^{(1)}_d & \hdots x^{(n)}_{d}
+	\end{bmatrix} \begin{bmatrix}
+	a_1 \\ \vdots \\a_n
+	\end{bmatrix}\color{black}} \\
+	&\visible<4->{= \sum_{i=1}^{n}x^{*}{\only<2->{\color{blue}}x_{i}^Ta_{i}}} \visible<5->{=\sum_{i=1}^{n}k\left(x^{*},x_{i}\right)a_{i}}
 \end{align*}
-\uncover<4->{
-The term \color{purple}$XX^T$\color{black} is the (linear) \textbf{kernel matrix}, whose elements are $\left\langle x_i,x_j \right\rangle = x_i^Tx_j$,  and for $n\times p$ matrix $X$, this is a $n$-sized matrix.}
+%\begin{align*}
+%&\left( \lambda I + X^TX \right) w = X^Ty_{data} \\
+%&w  =  \color{red}{X^T}\color{blue}{\lambda^{-1}\left(y_{data} - Xw \right)}\color{black} =\color{red}X^T\color{blue}a\\ 
+%\uncover<2->{\lambda &a  =  y_{data} - Xw = y_{data} + XX^T a \implies a = \left(XX^T + \lambda I\right)^{-1}y_{data}} \\
+%\uncover<3->{\implies &w = X^T\left(\color{purple}{XX^T} \color{black} + \lambda I\right)^{-1}y_{data} }\\
+%\uncover<4->{\text{c.f. }\: &w = \left(\lambda I + X^TX\right)^{-1} X^Ty_{data}}
+%\end{align*}
+
+\uncover<6->{The term \color{blue}$k\left(x^{*},x_{i}\right)=x^{*}x_{i}^T=\left\langle x^{*},x_{i}\right\rangle$\color{black} is the \textbf{linear kernel}.}
 
 
 
