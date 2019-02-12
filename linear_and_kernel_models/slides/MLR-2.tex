@@ -1,10 +1,8 @@
-
-
-Consider our objective:
+Let's solve our regularized least-squares problem:
 \begin{align*}
-w =& \arg \min_{ w \in \mathbb{R}^{p}} \left\Vert y_{data}-Xw \right\Vert^2 + \lambda\left\Vert w\right\Vert^{2} \\
-\implies & -2X^T\left(y_{data} - Xw\right) + 2\lambda w = 0\\
-& \uncover<2->{(\lambda I + X^TX )w = X^Ty_{data}} \\
-&  \uncover<3->{ w = \left(\lambda I + X^TX\right)^{-1} X^Ty_{data}}
+w =& \arg \min_{ w \in \mathbb{R}^{p}} \frac{1}{n}\left\Vert y_{data}-Xw \right\Vert_{2}^2+ + \lambda\left\Vert w\right\Vert^{2}_{2} \\
+&= \frac{1}{n}\left(y_{data}-Xw\right)^{T}\left(y_{data}-Xw\right) + \lambda w^Tw\\
+\frac{\partial\mathcal{L}}{\partial w } &= -\frac{2}{n}X^T\left(y_{data} - Xw\right) + 2\lambda w = 0\\
+ \implies (\lambda I + X^TX )w &= X^Ty_{data} \\
+  w &= \left(\lambda I + X^TX\right)^{-1} X^Ty_{data}
 \end{align*}
-For any positive $\lambda$, $w$ exists and is well defined (eigenvalues of commuting  matrices are additive)

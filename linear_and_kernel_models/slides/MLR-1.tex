@@ -4,7 +4,8 @@ Linear models give $\hat{y}$ as linear function of the data matrix of $X$:
 \end{align*}
 \visible<3->{We can write this in a matrix form as well:
 \begin{align*}
-    &\hat{y}_{MLR}(X) = \begin{bmatrix}  1 &  x^{(1)}_{1} & x^{(1)}_{2} & \hdots x^{(1)}_{d}  \\  \vdots  &&&\vdots \\  1&  x^{(n)}_{1} & x^{(n)}_{2} & \hdots x^{(n)}_{d} \end{bmatrix} w  = X'w\\
+    &\hat{y}_{MLR}(X) = \begin{bmatrix}  1 &  x^{(1)}_{1} & x^{(1)}_{2} & \hdots x^{(1)}_{d}  \\  \vdots  &&&\vdots \\  1&  x^{(n)}_{1} & x^{(n)}_{2} & \hdots x^{(n)}_{d} \end{bmatrix}  \begin{bmatrix} w_0 \\ w_1 \\ \vdots \\ w_d  \end{bmatrix}   = Xw\\
 \end{align*}
 }
+\vspace{-1.0cm}
 \visible<4->{Notice how we handle the constant terms} 

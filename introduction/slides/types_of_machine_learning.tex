@@ -1,15 +1,72 @@
 \begin{center}
 \begin{tikzpicture}[x=1cm,y=1cm]
 \tikzstyle{venncirc}=[circle,draw=none,fill=#1,
-text badly centered,minimum size = 3cm,text width = 2.5 cm, text=black,fill opacity = 0.25, text opacity=1]
+text badly centered,minimum size = 2.55cm,text width = 2.5 cm, text=black,fill opacity = 0.25, text opacity=1]
 \pgfresetboundingbox
 \draw[use as bounding box, anchor = north west,draw=none,dashed,gray] (-5.5,-3.25) rectangle (5.5,3.25);
-\clip (-5.5,-3.25) rectangle (5.5,3.25);
+\clip (-6,-3.25) rectangle (5.5,3.25);
 %% basic types
-\node [venncirc=orange,minimum size=6.5cm] (ml) at (0,0) {machine learning};
-\node [venncirc=blue] (spl) at (1.77,1.77) {supervised learning};
-\node [venncirc=red] (uspl) at (-1.77,1.77) {unsupervised learning};
-\node [venncirc=darkgreen] (rl) at (0,-2.0) {reinforcement learning};
+\visible<2->{\node [venncirc=orange,minimum size=6.5cm,fill opacity=0.15] (ml) at (0,0) {machine learning};}
+\visible<3->{\node [venncirc=blue] (spl) at (1.7,1.77) {supervised learning};}
+\visible<4->{\node[anchor=west] (uspldet) at (2.85,1.77) {
+		\begin{minipage}{2.75cm}{\small
+			\begin{tabular}{p{2.5cm}}
+			\hline 
+			regression \\
+			classification \\
+			kernel methods\\
+			neural networks\\ \hline
+			\end{tabular}
+		}\end{minipage}
+	};}
+\visible<5-8>{\node [venncirc=red] (uspl) at (-1.7,1.77) {unsupervised learning};}
+\visible<9->{\node [venncirc=red,opacity=0.1, text opacity=0.1] (uspl) at (-1.7,1.77) {unsupervised learning};}
+\visible<5-8>{\node[anchor=east] (spldet) at (-2.75,1.77) {
+		\begin{minipage}{2.75cm}{\small
+			\begin{tabular}{p{2.5cm}}
+			\hline 
+			pattern detection\\
+			clustering \\
+			generative mod.\\
+			autoencoders\\ \hline
+			\end{tabular}
+		}\end{minipage}
+	};}
+\visible<9->{\node[anchor=east,opacity=0.1, text opacity=0.1] (spldet) at (-2.75,1.77) {
+		\begin{minipage}{2.75cm}{\small
+			\begin{tabular}{p{2.5cm}}
+			\hline 
+			pattern detection\\
+			clustering \\
+			generative mod.\\
+			autoencoders\\ \hline
+			\end{tabular}
+		}\end{minipage}
+	};}
+\visible<7-8>{\node [venncirc=darkgreen] (rl) at (0,-2.0) {reinforcement learning};}
+\visible<9->{\node [venncirc=darkgreen,opacity=0.1, text opacity=0.1] (rl) at (0,-2.0) {reinforcement learning};}
+\visible<8-8>{\node[anchor=west] (rldet) at (1.1,-2.0) {
+\begin{minipage}{2.75cm}{\small
+\begin{tabular}{p{2.5cm}}
+	\hline 
+	game playing\\
+	control\\
+	Q learning \\
+	policy gradients\\ \hline
+\end{tabular}
+}\end{minipage}
+};}
+\visible<9->{\node[anchor=west,opacity=0.1, text opacity=0.1] (rldet) at (1.1,-2.0) {
+		\begin{minipage}{2.75cm}{\small
+			\begin{tabular}{p{2.5cm}}
+			\hline 
+			game playing\\
+			control\\
+			Q learning \\
+			policy gradients\\ \hline
+			\end{tabular}
+		}\end{minipage}
+	};}
 %% explanation for each type
 \end{tikzpicture}
 \end{center}

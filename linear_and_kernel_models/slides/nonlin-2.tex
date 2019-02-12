@@ -1,5 +1,15 @@
-So what? All that is required is vector products, i.e. $K_{i,j} =  \left\langle \varphi(x_i),\varphi(x_j) \right\rangle $ and $ \left\langle \varphi(x^*),\varphi(x_i) \right\rangle $.\\ It turns out that these can often be computed \emph{much} more efficiently, without ever forming the big, nonlinear feature space directly. \pause{}For our quadratic example:
+We can solve these equations exactly as before:
 \begin{align*}
-K_{i,j} = \left(x_i^Tx_j +1\right)^2 = x_{i,1}^2x_{i,2}^2  + x_{i,1}x_{i,2}x_{j,1}x_{j,2} + \hdots 
+ y_{QUAD}(x) &=     \varphi(X) w \\
+ \visible<2->{\implies  w &=  ( \varphi(X)^T \varphi(X)+{I}_{d'}\lambda)^{-1} \varphi(X)^Ty_{data}}
 \end{align*}
-which can be computed entirely using vectors in $\mathbb{R}^2$, so we never have to allocate the (factorially large) feature space!
+\uncover<3->{by direct analogy to the previous slides, there is also a kernel form:
+\begin{align*}
+K &= \varphi(X)\varphi(X)^T \in \mathbb{R}^{n\times n};\\
+ K_{i,j}&= \left\langle \varphi(x_i),\varphi(x_j)\right\rangle\\
+ &= \begin{bmatrix} 1&  \sqrt{2}x_1^{(i)} & \hdots & (x_1^{(i)})^{2} & (x_{2}^{(i)})^{2}\end{bmatrix} 
+\begin{bmatrix} 1 \\ \sqrt{2} x_1^{(j)} \\ \vdots \\ (x_1^{(j)})^{2} \\ (x_{2}^{(j)})^{2}
+\end{bmatrix}
+\end{align*}
+
+}

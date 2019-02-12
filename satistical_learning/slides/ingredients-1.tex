@@ -1,12 +1,18 @@
-The basic ingredients are
-\begin{enumerate}
-	\item Training data $X$ and $y$ -- we write each observation as a row so $X \in \mathbb{R}^{n\times d}$ and $y\in \mathbb{R}^{n}$
-	\item A family of possible models $f(\cdot,X)\in \mathcal{T}$, defined by parameters $W$. For example linear: functions \[
-	f(X,w)=Xw\]
-	\item a loss function -- we'll only use $l_{2}$:
-	\[
-	\mathcal{L}(y,\hat{y}(x)) = \left\Vert y - \hat{y}(x)\right\Vert_2^2 = \left\Vert y - f(x,W)\right\Vert_2^2 = \left(y - f(x,W)\right)^2
-	\]
-	\item A way to change $W$ to make $\mathcal{L}$ smaller -- optimization method.
-\end{enumerate}
-\pause{Note the notation used here.}
+\begin{center}
+\tikzset{tbox/.style={draw, text badly centered, very thick, black, rectangle, inner sep=0, minimum width = 2.0 cm, minimum height = 1.0 cm}}
+\begin{tikzpicture}[x=1cm,y=1cm, text badly centered]
+%\pgfresetboundingbox
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-5.5,-3.25) rectangle (5.5,3.25);
+\clip (-5.5,-3.25) rectangle (5.5,3.25);
+\visible<2->{\node[anchor=west, text width=2 cm] (obs) at (-5.0,0) {observation $x\in\mathbb{R}^{d}$};}
+\visible<5->{\node [tbox,minimum width=2.0 cm, text width = 2.0 cm] (model) at (0,0) {model};}
+\visible<2->{\node[anchor=east, text width=2 cm] (preds) at (5.0,0) {property $y\in\mathbb{R}$};}
+\visible<3->{\node[circle,minimum size=5cm, fill=orange, opacity=0.15,text opacity=1.0] at (0,0){};}
+\visible<3->{\node[text width=2.5 cm, text badly centered]  at (0,1.75){model space $\mathcal{T}$ maps $\mathcal{R}^{d}\rightarrow \mathbb{R}$};}
+\visible<4->{\node[text width=2.5 cm] (params) at (0,-1.75){parameters $w\in\mathbb{R}^{p}$};}
+%% paths
+\visible<5->{\path[draw,very thick,->] (obs) -- (model);}
+\visible<5->{\path[draw,very thick,->] (model) -- (preds);}
+\visible<5->{\path[draw,very thick,->] (params) -- (model);}
+\end{tikzpicture}
+\end{center}

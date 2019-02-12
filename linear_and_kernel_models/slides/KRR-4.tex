@@ -1,0 +1,58 @@
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzstyle{line} = [draw, -latex', very thick]
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-1,-2) rectangle (5.5+4.5,3.25+2.25);
+\clip (-1.15,-2.0) rectangle (10,5.5);
+\visible<1->{\node[anchor=north] (lab1) at (5.0,5.45){\Large $y(x^*)=\sum_{i=1}^{n}a_i{\color{red}k(x^{*},x^{(i)})}$};}
+
+\node (ds) at (0,0){};
+\node (dsy) at (0,4){};
+\node (dsx) at (4,0){};
+\visible<1->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<1->{\path[line,very thick] (ds.center) -- (dsy);}
+\visible<1->{\node (xlab) at (2,-0.5) {\huge $x_1$};}
+\visible<1->{\node (ylab) at (-0.5,2) {\huge $x_2$};}
+
+\visible<1->{\node[circle, fill=black,minimum width =0.05cm,label=above:{$\mathbf{x}^*$}] (xs) at (1.5,1.3) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(1)}$}] (x1) at (2.2,3.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(2)}$}] (x2) at (0.35,2.7) {};}
+\visible<1->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}^{(3)}$}] (x3) at (3,0.45) {};}
+\visible<1->{\node (lab1) at (2,-1.5){\textbf{linear kernel}};}
+%
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x2);}
+\visible<1->{\path[line,red, very thick,dashed] (ds.center) -- ($(x2.center)!.53!(ds.center)$);}
+%
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x1);}
+\visible<1->{\path[line,blue, very thick] (ds.center) -- (xs);}
+\visible<1->{\path[line,red, very thick,dashed] (ds.center) -- ($(x1.center)!.63!(ds.center)$);}
+%
+\visible<1->{\path[line,gray,very  thick] (ds.center) -- (x3);}
+\visible<1->{\path[line,red, very thick,dashed] (ds.center) -- ($(x3.center)!.48!(ds.center)$);}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node (ds) at (6,0){};
+\node (dsy) at (6,4){};
+\node (dsx) at (10,0){};
+\def\particles{(7.2,1.3)}
+\visible<2->{\node (xlab) at (8,-0.5) {\huge $x_1$};}
+\visible<2->{\node (ylab) at (5.5,2) {\huge $x_2$};}
+\foreach \point in \particles{
+\foreach\i in {0,0.1,...,1.2} {
+\visible<3->{\fill[opacity=\i/4,blue] \point circle ({1.5-\i});}         
+}
+}
+\visible<2->{\path[line,very thick] (ds.center) -- (dsx);}
+\visible<2->{\path[line,very thick] (ds.center) -- (dsy);}
+\visible<2->{\node (lab1) at (8,-1.5){\textbf{Gaussian kernel}};}
+\visible<2->{\node[circle, fill=black,minimum width =0.05cm,label=below:{$\mathbf{x}_*$}] (xs) at (7.2,1.3) {};}
+\visible<2->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_1$}] (x1) at (8.2,3.7) {};}
+\visible<2->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_2$}] (x2) at (6.35,2.7) {};}
+\visible<2->{\node[circle, fill=gray,minimum width =0.05cm,label=above:{$\mathbf{x}_3$}] (x3) at (9,0.45) {};}
+
+\visible<3->{\path[line,gray,very  thick,dashed,red] (xs) -- (x2);}
+
+\visible<3->{\path[line,gray,very  thick,dashed,red] (xs) -- (x1);}
+
+\visible<3->{\path[line,gray,very  thick,dashed,red] (xs) -- (x3);}
+
+\end{tikzpicture}
