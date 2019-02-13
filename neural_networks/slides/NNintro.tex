@@ -6,7 +6,7 @@ z & z>0 \\
 \end{cases}
 \]}
 \begin{tikzpicture}[shorten >=1pt,draw=black, x=1cm, y=1 cm,  node distance=0cm]
-	\draw[draw=gray, use as bounding box](-2,0) rectangle (8,4);
+	\draw[draw=none, use as bounding box](-2,0) rectangle (8,4);
 	\clip (-2,-0) rectangle (8,6);
 	\def\layersep{2cm}
 	
@@ -28,7 +28,7 @@ z & z>0 \\
 	\visible<6->{\node[input neuron,fill=orange!100 ] (I-2) at (2.5,3) {$ $};}
 	\visible<6->{\node[hidden neuron,fill=green!50!orange] (H-1) at (4.5,1) {$ $};}
 	\visible<6->{\node[hidden neuron,fill=green!50!orange] (H-2) at (4.5,3) {$ $};}
-	\visible<6->{\node[output neuron,fill=green!50!blue] (O) at (6.5,2) {$+/-$};}
+	\visible<6->{\node[output neuron,fill=green!50!blue] (O) at (6.5,2) {$ $};}
 	\foreach \dest in {1,2}{     
 		\foreach \source in {1,2}{
 			\visible<6->{\path[thin,->,black] (I-\source) edge node[font=\scriptsize] {} (H-\dest) ;}}
@@ -36,12 +36,12 @@ z & z>0 \\
 	\visible<6->{\path[thin,->,black] (H-1) edge node[font=\scriptsize] {} (O);}
 	\visible<6->{\path[thin,->,black] (H-2) edge node[font=\scriptsize] {} (O);}
 	\visible<7->{\path[thick,->,black, midway, above,black] (I-2) edge node[font=\scriptsize] {$W_{11}=1$} (H-2) ;}
-	\visible<7->{\path[thick,->,gray, midway, left,gray] (I-2) edge node[font=\scriptsize, left=10pt] {$W_{12}=-1$} (H-1) ;}
+	\visible<7->{\path[thick,->,blue, midway, left,blue] (I-2) edge node[font=\scriptsize, left=10pt] {$W_{12}=-1$} (H-1) ;}
 	\visible<7->{\path[thick,->,black, midway, right,black] (I-1) edge node[font=\scriptsize, right=10pt] {$W_{21}=1$} (H-2) ;}
 	\visible<7->{\path[thick,->,black, midway, below,black] (I-1) edge node[font=\scriptsize] {$W_{22}=-1$} (H-1) ;}
-	\visible<7->{\path[thick,->,black, midway, below,black] (H-1) edge node[font=\scriptsize, below = 10pt] {$W_{2O}=1$} (O) ;}
-	\visible<7->{\path[thick,->,black, midway, below,black] (H-2) edge node[font=\scriptsize, above = 10pt] {$W_{1O}=1$} (O) ;}
+	\visible<7->{\path[thick,->,black, midway, below,black] (H-1) edge node[font=\scriptsize, below = 10pt] {$W_{2O}=-1$} (O) ;}
+	\visible<7->{\path[thick,->,black, midway, below,black] (H-2) edge node[font=\scriptsize, above = 10pt] {$W_{1O}=-1$} (O) ;}
 	\visible<7->{\path[thick,->,black, midway, below,black] (4.5,0.25) edge node[font=\scriptsize, left = 3pt] {$b_2=1.5$} (H-1) ;}
 	\visible<7->{\path[thick,->,black, midway, below,black] (4.5,3.75) edge node[font=\scriptsize, left = 3pt] {$b_1=-0.5$} (H-2) ;}
-	\visible<7->{\path[thick,->,black, midway, below,black] (6.5,2.75) edge node[font=\scriptsize, right = 2pt] {$b_3=-1$} (O) ;}
+	\visible<7->{\path[thick,->,black, midway, below,black] (6.5,2.75) edge node[font=\scriptsize, right = 2pt] {$b_3=1.25$} (O) ;}
 \end{tikzpicture}
