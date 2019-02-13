@@ -1,0 +1,35 @@
+\begin{center}
+\begin{tikzpicture}[shorten >=1pt,draw=black!50, x = 1 cm, y = 1cm,  node distance=20pt]
+%\draw[draw=black, use as bounding box](-10,12) rectangle (10,0);
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-5.65,-3.25) rectangle (5.65,3.25);
+\clip (-5.7,-3.3) rectangle (5.7,3.6);
+\visible<3->{\node[rectangle, black,thick,anchor=south west] (ms1) at (-5.25,-3.25){\includegraphics[width=3.75cm]{representations/figures/split-cmes} };}
+\visible<3->{\node[rectangle, black,thick,anchor=south east] (ms2) at (5.25,-3.25){\includegraphics[width=3.75cm]{representations/figures/size-cmes} };}
+\visible<6->{\node[rectangle, black,thick,anchor=south west] (ms1) at (-5.25,-3.25){\includegraphics[width=3.75cm]{representations/figures/split-LS28} };}
+\visible<6->{\node[rectangle, black,thick,anchor=south east] (ms2) at (5.25,-3.25){\includegraphics[width=3.75cm]{representations/figures/size-LS28} };}
+%
+%\visible<3->{\node[rectangle, black,thick,minimum width = 5.25cm,minimum height = 5.25cm,path picture={\node at (path picture bounding box.center){\includegraphics[width=4.5cm]{representations/figures/size-cmes}}; }] (ms1) at (5,2){};}
+%
+\visible<3-5>{\node (lsplit) at (-3.25,-1.0) {$\Delta E_{H-L}$};}
+\visible<3-5>{\node (lsize) at (3.25,-1.0) {size};}	
+	
+	
+\visible<1->{\node[circle,ultra thick,minimum width = 2.25 cm,minimum height =2.25 cm,draw,blue,fill opacity =0.25] (piscr) at (-4,2){};}
+\visible<1->{\node[circle,minimum width = 2.25 cm,minimum height = 2.25 cm,path picture={\node at (path picture bounding box.center){\includegraphics[width=2.25cm ]{representations/images/pisc_trans.png}}; }] (piscy) at (-4,2){};}
+
+\visible<1->{\node[rectangle,ultra thick,minimum width = 0.75 in,minimum height = 0.75 in,draw,blue,fill opacity =0.25] (miscr) at (4,2){};}
+
+\visible<1->{\node[circle,minimum width = 2.25 cm,minimum height = 2.25 cm,path picture={\node at (path picture bounding box.center){\includegraphics[width= 4.65cm ]{representations/images/misc_trans.png}}; }] (miscyf) at (4.0,2){};}
+
+\only<1-2>{\node[blue,anchor=north] (pisc) at (-4.0,1.0) {$\text{Fe[pisc]}_6^{3+}$};}
+\only<2>{\node[blue,anchor=north] (pisc) at (4,0.40) {\footnotesize $\Delta \text{E}_{\text{H-L}}=40.7\:\text{kcal/mol}$};}
+\only<1-2>{\node[blue,anchor=north] (misc) at (4.0,1.0) {$\text{Fe[misc]}_6^{3+}$};}
+\only<2>{\node[blue,anchor=north] (misc) at (-4,0.40) {\footnotesize $\Delta \text{E}_{\text{H-L}}=37.7\:\text{kcal/mol}$};}
+\only<5>{\path[draw,ultra thick, blue,->] (miscr.south) -- (4.80,-2.5){};}
+\only<4>{\path[draw,ultra thick, blue,->] (miscr.south) -- (-1.70,-2.35){};}
+\only<5>{\path[draw,ultra thick, blue,->] (piscr.south) -- (1.80,-2.65){};}
+\only<4>{\path[draw,ultra thick, blue,->] (piscr.south) -- (-4.70,-2.5){};}
+\end{tikzpicture}
+\end{center}
+
+

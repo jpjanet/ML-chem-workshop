@@ -1,9 +1,10 @@
 
 \begin{align*}
-w = \arg \min_{\mathbf{w}\in \mathbb{R}^p} \sum_{i}\left(\mathbf{x}_i\mathbf{w} - y_d(\mathbf{x}_i)\right)^2  \visible<2->{ + \lambda \left( \color{blue}\alpha\left\Vert \mathbf{p} \right\Vert _1\color{black} \visible<3->{+\color{red} \left(1-\alpha\right)\left\Vert \mathbf{p} \right\Vert _2 \color{black}} \right)}
+w = \arg \min_{w\in \mathbb{R}^p} \left\Vert Xw - y_{data} \right\Vert_{2}^{2}  \visible<2->{ + \lambda \left( \color{blue}\alpha\left\Vert w \right\Vert _1^{1}\color{black} \visible<3->{+\color{red} \left(1-\alpha\right)\left\Vert w\right\Vert _2^{2} \color{black}} \right)}
 \end{align*}
 \begin{center}
 	\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+	\tikzstyle{line} = [draw, -latex', very thick]
 	\node (ds1) at (0,0){};
 	\node (dsy1) at (0,2){};
 	\node (dsx1) at (2,0){};
@@ -40,7 +41,9 @@ w = \arg \min_{\mathbf{w}\in \mathbb{R}^p} \sum_{i}\left(\mathbf{x}_i\mathbf{w} 
 	\visible<4->{\node [] (labl1) at (0,-2) {$\alpha=1$};}
 	\visible<4->{\node [] (labl1) at (0,2) {LASSO};}
 	\visible<6->{\node [] (labl1) at (4,-2) {$\alpha=0.5$};}
+	\visible<6->{\node [] (labl1l) at (4,2) {elastic net};}
 	\visible<5->{\node [] (labl1) at (8,-2) {$\alpha=0$};}
 	\visible<5->{\node [] (labl1) at (8,2) {ridge reg.};}
 	\end{tikzpicture}
 \end{center}
+\visible<7->{Using even a small $\alpha>0$ ensures the minimization is stable.}

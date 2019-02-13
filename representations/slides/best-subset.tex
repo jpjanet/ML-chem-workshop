@@ -1,0 +1,6 @@
+Using unnecessary features can degrade model performance, so we want to able to pick the subset of variables that is best correlated with our objective, formally:
+\begin{align*}
+w=\arg\min_{w\in \mathbb{d}}\left(\mathcal{L}\left( Xw \right) + K\left\Vert w \right\Vert^{0}_{0} \right),\: \: K\in\mathbb{N}_{0}
+\end{align*}
+\pause{}
+We don't know $K$ upfront, and  this is a combinatorial problem -- possible for $\leq 30$ dimensions or so, but rapidly becomes unfeasible.

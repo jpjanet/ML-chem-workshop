@@ -1,0 +1,28 @@
+\begin{center}
+
+\begin{tikzpicture}[x=1cm,y=1cm]
+\tikzstyle{line} = [draw, -latex', very thick]
+\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-1,-1) rectangle (5.5+4.5,3.25+2.25);
+\clip (-1,-1) rectangle (10,5.5);
+\linespread{0.5}
+\node (ne) at (0,0) {};
+\node (orig) at (-2,5) {};
+\node (xe) at (10,5) {};
+\node (ye) at (0,6) {};
+\path [draw,very thick,->] (orig) edge node[above] {complexity}  (xe);
+%\path [draw,very thick,->] (cxe) edge node[above] {cost}  (corig);
+\node [rotate=90] (lab) at (-0.25,3){};
+%\path [line] (orig.center)-- (ye);
+\path [line] (orig.center)-- (xe);
+\visible<2->{\node [draw,circle,very thick,red,fill=red,minimum width = 0.25cm,label={[align=left,below]{}}] (fpt) at (0,4) {};}
+\visible<3->{\node [draw,circle,very thick,blue,fill=blue,minimum width = 0.25cm] (GGA) at (4,4) {};}
+\visible<4->{\node [draw,circle,very thick,gray,fill=gray,minimum width = 0.25cm] (GGA) at (8,4) {};}
+\visible<2->{\node [red] (lab1) at (0,3.25) {{Fingerprints}};}
+\visible<2->{\node [align = flush left,black,text width = 3.25cm,anchor=north west] (lab13) at (-1,2.75) {\small{-- considerable use in drug design \\ $ $\\ -- no information related to molecular topology \\$ $\\ -- cheap to compute }};}
+\visible<3->{\node [blue] (lab2) at (4,3.25) {Graph-theoretic};}
+\visible<3->{\node [align = left,black,text width = 3.5cm,anchor=north west] (lab13) at (2.25,2.75) {\small{ -- \textit{topological}  and \textit{topochemical} representations \\ $ $\\  -- includes all connectivity but no 3D information \\ $ $\\ -- relatively easy to compute   }};}
+\visible<4->{\node [align = left,gray] (lab3) at (8,3.25) {3D structure};}
+\visible<4->{\node [align = left,black,text width = 3.5cm,anchor=north west] (lab13) at (5.75,2.75) {\small { -- fine-grained structural information in 3D\\ $ $\\  -- mimic input to a quantum chemistry code \\ $ $ \\ --expensive to compute, rich information}};}
+\end{tikzpicture}
+
+\end{center}
