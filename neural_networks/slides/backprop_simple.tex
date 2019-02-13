@@ -3,13 +3,13 @@ Back-propagation updates neural network weights $\rightarrow$ example
 	\draw[draw=none, use as bounding box](-2.5,0) rectangle (8.5,6);
 	\clip (-2.5,-0) rectangle (8.5,6);
 	\def\layersep{2cm}
-	\visible<7>{\node [] (ll) at (3,5.5) {Loss $\rightarrow L(y)=\sum_{i=1}^{N}((y_i-y_{pred})^2)$ };}
-	\visible<8>{\node [] (ll) at (3,5.5) {Loss $\rightarrow L(y)=\sum_{i=1}^{N}((y_i-y_{pred})^2)+\lambda(\sum_{l=1}^{L}||W_l||^2)$ };}
-	\visible<9>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial L}{\partial W_{I2,H_{1}3}}\Big)$};}
-	\visible<10>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial L}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial L}{\partial \sigma_4}\Big)$};}
-	\visible<11>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial L}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial L}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)$};}
-	\visible<12>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial L}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial L}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)...+\Big(\frac{\partial z_4}{\partial W_{H_{2}2,O}}\Big)...\Big]$};}	
-	\visible<13>{\node [] (ll) at (3,5.5) {\tiny$\Big(\frac{\partial L}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial L}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)\Big(\frac{\partial W_{H_{2}1,O}}{\partial \sigma_2}\Big)\Big(\frac{\partial \sigma_2}{\partial z_2}\Big)\Big(\frac{\partial z_2}{\partial  W_{H_{1}3,H_{2}1}}\Big)\Big(\frac{\partial W_{H_{1}3,H_{2}1}}{\partial \sigma_1}\Big)$};}	
+	\visible<7>{\node [] (ll) at (3,5.5) {Loss $\rightarrow \mathcal{L}(W)=\sum_{i=1}^{N}((y_i-y_{pred})^2)$ };}
+	\visible<8>{\node [] (ll) at (3,5.5) {Loss $\rightarrow \mathcal{L}(W)=\sum_{i=1}^{N}((y_i-y_{pred})^2)+\lambda(\sum_{l=1}^{L}||W_l||^2)$ };}
+	\visible<9>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)$};}
+	\visible<10>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)$};}
+	\visible<11>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)$};}
+	\visible<12>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)...+\Big(\frac{\partial z_4}{\partial W_{H_{2}2,O}}\Big)...\Big]$};}	
+	\visible<13>{\node [] (ll) at (3,5.5) {\tiny$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)\Big(\frac{\partial W_{H_{2}1,O}}{\partial \sigma_2}\Big)\Big(\frac{\partial \sigma_2}{\partial z_2}\Big)\Big(\frac{\partial z_2}{\partial  W_{H_{1}3,H_{2}1}}\Big)\Big(\frac{\partial W_{H_{1}3,H_{2}1}}{\partial \sigma_1}\Big)$};}	
 	\visible<13>{\node [] (ll) at (3,4.5) {\tiny$\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)+\Big(\frac{\partial z_4}{\partial W_{H_{2}2,O}}\Big)\Big(\frac{\partial W_{H_{2}2,O}}{\partial \sigma_3}\Big)\Big(\frac{\partial \sigma_3}{\partial z_3}\Big)\Big(\frac{\partial z_3}{\partial  W_{H_{1}3,H_{2}2}}\Big)\Big(\frac{\partial W_{H_{1}3,H_{2}2}}{\partial \sigma_1}\Big)\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)\Big]$};}
 	%\visible<13>{\node [] (ll) at (3, 3.5){\tiny$\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)$}}
     \tikzstyle{every pin edge}=[<-,shorten <=1pt,thick]
@@ -81,5 +81,5 @@ Back-propagation updates neural network weights $\rightarrow$ example
 %\only<2->{\node[circle, fill=green, minimum size = 2cm, below of = mynode] (mynode2) {};}
 %\only<2->{\path[draw,very thick,black,->]  (mynode)--(mynode2);}
 %    % Annotate the layers
-	\node [] (ll) at (-1.25,2.5) {RAC-155};
+	\node [] (ll) at (-1.25,2.5) {features};
 \end{tikzpicture}}

@@ -45,7 +45,7 @@ text width=1.5cm, text centered, rounded corners, minimum height=1.5cm]
 \tikzset{tbox/.style={draw, text badly centered, very thick, black, rectangle, inner sep=0, minimum width = 2.0 cm, minimum height = 1.0 cm}}
 \begin{tikzpicture}[x=1cm,y=1cm]
 %\pgfresetboundingbox
-\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-2,-3.5) rectangle (9.5,3.5);
+\draw[use as bounding box, anchor = north west,draw=none] (-2,-3.5) rectangle (9.5,3.5);
 \clip (-2,-3.25) rectangle (9.0,3.25);
 \node (ds) at (0,0){};
 \node (dsy) at (0,4){};
