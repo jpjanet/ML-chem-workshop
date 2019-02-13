@@ -1,0 +1,16 @@
+DFT False
+runtype split
+rundir /home/jp/museum_night/split_run
+liglist /home/jp/museum_night/museum_ligands.txt
+maxgen 40 
+property_parameter 15 
+distance_parameter 4
+distance_threshold 2
+maxjobs 10
+npool 20 
+pmut 0.25
+ncross 20
+symclass weak
+monitor_distance False
+monitor_diversity True
+scoring_function find_prop_fitness 
