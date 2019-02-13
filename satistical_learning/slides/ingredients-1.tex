@@ -2,7 +2,7 @@
 \tikzset{tbox/.style={draw, text badly centered, very thick, black, rectangle, inner sep=0, minimum width = 2.0 cm, minimum height = 1.0 cm}}
 \begin{tikzpicture}[x=1cm,y=1cm, text badly centered]
 %\pgfresetboundingbox
-\draw[use as bounding box, anchor = north west,draw,dashed,gray] (-5.5,-3.25) rectangle (5.5,3.25);
+\draw[use as bounding box, anchor = north west,draw=none] (-5.5,-3.25) rectangle (5.5,3.25);
 \clip (-5.5,-3.25) rectangle (5.5,3.25);
 \visible<2->{\node[anchor=west, text width=2 cm] (obs) at (-5.0,0) {observation $x\in\mathbb{R}^{d}$};}
 \visible<5->{\node [tbox,minimum width=2.0 cm, text width = 2.0 cm] (model) at (0,0) {model};}
