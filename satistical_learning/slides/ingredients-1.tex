@@ -4,15 +4,16 @@
 %\pgfresetboundingbox
 \draw[use as bounding box, anchor = north west,draw=none] (-5.5,-3.25) rectangle (5.5,3.25);
 \clip (-5.5,-3.25) rectangle (5.5,3.25);
-\visible<2->{\node[anchor=west, text width=2 cm] (obs) at (-5.0,0) {observation $x\in\mathbb{R}^{d}$};}
+\visible<2->{\node[anchor=west, text width=2 cm] (obs) at (-5.0,0) {observation {$x\in\mathbb{R}^{d}$} };}
 \visible<5->{\node [tbox,minimum width=2.0 cm, text width = 2.0 cm] (model) at (0,0) {model};}
-\visible<2->{\node[anchor=east, text width=2 cm] (preds) at (5.0,0) {property $y\in\mathbb{R}$};}
+\visible<2->{\node[anchor=east, text width=2 cm] (preds) at (5.0,0) {property {$y\in\mathbb{R}$}};}
 \visible<3->{\node[circle,minimum size=5cm, fill=orange, opacity=0.15,text opacity=1.0] at (0,0){};}
-\visible<3->{\node[text width=2.5 cm, text badly centered]  at (0,1.75){model space $\mathcal{T}$ maps $\mathcal{R}^{d}\rightarrow \mathbb{R}$};}
-\visible<4->{\node[text width=2.5 cm] (params) at (0,-1.75){parameters $w\in\mathbb{R}^{p}$};}
+\visible<3->{\node[text width=2.5 cm, text badly centered]  at (0,1.75){model space {$\mathcal{T}$ maps $\mathcal{R}^{d}\rightarrow \mathbb{R}$}};}
+\visible<4->{\node[text width=2.5 cm] (params) at (0,-1.75){parameters {$w\in\mathbb{R}^{p}$}};}
 %% paths
 \visible<5->{\path[draw,very thick,->] (obs) -- (model);}
 \visible<5->{\path[draw,very thick,->] (model) -- (preds);}
 \visible<5->{\path[draw,very thick,->] (params) -- (model);}
+\visible<7->{\node at(0,0) {\includegraphics[width=5cm]{images-top/ml-or-regression}};}
 \end{tikzpicture}
 \end{center}

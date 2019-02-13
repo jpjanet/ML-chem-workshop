@@ -11,6 +11,7 @@ Back-propagation updates neural network weights $\rightarrow$ example
 	\visible<12>{\node [] (ll) at (3,5.5) {$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)...+\Big(\frac{\partial z_4}{\partial W_{H_{2}2,O}}\Big)...\Big]$};}	
 	\visible<13>{\node [] (ll) at (3,5.5) {\tiny$\Big(\frac{\partial \mathcal{L}}{\partial W_{I2,H_{1}3}}\Big)=\Big(\frac{\partial \mathcal{L}}{\partial \sigma_4}\Big)\Big(\frac{\partial \sigma_4}{\partial z_4}\Big)\Big[\Big(\frac{\partial z_4}{\partial W_{H_{2}1,O}}\Big)\Big(\frac{\partial W_{H_{2}1,O}}{\partial \sigma_2}\Big)\Big(\frac{\partial \sigma_2}{\partial z_2}\Big)\Big(\frac{\partial z_2}{\partial  W_{H_{1}3,H_{2}1}}\Big)\Big(\frac{\partial W_{H_{1}3,H_{2}1}}{\partial \sigma_1}\Big)$};}	
 	\visible<13>{\node [] (ll) at (3,4.5) {\tiny$\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)+\Big(\frac{\partial z_4}{\partial W_{H_{2}2,O}}\Big)\Big(\frac{\partial W_{H_{2}2,O}}{\partial \sigma_3}\Big)\Big(\frac{\partial \sigma_3}{\partial z_3}\Big)\Big(\frac{\partial z_3}{\partial  W_{H_{1}3,H_{2}2}}\Big)\Big(\frac{\partial W_{H_{1}3,H_{2}2}}{\partial \sigma_1}\Big)\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)\Big]$};}
+	
 	%\visible<13>{\node [] (ll) at (3, 3.5){\tiny$\Big(\frac{\partial \sigma_1}{\partial z_1}\Big)\Big(\frac{\partial z_1}{\partial W_{I{2},H_{1}3}}\Big)$}}
     \tikzstyle{every pin edge}=[<-,shorten <=1pt,thick]
     \tikzstyle{neuron}=[circle,fill=black!25,minimum size=0.5cm ,inner sep=0pt, color=black, draw]
@@ -82,4 +83,5 @@ Back-propagation updates neural network weights $\rightarrow$ example
 %\only<2->{\path[draw,very thick,black,->]  (mynode)--(mynode2);}
 %    % Annotate the layers
 	\node [] (ll) at (-1.25,2.5) {features};
+	\visible<14->{\node at (3,2.5) {\includegraphics[width=6cm]{images-top/backprop}};}
 \end{tikzpicture}}
