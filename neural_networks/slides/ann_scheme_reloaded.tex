@@ -42,7 +42,7 @@
 		\foreach \dest in {1,2,3,4}     
         	\path[thick,->,gray] (I-\source) edge node[font=\scriptsize] {} (H-\dest) ;
 %    % Annotate the layers
-	\node [] (ll) at (-1.25,3) {RAC-155};
+	\node [] (ll) at (-1.25,3) {features};
 	\node[circle, black,thick,minimum width = 2.7cm,minimum height = 2.7cm,path picture={\node at (path picture bounding box.center){\includegraphics[width=3cm]{representations/images/pisc_trans}}; }] (Xp) at (-1.24,5) {};
 	\node[] (ll) at (3.5*\layersep,5) {$\Delta E_{H-L}$};
 	\visible<3->{\node[input neuron,fill=orange!100,opacity=1 ] (I-2) at (0,2) {$ $};}

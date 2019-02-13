@@ -1,5 +1,5 @@
 \visible<1->{Backpropagation is normally used to find the gradients. Since all of the gradients are made easy to find with backpropagation, they can be updated with gradient descent:}
 \visible<2->{$$W = W-\eta *\Big(\frac{\partial Loss}{\partial W}\Big)$$}
 \visible<3->{In gradient descent, loss term calculated from training data $\rightarrow$ if you train for the same number of epochs (number of rounds your NN sees the training data), you will get the same result. \textbf{Gets stuck in local minima!}}
-\visible<4->{$$GD\rightarrow\Big(\frac{\partial Loss}{\partial W}\Big)\rightarrow all\:training\:data$$}
-\visible<5->{$$SGD\rightarrow\Big(\frac{\partial Loss}{\partial W}\Big)\rightarrow one/few\:examples\rightarrow MUCH\:noisier!\rightarrow less\:stuck$$}
+\visible<4->{$$GD\rightarrow\Big(\frac{\partial Loss}{\partial W}\Big)\rightarrow \text{all training data}$$}
+\visible<5->{$$SGD\rightarrow\Big(\frac{\partial Loss}{\partial W}\Big)\rightarrow \text{one/few examples}\rightarrow \text{MUCH noisier!}\rightarrow \text{less stuck}$$}
