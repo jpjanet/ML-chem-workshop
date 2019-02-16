@@ -1,15 +1,18 @@
 We can solve these equations exactly as before:
 \begin{align*}
  y_{QUAD}(x) &=     \varphi(X) w \\
- \visible<2->{\implies  w &=  ( \varphi(X)^T \varphi(X)+{I}_{d'}\lambda)^{-1} \varphi(X)^Ty_{data}}
+ \visible<2->{\implies  w &=  ( \varphi(X)^T \varphi(X)+{I}_{d'}\lambda)^{-1} \varphi(X)^Ty_{data}}\\
+ \visible<3->{
+ 			 \color{blue}{\textrm{(c.f. the linear case)}} \:\:
+ 			 \color{blue}{w}&\color{blue}{=  ( X^TX+{I}_{d}\lambda)^{-1} X^Ty_{data}}
+     		}
 \end{align*}
-\uncover<3->{by direct analogy to the previous slides, there is also a kernel form:
+\uncover<4->{by direct analogy to the previous slides, there is also a kernel form:
 \begin{align*}
-K &= \varphi(X)\varphi(X)^T \in \mathbb{R}^{n\times n};\\
- K_{i,j}&= \left\langle \varphi(x_i),\varphi(x_j)\right\rangle\\
- &= \begin{bmatrix} 1&  \sqrt{2}x_1^{(i)} & \hdots & (x_1^{(i)})^{2} & (x_{2}^{(i)})^{2}\end{bmatrix} 
+\hat{y}(x^{*}) &=\sum_{i=1}^{n}k\left(x^{*},x_{i}\right)a_{i}\\
+k\left(x^{*},x_{i}\right)&= \left\langle \varphi(x_i),\varphi(x_j)\right\rangle\\
+ &= \begin{tiny}\begin{bmatrix} 1&  \sqrt{2}x_1^{(i)} & \hdots & (x_1^{(i)})^{2} & (x_{2}^{(i)})^{2}\end{bmatrix} 
 \begin{bmatrix} 1 \\ \sqrt{2} x_1^{(j)} \\ \vdots \\ (x_1^{(j)})^{2} \\ (x_{2}^{(j)})^{2}
-\end{bmatrix}
+\end{bmatrix}\end{tiny}
 \end{align*}
-
 }
