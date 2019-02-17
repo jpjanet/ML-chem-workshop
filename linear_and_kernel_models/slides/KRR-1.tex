@@ -1,6 +1,17 @@
-From the perspective of similarity, we can imagine arbitrary functions to be our kernel, without ever needing to know what the underlying feature map $\varphi$ is.\pause{}\\ Functions $k:\mathbb{R}^d\times \mathbb{R}^d \rightarrow  \mathbb{R}=\left\langle \varphi , \varphi \right\rangle$ are valid kernels if (Mercer's Theorem):
-
-\begin{enumerate}
-	\uncover<3->{\item The function must be non-negative and symmetric: $k(x',x)=k(x,x')\geq 0$ for all inputs}
-	\item \uncover<4->{The kernel must be \textit{positive definite}, that is all eigenvalues of the kernel matrix K are $\geq 0$}
-\end{enumerate}
+Both kernel methods are the same except:
+\begin{table}
+	\begin{tabular}{cccc}
+\hline 	& linear & quadratic \\
+\hline	$K_{ij}$ & $(x^{(i)})^Tx^{(j)}$ & $\left((x^{(i)})^Tx^{(j)} +1\right)^2$\\ \hline 
+	\end{tabular}
+\end{table}
+\begin{align*}
+&\hat{y}(X)= Ka \:
+&a =  (K+{I}_n\lambda)^{-1}y
+\end{align*}\vspace{-0.4cm}
+\pause{}
+\begin{center}
+	\textbf{we use the same machinery as the linear kernel, but the definition of similarity, defined by the kernel, has changed}.
+\end{center}
+\pause{}
+From the perspective of similarity, we can imagine arbitrary functions to be our kernel, without ever needing to know what the underlying feature map $\varphi$ is.

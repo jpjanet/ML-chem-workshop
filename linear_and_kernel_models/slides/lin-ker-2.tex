@@ -4,5 +4,9 @@ We can write the solution of the regression problem in this form -- it is \textb
 \hat{y}(X)&= Ka \\ 
 a &=  (K+{I}_n\lambda)^{-1}y
 \end{align*}
-\visible<2->{The prediction at any new point is proportional to the inner product of each training point and the new point.}
+\visible<2->{The prediction at any new point is proportional to the inner product of each training point and the new point:
+\begin{align*}
+\hat{y}_{MLR}(x^{*}) &=\sum_{i=1}^{n}k\left(x^{*},x_{i}\right)a_{i}=\sum_{i=1}^{n}k\left
+\langle x^{*},x_{i}\right\rangle a_{i}
+\end{align*}}
 

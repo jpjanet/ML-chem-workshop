@@ -1,8 +1,8 @@
 A simple recipe for {\color{red}kernel} {\color{blue}ridge} regression (KRR):\\
 \begin{enumerate}
 	\pause{}
-	\item form the kernel matrix, $\color{red}K\color{black}\in\mathbb{R}^{n\times n}$ with \[K_{ij}=k(x^{(i)},x^{(j)})= \exp\left(-\sigma^{-2}\left\Vert x_i-x_j \right\Vert_2^2 \right)\]	\pause{}
+	\item form the kernel matrix, $\color{red}K\color{black}\in\mathbb{R}^{n\times n}$ with \[K_{ij}=k(x^{(i)},x^{(j)})= \exp\left(-\sigma^{-2}\left\Vert x^{(i)}-x^{(j)} \right\Vert_2^2 \right)\]	\pause{}
 	\item solve for $a\in\mathbb{R}^{n}$ from \[a=\left(K + \color{blue}\lambda\color{black} I\right)^{-1}y_{data}\]	\pause{}
-	\item compute values a new points $x^{*}\in \mathbb{R}^{d}$ by\[ y(x^{*})=\sum_{i=1}^{n}k(x^{*},,x^{(i)})\]	\pause{}
+	\item compute values a new points $x^{*}\in \mathbb{R}^{d}$ by\[ y(x^{*})=\sum_{i=1}^{n}k(x^{*},x^{(i)})\]	\pause{}
 	\item check using cross-validation to choose $\sigma$ and $\lambda$
 \end{enumerate}

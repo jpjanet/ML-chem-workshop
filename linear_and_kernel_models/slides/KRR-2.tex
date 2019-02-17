@@ -1,11 +1,12 @@
-The most widely used kernel is the Gaussian kernel:
+The most widely used kernel is the Gaussian kernel:o
 \begin{align*}
-K_{i,j} = \exp\left(-\sigma^{-2}\left\Vert x_i-x_j \right\Vert_2^2 \right)
+K_{i,j} = \exp\left(-\sigma^{-2}\left\Vert x^{(i)}-x^{(j)} \right\Vert_2^2 \right)
 \end{align*}
-\only<2->{What is $\varphi(x_i)$ here?}
+\only<2->{What is $\varphi(X)$ here?}
 \only<3->{\begin{align*}
 \varphi(x) = e^{\frac{-x^2}{2\sigma^2}}\begin{bmatrix} 1 &
 &{\frac{1}{\sigma}}x &\sqrt{\frac{1}{2!\sigma^4}}x^2 &\hdots\end{bmatrix}^T
 \end{align*}
-Actually a Hilbert space (infinite dimensions...)}
+Actually a Hilbert space (infinite dimensions...)}\\
+$ $
 \only<4->{Depends on $\sigma$ to control non-locality.}
