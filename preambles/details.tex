@@ -1,3 +1,9 @@
+%% git version grep
+\CatchFileDef{\headfull}{.git/HEAD.}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\CatchFileDef{\commit}{.git/refs/heads/\branch.}{}
+
 %% title and author list
 \title{Machine learning and chemistry}
 \author[]{{Jon Paul Janet} \inst{1} \and Aditya Nandy \inst{2} \and Nick (Tzuhsiung) Yang \inst{1}}
@@ -10,6 +16,8 @@ the Kulik group at MIT, \url{hjkgrp.mit.edu/}\\
 under the supervision of Professor Heather J. Kulik \\
 \vspace{0.25 cm}
 for the most recent version and demo notebooks see \url{https://github.com/jpjanet/BGU-workshop} \\
+\vspace{0.25cm}
+This revision: \texttt{\commit} on branch \texttt{\branch
 \vspace{0.5 cm}
 \includegraphics[height=0.9cm]{images-top/logo.png}}
 \date{\begin{tiny} compliled \today \end{tiny}}
@@ -38,4 +46,3 @@ for the most recent version and demo notebooks see \url{https://github.com/jpjan
 }
 \setbeamercolor{footline}{fg=black}
 \setbeamerfont{footline}{series=\bfseries}
-
