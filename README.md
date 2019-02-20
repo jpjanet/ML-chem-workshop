@@ -1,4 +1,4 @@
-# machine learning in chemisrty workshop
+# machine learning in chemistry workshop
 This workshop is a set of slides and jupyter notebooks intended to give an overview of machine learning in chemistry to graduate students 
 in chemical sciences, which was originally presented during a research trip to Ben Gurion University and the Hebrew University in Jerusalem in February 2019.
  
