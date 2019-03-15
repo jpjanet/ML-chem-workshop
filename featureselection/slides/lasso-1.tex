@@ -1,0 +1,15 @@
+LASSO regression gives us a one-shot option for linear models:
+\begin{align*}
+w=\arg\min_{w}\mathcal{L}(w) &= \left\Vert Xw -y_{data}\right\Vert_{2}^{2} + \lambda \left\Vert W \right\Vert^{{\only<1>{0}\only<2->{\color{red}1}}}_{\only<1>{0}\only<2->{\color{red}1}}
+\end{align*}
+\uncover<3->{
+Using  the $l_1$ makes the optimization problem more difficult, but automatically performs feature selection so we don't need RFE or other tricks.}\uncover<4->{ Why? Note the above is equivalent to 
+\begin{align*}
+w=\arg\min_{w}\mathcal{L}(w) &= \left\Vert Xw -y_{data}\right\Vert_{2}^{2} \\
+\text{s.t.}\:\: w &\leq \lambda^{-1}
+\end{align*}
+(by Lagrange multipliers)}
+\begin{itemize}
+\item \uncover<5->{the \textbf{larger}  $\lambda$, the fewer features survive}
+\item \uncover<6->{$\lambda$ comes from cross-validation}
+\end{itemize}

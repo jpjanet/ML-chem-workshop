@@ -1,0 +1,6 @@
+Using unnecessary features can degrade model performance, so we want to able to pick the subset of variables that is best correlated with our objective, formally:
+\begin{align*}
+w=\arg\min_{w\in \mathbb{d}}\left(\left\Vert y_{data} -  Xw \right\Vert_{2}^{2} + \lambda\left\Vert w \right\Vert^{0}_{0} \right)
+\end{align*}
+\pause{}
+We don't know the optimal number upfront, and  this is a combinatorial problem -- possible for $\leq 30$ dimensions or so, but rapidly becomes unfeasible.
