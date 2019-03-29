@@ -1,0 +1,156 @@
+\begin{tikzpicture}[shorten >=1pt,draw=black, x=1cm, y=1 cm,  node distance=0cm]
+
+\draw[use as bounding box, anchor = north west,draw=none] (-2,-4.25) rectangle (9,3.25);
+\clip (-2,-4.25) rectangle (9.0,3.25);
+
+%% setup parameters for NN drawing
+
+\tikzstyle{every pin edge}=[<-,shorten <=1pt,thick]
+\tikzstyle{neuron}=[circle,fill=black!25,minimum size=0.75cm ,inner sep=0pt, color=black, draw]
+\tikzstyle{input neuron}=[neuron, fill=green!25!blue!25];
+\tikzstyle{output neuron}=[neuron, fill=green!25!blue!50];
+\tikzstyle{hidden neuron}=[neuron, fill=green!50!orange!25];
+\tikzstyle{annot} = [text width=2cm, text centered]
+
+
+%% define coordinate grid 
+\def \xfarleft {-1.25}
+\def \xleft {-1.0}
+\def \xmid {-0.25}
+\def \xright {0.5}
+\def \ytop {1.0}
+\def \ymid {-0.5}
+\def \ybot {-1.15}
+\def \yh {3.25}
+\def \yphasetwo {-2.0}
+\def \xlabeloffset {0.05}
+\def \ylabeloffset {0.15}
+\def\layersep{3.0}
+\def\vlayersep{1.5}
+
+% Draw the input layer nodes
+\visible<1->{\node  (ll) at (\xfarleft,\ymid+1.5*\vlayersep) {\small inputs};}
+\visible<2->{\node  (ll) at (\xfarleft,\ymid-1.5*\vlayersep) {$x\in\mathbb{R}^{1\times 3}$};}
+\visible<2->{\node  (ll) at (\xfarleft+\layersep,\ymid-2.0*\vlayersep) {$z\in\mathbb{R}^{1\times 4}$};}
+
+\foreach \name/\y in {1/\ymid-\vlayersep,2/\ymid,3/\ymid+\vlayersep}{
+\visible<1->{\node[input neuron,fill=orange!100 ] (I-\name) at (\xfarleft,\y) {$I_{\name}$};}
+}
+
+% Draw the hidden layer nodes
+
+\foreach \name/\y in {1/\ymid}{
+\visible<1>{\path node[hidden neuron] (H-\name) at (\xfarleft+\layersep,\y) {$\sigma$};}
+}
+
+\foreach \name/\y in {1/\ymid-1.5*\vlayersep,
+	2/\ymid-0.5*\vlayersep,
+	3/\ymid+0.5*\vlayersep,
+	4/\ymid+1.5*\vlayersep}{
+\only<2->{\path node[hidden neuron] (H-\name) at (\xfarleft+\layersep,\y) {$H_{1,\name}$};}
+}
+
+
+
+% Draw the output layer node
+\visible<1->{\node[thick, output neuron] at (\xfarleft+2*\layersep,\ymid) (O) {$O$};}
+
+
+
+
+\foreach \source in {1}{
+\visible<1->{\path[thick,->,black] (H-\source) -- (O) ;}}
+
+\visible<1->{\path[thick,->,black,draw] (O.east) -- ([xshift=0.25*\layersep cm]O.east);}
+
+\visible<1->{\node [anchor=west] (l2) at ([xshift=0.25*\layersep cm]O.east) {\small property};}
+
+
+\foreach \source in {1}{
+\only<1>{\path[->,black,draw,thick] (H-\source) -- (O) ;}}
+
+\foreach \source in {1,2,3,4}{
+\only<2-4>{\path[->,black,draw,thick] (H-\source) -- (O) ;}}
+
+\foreach \source in {1,2,3,4}{
+%\only<4->{\path[->,gray,draw,thick,opacity=0.5] (H-\source) -- (O) ;}}
+\only<5->{\path[thick,->,blue] (H-\source) edge node[rectangle, fill=white,fill opacity=0.75,text opacity=1] {{\color{blue}$w_{\source,1}^1$}{\color{black}$z_{\source}$}} (O) ;}}
+
+
+
+%\foreach \source in {1}{
+%\visible<4->{\path[thick,->,blue] (H-\source) edge node[rectangle, fill=white,fill opacity=0.5,opacity=1] {\color{blue}$\sigma\left(w^Tx\right)$} (O) ;}}
+
+\visible<3-4>{\node[anchor = north west] at (\xmid+1.75,\ymid-0.5) {
+\begin{minipage}{8cm}
+\small
+\begin{align*}
+z=\begin{bmatrix}
+\sigma \left(x {\color{blue}w_{:,1}^0} \right)\\
+\sigma \left(x {\color{blue}w_{:,2}^0} \right)\\
+\sigma \left(x {\color{blue}w_{:,3}^0} \right)\\
+\sigma \left(x {\color{blue}w_{:,4}^0} \right)\\
+\end{bmatrix}^T
+=&\sigma\left(x{\color{blue}W^0}\right)\\
+\visible<4>{&\color{blue}W^0\color{black}\in\mathbb{R}^{3\times4}}
+\end{align*}
+\end{minipage}};}
+
+\visible<5->{\node[anchor = north west] at (\xmid+1.75,\ymid-0.5) {
+\begin{minipage}{8cm}
+\small
+\begin{align*}
+O&=z{\color{blue}w^1} =\sigma\left(x {\color{blue}W^0} \right){\color{blue}w^1}\\
+\only<6-7>{\textrm{c.f. } \hat{y}&= \varphi(x)w\\}
+\only<8->{\frac{\partial O}{\partial {\color{blue}w_{1,1}^{0}}}&=\party{z}{\color{blue}w_{1,1}^{0}}{\color{blue}w^1}\\}
+\only<9->{&=x_1\sigma'\left(x{\color{blue} W^0} \right){\color{blue}w^1}}
+\end{align*}
+\end{minipage}};}
+
+\node[anchor = north west] at (\xmid+4,\ymid+2.75) {
+\begin{minipage}{7cm}
+\visible<7>{\textbf{What is} $k(x,x^*)$ \textbf{here?}}
+\end{minipage}};
+
+%\foreach \source in {1,2,3,4}{
+%	{\path[thick,->,blue] (H-\source) edge node[rectangle, fill=white,fill opacity=0.5,opacity=1] {\color{blue}$w_{\source,1}^{1}$} (O) ;}}
+
+
+%\foreach \source in {1,2,3,4}{
+%	{\path[thick,->,blue] (H-\source) edge node[rectangle, fill=white,fill opacity=0.5,opacity=1] {\color{blue}$w_{\source,1}^{1}$} (O) ;}}
+
+
+%\foreach \source in {1,2,3}{
+%\foreach \dest in {}{     
+%	\path[thick,->,gray,opacity=0.5] (I-\source) edge node[] {} (H-\dest) ;}}
+
+
+% input to H 1st
+\foreach \source in {1,2,3}{
+\foreach \dest in {1}{     
+\only<1>{\path[thick,->,black] (I-\source) edge[thick] node[] {} (H-\dest) ;}}
+}
+
+% input to H 2nd
+\foreach \source in {1,2,3}{
+\foreach \dest in {1,2,3,4}{     
+\only<2>{\path[thick,->,black] (I-\source) edge[thick] node[] {} (H-\dest) ;}}
+}
+
+% input to H 3rd
+\foreach \source in {2,3}{
+	\foreach \dest in {1,2,3,4}{     
+		\only<3->{\path[thick,->,gray, opacity=0.5] (I-\source) edge[thick] node[] {} (H-\dest) ;}}
+}
+
+
+\foreach \source in {1}{
+\foreach \dest in {4,3,2,1}{     
+\only<3->{\path[thick,->,blue] (I-\source) edge node[rectangle, fill=white,fill opacity=0.75,text opacity=1] {{\color{blue}$w_{\source,\dest}^0$}{\color{black}$x_{\source}$}} (H-\dest) ;}}
+}
+
+
+
+
+\end{tikzpicture}
+

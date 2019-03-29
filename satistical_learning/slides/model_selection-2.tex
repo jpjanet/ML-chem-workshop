@@ -99,8 +99,10 @@ text width=1.5cm, text centered, rounded corners, minimum height=1.0cm]
 \visible<10>{\draw[red,very thick,->] (0.5,0.25) -- (6.0,0.25);}
 \visible<10>{\node[red,anchor = west] at (6.75, 0.25){error};}
 \visible<10>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/2,0/1,0/0};}
+
+
 %% all done 
-\visible<11-12>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/2,0/1,0/0,0/3,0/4,0/5,0/6};}
+\visible<11-12>{\rectDivred{1}{6}{(6,-1)}{(6.5,2)}{0/2,0/1,0/0,0/3,0/4,0/5};}
 \visible<11>{\rectDiv{1}{6}{(0,-1)}{(0.5,2)}{};}
 \visible<12>{\draw [decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
 	(6,-1) -- (6,2) node [text badly centered,midway,xshift=-2.0cm, text width = 2 cm] { $\text{average  error}=\color{red}\textrm{CV error}$};}
