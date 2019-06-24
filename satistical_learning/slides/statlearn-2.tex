@@ -2,11 +2,11 @@ We cannot expect that $f^*$ is in $\mathcal{T}$. The best we can do is $f^{\dagg
 \begin{align*}
     f^{\dagger}&= \arg \min_{f\in \mathcal{T}}\mathcal{E}(f) \:& \textrm{(the best model we could pick)}\\
    \uncover<2->{  \hat{f} &= \arg\min_{f\in\mathcal{T}} \mathcal{E}_{emp}(f)\: &\textrm{(the model we do pick)}\\}
-      \uncover<2->{      f^{*}&= \mathbb{E}\left[Y\vert X=x\right]\: &\textrm{(the `truth')}\\}
+      \uncover<2->{      f^{*}&= \mathbb{E}\left[\mathcal{L}\left(Y,f(X)\right)\vert X=x\right]\: &\textrm{(the `truth')}\\}
 \end{align*}
 \uncover<3->{
 We want to generalize,  we want the \textit{excess risk} to be small:
 \begin{align*}
-     \mathcal{E}(f^{*}) - \mathcal{E}(\hat{f}) &=   \only<4->{\color{red}}\left[\mathcal{E}(f^{*})-\mathcal{E}(f^{\dagger})\right] \only<3->{\color{black}} + \only<4->{\color{blue}}\left[\mathcal{E}(f^{\dagger})-\mathcal{E}(\hat{f})\right]\only<3->{\color{black}}
+ \mathcal{E}(\hat{f}) -      \mathcal{E}(f^{*}) &=    \only<4->{\color{blue}}\left[\mathcal{E}(\hat{f})-\mathcal{E}(f^{\dagger})\right] \only<3- >{\color{black}}  +\only<4->{\color{red}}\left[\mathcal{E}(f^{\dagger})-\mathcal{E}(f^{*})\right]\only<3->{\color{black}} 
 \end{align*}}
-\uncover<3->{these terms are {\color{red}\textbf{approximation error}} and {\color{blue}\textbf{estimation error}}.}
+\uncover<3->{these terms are {\color{blue}\textbf{estimation error}} and {\color{red}\textbf{approximation error}}.}
